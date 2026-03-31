@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #FAF7F2;
+  --color-charcoal: #2D2D2D;
+  --color-sage: #8FA98B;
+  --color-sage-light: #B5C9B2;
+  --color-sage-dark: #6B8A67;
+  --color-terracotta: #C67B5C;
+  --color-terracotta-light: #D9A08C;
+  --color-terracotta-dark: #A85F42;
+  --color-stone: #A69B8D;
+  --color-stone-light: #C4BAB0;
+  --color-stone-dark: #8A7F72;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}

@@ -1,0 +1,280 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop, staging]
+  pull_request:
+    branches: [main, develop, staging]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '10'
+
+jobs:
+  check:
+    name: Lint, Type Check & Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Type check
+        run: pnpm turbo check
+
+      - name: Lint
+        run: pnpm turbo lint
+
+      - name: Test
+        run: pnpm turbo test
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for secrets in code
+        run: |
+          PATTERNS='(sk_live_|sk_test_|pk_live_|pk_test_|eyJhbGciOi[a-zA-Z0-9_-]{50}|service_role|-----BEGIN.*PRIVATE KEY|AKIA[0-9A-Z]{16}|aws_secret_access_key|AIza[0-9A-Za-z_-]{35}|ghp_[a-zA-Z0-9]{36}|gho_[a-zA-Z0-9]{36}|github_pat_|xox[bporas]-)'
+          if grep -rE "$PATTERNS" \
+            --include='*.ts' --include='*.tsx' --include='*.js' --include='*.jsx' --include='*.json' \
+            --exclude='package.json' --exclude='package-lock.json' --exclude='pnpm-lock.yaml' \
+            --exclude-dir=node_modules --exclude-dir=.git --exclude-dir=.turbo .; then
+            echo "::error::Secret patterns detected in source code!"
+            exit 1
+          fi
+
+      - name: Check for .env files committed
+        run: |
+          if git ls-files | grep -E '\.env$|\.env\.local$|\.env\.production$|\.env\.development$'; then
+            echo "::error::.env files should not be committed!"
+            exit 1
+          fi
+
+      - name: Check for hardcoded database URLs with credentials
+        run: |
+          if grep -rE 'postgres(ql)?://[^:]+:[^@]+@|mysql://[^:]+:[^@]+@|mongodb(\+srv)?://[^:]+:[^@]+@' \
+            --include='*.ts' --include='*.tsx' --include='*.js' --include='*.jsx' \
+            --exclude-dir=node_modules --exclude-dir=.git .; then
+            echo "::error::Database URL with embedded credentials detected!"
+            exit 1
+          fi
+
+      - name: Check RLS on new migrations
+        run: |
+          # Find migrations that CREATE TABLE but don't ENABLE ROW LEVEL SECURITY
+          for migration in supabase/migrations/*.sql; do
+            if grep -qiE 'CREATE\s+TABLE' "$migration" 2>/dev/null; then
+              if ! grep -qiE 'ENABLE\s+ROW\s+LEVEL\s+SECURITY' "$migration" 2>/dev/null; then
+                echo "::error::Migration $migration creates table without enabling RLS!"
+                exit 1
+              fi
+            fi
+          done
+
+      - name: Check architecture violations
+        run: |
+          # apps/mobile cannot import from apps/admin
+          if grep -rE "from ['\"].*apps/admin" apps/mobile/ --include='*.ts' --include='*.tsx' 2>/dev/null; then
+            echo "::error::apps/mobile imports from apps/admin (forbidden)"
+            exit 1
+          fi
+          # apps/admin cannot import from apps/mobile
+          if grep -rE "from ['\"].*apps/mobile" apps/admin/ --include='*.ts' --include='*.tsx' 2>/dev/null; then
+            echo "::error::apps/admin imports from apps/mobile (forbidden)"
+            exit 1
+          fi
+          # packages/shared cannot import from apps/
+          if grep -rE "from ['\"].*apps/" packages/shared/ --include='*.ts' --include='*.tsx' 2>/dev/null; then
+            echo "::error::packages/shared imports from apps/ (forbidden)"
+            exit 1
+          fi
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit dependencies
+        run: pnpm audit --audit-level=high || true
+
+  eas-preview:
+    name: EAS Build (Preview)
+    needs: [check, security-scan]
+    if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build preview
+        run: cd apps/mobile && eas build --platform all --profile preview --non-interactive
+
+  eas-staging:
+    name: EAS Build (Staging)
+    needs: [check, security-scan]
+    if: github.ref == 'refs/heads/staging' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build staging
+        run: cd apps/mobile && eas build --platform all --profile staging --non-interactive
+
+  eas-production:
+    name: EAS Build (Production)
+    needs: [check, security-scan]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build production
+        run: cd apps/mobile && eas build --platform all --profile production --non-interactive
+
+  deploy-admin-preview:
+    name: Deploy Admin (Preview)
+    needs: [check, security-scan]
+    if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build admin
+        run: pnpm turbo build --filter=@borkd/admin
+
+      # TODO: Add Vercel/Netlify preview deployment step
+
+  deploy-admin-production:
+    name: Deploy Admin (Production)
+    needs: [check, security-scan]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build admin
+        run: pnpm turbo build --filter=@borkd/admin
+
+      # TODO: Add Vercel/Netlify production deployment step
+
+  supabase-migrations:
+    name: Supabase Migrations
+    needs: [check, security-scan]
+    if: |
+      github.event_name == 'push' &&
+      (github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'staging' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+
+      - name: Link Supabase project
+        run: supabase link --project-ref ${{ secrets.SUPABASE_PROJECT_REF }}
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Run migrations
+        run: supabase db push
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}

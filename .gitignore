@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+
+# Build outputs
+dist/
+
+# Turborepo
+.turbo/
+
+# Environment variables
+.env*
+*.local
+
+# Native builds
+ios/
+android/
+
+# OS files
+.DS_Store
+
+# Test coverage
+coverage/
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/context/sessions/
+.claude/discord-webhook.url
+
+# TypeScript build info
+*.tsbuildinfo

@@ -1,0 +1,12 @@
+{
+  "macbook_pro": {
+    "last_seen": null,
+    "branch": null,
+    "session_id": null
+  },
+  "nanoclaw": {
+    "last_seen": null,
+    "active_containers": 0,
+    "active_tasks": []
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm:*)",
+      "Bash(npx:*)",
+      "Bash(turbo:*)",
+      "Bash(biome:*)",
+      "Bash(vitest:*)",
+      "Bash(expo:*)",
+      "Bash(eas:*)",
+      "Bash(supabase gen:*)",
+      "Bash(supabase migration:*)",
+      "Bash(supabase functions:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git switch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(gh:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(cd:*)",
+      "Bash(pwd:*)",
+      "Bash(which:*)",
+      "Bash(echo:*)",
+      "Bash(node:*)",
+      "Bash(tsc:*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep"
+    ],
+    "deny": [
+      "Bash(rm -rf /:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(supabase db reset:*)"
+    ]
+  },
+  "worktree": {
+    "symlinkDirectories": ["node_modules", ".expo", ".turbo", ".next"]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/format-on-save.sh",
+            "timeout": 15,
+            "statusMessage": "Formatting with Biome..."
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/check-types.sh",
+            "timeout": 30,
+            "statusMessage": "Type checking...",
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/check-architecture.sh",
+            "timeout": 5,
+            "statusMessage": "Architecture check..."
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/validate-commit-msg.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/block-dangerous-cmds.sh",
+            "timeout": 5,
+            "statusMessage": "Safety check..."
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/scan-secrets.sh",
+            "timeout": 5,
+            "statusMessage": "Scanning for secrets..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/session-summary.sh",
+            "timeout": 10,
+            "statusMessage": "Saving session context..."
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0; TASK=$(cat \"$ROOT/.claude/context/current-task.md\" 2>/dev/null | tr \"\\n\" \" \" | sed \"s/\\\"/\\\\\\\\\\\"/g\"); echo \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"PreCompact\\\",\\\"additionalContext\\\":\\\"$TASK\\\"}}\"'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

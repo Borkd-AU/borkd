@@ -1,0 +1,58 @@
+name: PR Checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+
+jobs:
+  label-by-path:
+    name: Auto Label PR
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Label by changed files
+        uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  pr-size:
+    name: PR Size Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check PR size
+        run: |
+          ADDITIONS=$(git diff --stat origin/${{ github.base_ref }}...HEAD | tail -1 | awk '{print $4}')
+          if [ "${ADDITIONS:-0}" -gt 500 ]; then
+            echo "::warning::Large PR detected ($ADDITIONS additions). Consider splitting into smaller PRs."
+          fi
+
+  commit-messages:
+    name: Validate Commit Messages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check conventional commits
+        run: |
+          ERRORS=0
+          while IFS= read -r msg; do
+            if ! echo "$msg" | grep -qE '^(feat|fix|refactor|docs|test|chore|style|perf|ci)\(.+\):'; then
+              echo "::error::Invalid commit message: $msg"
+              echo "  Expected: type(scope): description"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done < <(git log --format='%s' origin/${{ github.base_ref }}..HEAD)
+
+          if [ $ERRORS -gt 0 ]; then
+            echo "::error::$ERRORS commit(s) with invalid format"
+            exit 1
+          fi

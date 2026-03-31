@@ -1,0 +1,30 @@
+# Auto-label PRs based on changed file paths
+mobile:
+  - changed-files:
+    - any-glob-to-any-file: 'apps/mobile/**'
+
+admin:
+  - changed-files:
+    - any-glob-to-any-file: 'apps/admin/**'
+
+shared:
+  - changed-files:
+    - any-glob-to-any-file: 'packages/shared/**'
+
+config:
+  - changed-files:
+    - any-glob-to-any-file: 'packages/config/**'
+
+supabase:
+  - changed-files:
+    - any-glob-to-any-file: 'supabase/**'
+
+ci:
+  - changed-files:
+    - any-glob-to-any-file: '.github/**'
+
+harness:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.claude/**'
+      - 'CLAUDE.md'
