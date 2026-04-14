@@ -37,3 +37,7 @@ coverage/
 # Seed script working files (caches/audit logs — not reproducibility data)
 data/seed/manual/.geocoded.json
 data/seed/dropped.json
+
+# Supabase CLI local state (auth tokens, branch metadata — machine-specific)
+supabase/.branches/
+supabase/.temp/
