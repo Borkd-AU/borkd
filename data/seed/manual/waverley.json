@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Queens Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9015,
+    "lng": 151.2542,
+    "notes": "Fenced off-leash area. 5am-10pm. Water bowl near south gate."
+  },
+  {
+    "name": "Hugh Bamford Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8797,
+    "lng": 151.2756,
+    "notes": "Off-leash 24/7. Popular with locals."
+  },
+  {
+    "name": "Caffyn Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8929,
+    "lng": 151.2627,
+    "notes": "Small off-leash area, time-restricted."
+  },
+  {
+    "name": "Dickson Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8962,
+    "lng": 151.2656,
+    "notes": "Off-leash before 10am and after 4pm."
+  },
+  {
+    "name": "Diamond Bay Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8772,
+    "lng": 151.2817,
+    "notes": "Coastal reserve with off-leash area."
+  },
+  {
+    "name": "Rodney Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8830,
+    "lng": 151.2617,
+    "notes": "Off-leash during daylight hours."
+  },
+  {
+    "name": "Thomas Hogan Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8952,
+    "lng": 151.2534,
+    "notes": "Off-leash time-restricted."
+  },
+  {
+    "name": "Grant Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9100,
+    "lng": 151.2582,
+    "notes": "Coogee end, off-leash area."
+  }
+]
