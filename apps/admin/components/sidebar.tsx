@@ -1,16 +1,8 @@
 'use client';
 
+import { BarChart3, Dog, LayoutDashboard, MapPin, Menu, Users, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-  LayoutDashboard,
-  Users,
-  MapPin,
-  BarChart3,
-  Menu,
-  X,
-  Dog,
-} from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [

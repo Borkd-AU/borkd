@@ -10,9 +10,11 @@ dist/
 # Turborepo
 .turbo/
 
-# Environment variables
+# Environment variables (templates are committed, see exception below)
 .env*
 *.local
+!.env.example
+!**/.env.example
 
 # Native builds
 ios/
@@ -31,3 +33,11 @@ coverage/
 
 # TypeScript build info
 *.tsbuildinfo
+
+# Seed script working files (caches/audit logs — not reproducibility data)
+data/seed/manual/.geocoded.json
+data/seed/dropped.json
+
+# Supabase CLI local state (auth tokens, branch metadata — machine-specific)
+supabase/.branches/
+supabase/.temp/

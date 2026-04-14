@@ -1,5 +1,5 @@
-import React, { useCallback, useMemo } from 'react';
-import { View } from 'react-native';
+import type React from 'react';
+import { useCallback, useMemo } from 'react';
 import ReactMap, {
   Marker,
   Source,
@@ -8,6 +8,7 @@ import ReactMap, {
   type ViewStateChangeEvent,
 } from 'react-map-gl';
 import type { LineLayer as LineLayerSpec } from 'react-map-gl';
+import { View } from 'react-native';
 
 const SYDNEY_CBD = { latitude: -33.8688, longitude: 151.2093 };
 const DEFAULT_ZOOM = 13;
@@ -44,8 +45,12 @@ function getPinColor(category: string): string {
   return pinCategoryColors[category] ?? pinCategoryColors.default;
 }
 
+// react-map-gl v7 requires `source` on the LineLayerSpec even when the
+// <Layer> is nested inside a <Source>. The parent Source id below is
+// 'walk-route-source' — keep them in sync.
 const routeLayerStyle: LineLayerSpec = {
   id: 'walk-route-line',
+  source: 'walk-route-source',
   type: 'line',
   paint: {
     'line-color': '#7A9E7E',

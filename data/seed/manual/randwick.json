@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Baker Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9219,
+    "lng": 151.2482,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence and tennis courts"
+  },
+  {
+    "name": "Bangor Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9255,
+    "lng": 151.2477,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence"
+  },
+  {
+    "name": "Bardon Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9166,
+    "lng": 151.2536,
+    "notes": "Prohibited: Prohibited when park is being used for training"
+  },
+  {
+    "name": "Blenheim Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9275,
+    "lng": 151.257,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence"
+  },
+  {
+    "name": "Broadarrow Reserve",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9478,
+    "lng": 151.2541
+  },
+  {
+    "name": "Burrows Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9141,
+    "lng": 151.2696,
+    "notes": "Prohibited: Sportsfield"
+  },
+  {
+    "name": "Coral Sea Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9481,
+    "lng": 151.2446,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence, rugby/cricket sports field, cricket practice net area"
+  },
+  {
+    "name": "Ella Reserve",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9731,
+    "lng": 151.251,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence"
+  },
+  {
+    "name": "Nagle Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9432,
+    "lng": 151.2327,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence, inner fenced oval, netball/tennis courts and rugby/cricket fields"
+  },
+  {
+    "name": "Paine Reserve",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9243,
+    "lng": 151.2349,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence and soccer/cricket field"
+  },
+  {
+    "name": "Pioneers Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.958,
+    "lng": 151.247,
+    "notes": "Prohibited: Bushland and rugby/cricket sports field"
+  },
+  {
+    "name": "Snape Park",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9347,
+    "lng": 151.2329,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence, inner fenced oval, netball/tennis courts and rugby/cricket fields"
+  },
+  {
+    "name": "Trenerry Reserve",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9273,
+    "lng": 151.2601,
+    "notes": "Prohibited: Bushland areas and coastal walk"
+  },
+  {
+    "name": "Woomera Reserve",
+    "council": "Randwick",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9789,
+    "lng": 151.2385,
+    "notes": "Prohibited: Area within 10 meters from children's playground fence, cricket and sports fields"
+  }
+]

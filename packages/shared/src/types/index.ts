@@ -1,4 +1,4 @@
-import { PIN_CATEGORIES } from '../constants';
+import type { PIN_CATEGORIES } from '../constants';
 
 // ── Utility types ──────────────────────────────────────────────
 
@@ -113,18 +113,34 @@ export type WalkUpdate = Partial<
 
 // ── Pin ────────────────────────────────────────────────────────
 
+export type PinType = 'temporary' | 'permanent';
+export type PinSource = 'city_of_sydney' | 'osm' | 'manual';
+
 export type Pin = {
   id: string;
   user_id: string;
   walk_id: string | null;
   category: PinCategory;
+  /** Free-text subcategory (e.g. 'off_leash_area', 'dog_park', 'park', 'beach', 'cafe', 'fountain'). Null for legacy user pins. */
+  subcategory: string | null;
+  /** `temporary` = user-reported hazard, `permanent` = pre-seeded location. Default 'temporary'. */
+  pin_type: PinType;
+  /** Data origin for permanent pins. Null for user-created temporary pins. */
+  source: PinSource | null;
+  /** External stable id within the source (e.g. 'cos_1234', 'osm_way/567', 'manual_waverley_queens-park'). */
+  source_id: string | null;
+  /** Display name for permanent pins (CoS park name, OSM tags.name, etc.). Null for temporary. */
+  name: string | null;
+  /** License attribution string per pin, e.g. '© City of Sydney (CC BY 4.0)'. */
+  attribution: string | null;
   note: string;
   photo_url: string | null;
   location: GpsCoordinate;
   upvotes: number;
   downvotes: number;
   verification_score: number;
-  expires_at: string;
+  /** NULL for permanent pins (enforced by pins_expiry_matches_type CHECK). */
+  expires_at: string | null;
   is_expired: boolean;
   created_at: string;
   updated_at: string;

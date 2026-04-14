@@ -17,6 +17,9 @@ const pinCategorySchema = z.enum([
   'wildlife',
 ]) satisfies z.ZodType<PinCategory>;
 
+export const pinTypeSchema = z.enum(['temporary', 'permanent']);
+export const pinSourceSchema = z.enum(['city_of_sydney', 'osm', 'manual']);
+
 // ── User schemas ───────────────────────────────────────────────
 
 export const createUserSchema = z.object({

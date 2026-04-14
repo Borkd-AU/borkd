@@ -1,6 +1,7 @@
-import React, { useRef, useCallback } from 'react';
+import MapboxGL, { UserLocationRenderMode } from '@rnmapbox/maps';
+import type React from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 import { View } from 'react-native';
-import MapboxGL from '@rnmapbox/maps';
 
 const SYDNEY_CBD = { latitude: -33.8688, longitude: 151.2093 };
 const DEFAULT_ZOOM = 13;
@@ -98,6 +99,17 @@ export default function MapView({
     [onPinPress],
   );
 
+  // Memoize GeoJSON shape payloads so they stay referentially stable across
+  // re-renders that don't change the inputs. Rebuilding these on every render
+  // re-uploads the full FeatureCollection to the native Mapbox ShapeSource,
+  // which is O(n) in pins / route length and O(1) unnecessary work on idle
+  // parent re-renders.
+  const pinGeoJSON = useMemo(() => buildPinGeoJSON(pins), [pins]);
+  const routeGeoJSON = useMemo(
+    () => (walkRoute && walkRoute.length >= 2 ? buildRouteGeoJSON(walkRoute) : null),
+    [walkRoute],
+  );
+
   return (
     <View className="flex-1 bg-[#FAF6F1]">
       <MapboxGL.MapView
@@ -119,7 +131,7 @@ export default function MapView({
         {showUserLocation && (
           <MapboxGL.UserLocation
             visible
-            renderMode="native"
+            renderMode={UserLocationRenderMode.Native}
             androidRenderMode="compass"
           />
         )}
@@ -127,7 +139,7 @@ export default function MapView({
         {pins.length > 0 && (
           <MapboxGL.ShapeSource
             id="pin-source"
-            shape={buildPinGeoJSON(pins)}
+            shape={pinGeoJSON}
             cluster
             clusterRadius={50}
             clusterMaxZoomLevel={14}
@@ -151,15 +163,7 @@ export default function MapView({
               filter={['has', 'point_count']}
               style={{
                 circleColor: '#7A9E7E',
-                circleRadius: [
-                  'step',
-                  ['get', 'point_count'],
-                  20,
-                  10,
-                  25,
-                  50,
-                  30,
-                ],
+                circleRadius: ['step', ['get', 'point_count'], 20, 10, 25, 50, 30],
                 circleOpacity: 0.9,
                 circleStrokeWidth: 2,
                 circleStrokeColor: '#FAF6F1',
@@ -178,11 +182,8 @@ export default function MapView({
           </MapboxGL.ShapeSource>
         )}
 
-        {walkRoute && walkRoute.length >= 2 && (
-          <MapboxGL.ShapeSource
-            id="walk-route-source"
-            shape={buildRouteGeoJSON(walkRoute)}
-          >
+        {routeGeoJSON && (
+          <MapboxGL.ShapeSource id="walk-route-source" shape={routeGeoJSON}>
             <MapboxGL.LineLayer
               id="walk-route-line"
               style={{

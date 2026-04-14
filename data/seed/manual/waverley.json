@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Varna Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9010,
+    "lng": 151.2583,
+    "notes": "All-day off-leash (east end only)"
+  },
+  {
+    "name": "Raleigh Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8736,
+    "lng": 151.2764,
+    "notes": "All-day off-leash, Dover Heights"
+  },
+  {
+    "name": "Hugh Bamford Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8797,
+    "lng": 151.2756,
+    "notes": "All-day off-leash (north end only), Dover Heights"
+  },
+  {
+    "name": "Diamond Bay Reserve",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8772,
+    "lng": 151.2817,
+    "notes": "All-day off-leash, Vaucluse"
+  },
+  {
+    "name": "Dickson Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8928,
+    "lng": 151.2640,
+    "notes": "All-day off-leash (south end only), Bondi"
+  },
+  {
+    "name": "Waverley Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8998,
+    "lng": 151.2577,
+    "notes": "All-day off-leash (western middle section)"
+  },
+  {
+    "name": "Queens Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9015,
+    "lng": 151.2542,
+    "notes": "Designated areas managed by Centennial Parklands"
+  },
+  {
+    "name": "Tamarama Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9027,
+    "lng": 151.2707,
+    "notes": "All-day off-leash (central upper gully)"
+  },
+  {
+    "name": "Marks Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8978,
+    "lng": 151.2723,
+    "notes": "Timed off-leash 4:30pm-8:30am. Suspended during Sculptures by the Sea"
+  },
+  {
+    "name": "Bronte Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9048,
+    "lng": 151.2665,
+    "notes": "Timed off-leash (walking corridor) 3pm-10am daily"
+  },
+  {
+    "name": "Barracluff Park",
+    "council": "Waverley",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8912,
+    "lng": 151.2716,
+    "notes": "Timed off-leash 3pm-10am. Closed during sporting events"
+  }
+]

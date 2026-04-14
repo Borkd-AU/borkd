@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 export interface LocationState {
   isTracking: boolean;
@@ -36,8 +36,7 @@ function haversineDistance(
   const sinLat = Math.sin(dLat / 2);
   const sinLon = Math.sin(dLon / 2);
   const h =
-    sinLat * sinLat +
-    Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * sinLon * sinLon;
+    sinLat * sinLat + Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * sinLon * sinLon;
   return R * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
 }
 
@@ -75,8 +74,7 @@ export function useLocationTracking(): LocationState & LocationActions {
         newDistance += haversineDistance(last, point);
       }
 
-      const elapsed =
-        (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
+      const elapsed = (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
       const pace = calculatePace(newDistance, elapsed);
 
       return {
@@ -118,8 +116,7 @@ export function useLocationTracking(): LocationState & LocationActions {
       if (isPausedRef.current) return;
       setState((prev) => {
         if (!prev.isTracking) return prev;
-        const elapsed =
-          (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
+        const elapsed = (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
         const pace = calculatePace(prev.distance, elapsed);
         return { ...prev, duration: elapsed, averagePace: pace };
       });
