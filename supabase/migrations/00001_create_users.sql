@@ -3,7 +3,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "postgis";
 
 -- Users table (extends Supabase auth.users)
-CREATE TABLE public.users (
+CREATE TABLE IF NOT EXISTS public.users (
   id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   display_name TEXT NOT NULL,
   username TEXT UNIQUE,
@@ -22,7 +22,7 @@ CREATE TABLE public.users (
 );
 
 -- Index for username lookups
-CREATE INDEX idx_users_username ON public.users(username);
+CREATE INDEX IF NOT EXISTS idx_users_username ON public.users(username);
 
 -- Updated_at trigger
 CREATE OR REPLACE FUNCTION update_updated_at()
@@ -33,6 +33,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS users_updated_at ON public.users;
 CREATE TRIGGER users_updated_at
   BEFORE UPDATE ON public.users
   FOR EACH ROW EXECUTE FUNCTION update_updated_at();

@@ -1,4 +1,4 @@
-CREATE TABLE public.walks (
+CREATE TABLE IF NOT EXISTS public.walks (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
   dog_ids UUID[] DEFAULT '{}',
@@ -36,13 +36,14 @@ CREATE TABLE public.walks (
 );
 
 -- Spatial indexes
-CREATE INDEX idx_walks_route ON public.walks USING GIST(route);
-CREATE INDEX idx_walks_walking_route ON public.walks USING GIST(walking_route);
-CREATE INDEX idx_walks_start_point ON public.walks USING GIST(start_point);
+CREATE INDEX IF NOT EXISTS idx_walks_route ON public.walks USING GIST(route);
+CREATE INDEX IF NOT EXISTS idx_walks_walking_route ON public.walks USING GIST(walking_route);
+CREATE INDEX IF NOT EXISTS idx_walks_start_point ON public.walks USING GIST(start_point);
 
 -- User + time index for history queries
-CREATE INDEX idx_walks_user_started ON public.walks(user_id, started_at DESC);
+CREATE INDEX IF NOT EXISTS idx_walks_user_started ON public.walks(user_id, started_at DESC);
 
+DROP TRIGGER IF EXISTS walks_updated_at ON public.walks;
 CREATE TRIGGER walks_updated_at
   BEFORE UPDATE ON public.walks
   FOR EACH ROW EXECUTE FUNCTION update_updated_at();

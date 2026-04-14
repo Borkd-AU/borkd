@@ -307,6 +307,12 @@ ON CONFLICT (id) DO NOTHING;
 
 
 -- ── avatars bucket policies ───────────────────────────────────
+-- Policies: DROP first so this migration is re-runnable.
+
+DROP POLICY IF EXISTS "avatars: public read"   ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner upload"  ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner update"  ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner delete"  ON storage.objects;
 
 -- Public read
 CREATE POLICY "avatars: public read"
@@ -343,6 +349,11 @@ CREATE POLICY "avatars: owner delete"
 
 -- ── pin-photos bucket policies ────────────────────────────────
 
+DROP POLICY IF EXISTS "pin-photos: public read"   ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner upload"  ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner update"  ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner delete"  ON storage.objects;
+
 -- Public read
 CREATE POLICY "pin-photos: public read"
   ON storage.objects FOR SELECT
@@ -378,6 +389,11 @@ CREATE POLICY "pin-photos: owner delete"
 
 -- ── walk-selfies bucket policies ──────────────────────────────
 -- Private bucket — only the owner can upload or read their files.
+
+DROP POLICY IF EXISTS "walk-selfies: owner read"   ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner upload" ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner update" ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner delete" ON storage.objects;
 
 -- Owner read only (no public SELECT)
 CREATE POLICY "walk-selfies: owner read"
