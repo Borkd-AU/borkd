@@ -250,7 +250,16 @@ jobs:
   eas-preview:
     name: EAS Build (Preview)
     needs: [check, security-scan]
-    if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+    # Only runs when:
+    #   * pushed to develop, AND
+    #   * EXPO_TOKEN secret is populated (empty during alpha — job skips
+    #     cleanly instead of red-failing every merge).
+    # Provision the token on Expo dashboard → Access Tokens, then set
+    # it in GitHub repo Settings → Secrets → Actions → new secret.
+    if: |
+      github.ref == 'refs/heads/develop'
+      && github.event_name == 'push'
+      && vars.EAS_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -279,7 +288,10 @@ jobs:
   eas-staging:
     name: EAS Build (Staging)
     needs: [check, security-scan]
-    if: github.ref == 'refs/heads/staging' && github.event_name == 'push'
+    if: |
+      github.ref == 'refs/heads/staging'
+      && github.event_name == 'push'
+      && vars.EAS_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -308,7 +320,10 @@ jobs:
   eas-production:
     name: EAS Build (Production)
     needs: [check, security-scan]
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: |
+      github.ref == 'refs/heads/main'
+      && github.event_name == 'push'
+      && vars.EAS_ENABLED == 'true'
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -392,8 +407,9 @@ jobs:
     name: Supabase Migrations
     needs: [check, security-scan]
     if: |
-      github.event_name == 'push' &&
-      (github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main')
+      github.event_name == 'push'
+      && (github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main')
+      && vars.SUPABASE_CI_ENABLED == 'true'
     runs-on: ubuntu-latest
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'staging' }}
     steps:
