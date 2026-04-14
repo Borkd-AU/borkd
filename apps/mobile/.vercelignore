@@ -1,0 +1,15 @@
+# Native build artifacts — Vercel is web-only
+ios/
+android/
+.eas/
+
+# Expo/Metro caches
+.expo/
+node_modules/.cache/
+
+# Test + coverage
+coverage/
+__tests__/
+
+# OS
+.DS_Store
