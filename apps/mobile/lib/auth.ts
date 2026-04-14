@@ -17,7 +17,13 @@ export function useSession() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Guard against setState-after-unmount when the initial getSession()
+    // resolves after the consumer has navigated away (dev hot-reload +
+    // fast route changes can race).
+    let isMounted = true;
+
     supabase.auth.getSession().then(({ data: { session: s } }) => {
+      if (!isMounted) return;
       setSession(s);
       setUser(s?.user ?? null);
       setLoading(false);
@@ -26,12 +32,16 @@ export function useSession() {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, s) => {
+      if (!isMounted) return;
       setSession(s);
       setUser(s?.user ?? null);
       setLoading(false);
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      isMounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   return { session, user, loading };
