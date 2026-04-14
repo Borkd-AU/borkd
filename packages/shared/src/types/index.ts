@@ -1,4 +1,4 @@
-import { PIN_CATEGORIES } from '../constants';
+import type { PIN_CATEGORIES } from '../constants';
 
 // ── Utility types ──────────────────────────────────────────────
 

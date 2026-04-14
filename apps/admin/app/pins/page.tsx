@@ -1,4 +1,4 @@
-import { MapPin, LayoutDashboard } from 'lucide-react';
+import { LayoutDashboard, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 export default function PinsPage() {

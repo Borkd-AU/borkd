@@ -1,4 +1,4 @@
-import { Users, LayoutDashboard } from 'lucide-react';
+import { LayoutDashboard, Users } from 'lucide-react';
 import Link from 'next/link';
 
 export default function UsersPage() {

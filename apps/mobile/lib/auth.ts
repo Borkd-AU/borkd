@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import { makeRedirectUri } from 'expo-auth-session';
-import * as WebBrowser from 'expo-web-browser';
+import type { Session, User } from '@supabase/supabase-js';
 import * as AppleAuthentication from 'expo-apple-authentication';
+import { makeRedirectUri } from 'expo-auth-session';
 import * as Crypto from 'expo-crypto';
+import * as WebBrowser from 'expo-web-browser';
+import { useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 import { supabase } from './supabase';
-import type { Session, User } from '@supabase/supabase-js';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -23,13 +23,13 @@ export function useSession() {
       setLoading(false);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, s) => {
-        setSession(s);
-        setUser(s?.user ?? null);
-        setLoading(false);
-      },
-    );
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, s) => {
+      setSession(s);
+      setUser(s?.user ?? null);
+      setLoading(false);
+    });
 
     return () => subscription.unsubscribe();
   }, []);
@@ -48,11 +48,7 @@ export async function signInWithEmail(email: string, password: string) {
   return data;
 }
 
-export async function signUpWithEmail(
-  email: string,
-  password: string,
-  displayName: string,
-) {
+export async function signUpWithEmail(email: string, password: string, displayName: string) {
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
@@ -79,10 +75,7 @@ export async function signInWithGoogle() {
   if (error) throw error;
 
   if (data.url) {
-    const result = await WebBrowser.openAuthSessionAsync(
-      data.url,
-      redirectTo,
-    );
+    const result = await WebBrowser.openAuthSessionAsync(data.url, redirectTo);
 
     if (result.type === 'success') {
       const url = new URL(result.url);
@@ -93,11 +86,10 @@ export async function signInWithGoogle() {
       const refreshToken = params.get('refresh_token');
 
       if (accessToken && refreshToken) {
-        const { data: sessionData, error: sessionError } =
-          await supabase.auth.setSession({
-            access_token: accessToken,
-            refresh_token: refreshToken,
-          });
+        const { data: sessionData, error: sessionError } = await supabase.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        });
         if (sessionError) throw sessionError;
         return sessionData;
       }
@@ -120,10 +112,7 @@ export async function signInWithApple() {
     if (error) throw error;
 
     if (data.url) {
-      const result = await WebBrowser.openAuthSessionAsync(
-        data.url,
-        redirectTo,
-      );
+      const result = await WebBrowser.openAuthSessionAsync(data.url, redirectTo);
       if (result.type === 'success') {
         const url = new URL(result.url);
         const params = new URLSearchParams(
@@ -132,11 +121,10 @@ export async function signInWithApple() {
         const accessToken = params.get('access_token');
         const refreshToken = params.get('refresh_token');
         if (accessToken && refreshToken) {
-          const { data: sessionData, error: sessionError } =
-            await supabase.auth.setSession({
-              access_token: accessToken,
-              refresh_token: refreshToken,
-            });
+          const { data: sessionData, error: sessionError } = await supabase.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
           if (sessionError) throw sessionError;
           return sessionData;
         }
@@ -146,12 +134,11 @@ export async function signInWithApple() {
   }
 
   // Native Apple Sign-In
-  const rawNonce = Crypto.getRandomValues(new Uint8Array(32))
-    .reduce((acc, v) => acc + v.toString(16).padStart(2, '0'), '');
-  const hashedNonce = await Crypto.digestStringAsync(
-    Crypto.CryptoDigestAlgorithm.SHA256,
-    rawNonce,
+  const rawNonce = Crypto.getRandomValues(new Uint8Array(32)).reduce(
+    (acc, v) => acc + v.toString(16).padStart(2, '0'),
+    '',
   );
+  const hashedNonce = await Crypto.digestStringAsync(Crypto.CryptoDigestAlgorithm.SHA256, rawNonce);
 
   const credential = await AppleAuthentication.signInAsync({
     requestedScopes: [
