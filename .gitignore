@@ -10,9 +10,11 @@ dist/
 # Turborepo
 .turbo/
 
-# Environment variables
+# Environment variables (templates are committed, see exception below)
 .env*
 *.local
+!.env.example
+!**/.env.example
 
 # Native builds
 ios/
