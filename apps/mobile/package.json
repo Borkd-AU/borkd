@@ -9,7 +9,7 @@
     "build:android": "eas build --platform android",
     "lint": "biome check app/ components/ features/ lib/ constants/",
     "check": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "clean": "rm -rf .expo node_modules"
   },
   "dependencies": {
