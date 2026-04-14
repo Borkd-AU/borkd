@@ -62,9 +62,11 @@ plan for future live-lookup integration (allowed for real-time display only).
 
 | Source | Downloaded on |
 |--------|---------------|
-| City of Sydney (3 datasets) | <FILL WHEN DOWNLOADED> |
-| OSM Overpass | <FILL WHEN FIRST RUN, cached in raw/osm-response.json> |
-| Manual council pages | <FILL PER FILE> |
+| City of Sydney — Dog off-leash parks (51 points) | 2026-04-14 |
+| City of Sydney — Parks (418 multipolygons) | 2026-04-14 |
+| City of Sydney — Drinking fountains (273 points) | 2026-04-14 |
+| OSM Overpass | <pending seed run, will cache in raw/osm-response.json> |
+| Manual council pages | waverley.json: 2026-04-14 (8 entries) |
 
 ## Where attribution surfaces in the app
 
