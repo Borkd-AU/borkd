@@ -31,3 +31,7 @@ coverage/
 
 # TypeScript build info
 *.tsbuildinfo
+
+# Seed script working files (caches/audit logs — not reproducibility data)
+data/seed/manual/.geocoded.json
+data/seed/dropped.json
