@@ -1,6 +1,7 @@
-import React, { useRef, useCallback } from 'react';
+import MapboxGL, { UserLocationRenderMode } from '@rnmapbox/maps';
+import type React from 'react';
+import { useCallback, useRef } from 'react';
 import { View } from 'react-native';
-import MapboxGL from '@rnmapbox/maps';
 
 const SYDNEY_CBD = { latitude: -33.8688, longitude: 151.2093 };
 const DEFAULT_ZOOM = 13;
@@ -119,7 +120,7 @@ export default function MapView({
         {showUserLocation && (
           <MapboxGL.UserLocation
             visible
-            renderMode="native"
+            renderMode={UserLocationRenderMode.Native}
             androidRenderMode="compass"
           />
         )}
@@ -151,15 +152,7 @@ export default function MapView({
               filter={['has', 'point_count']}
               style={{
                 circleColor: '#7A9E7E',
-                circleRadius: [
-                  'step',
-                  ['get', 'point_count'],
-                  20,
-                  10,
-                  25,
-                  50,
-                  30,
-                ],
+                circleRadius: ['step', ['get', 'point_count'], 20, 10, 25, 50, 30],
                 circleOpacity: 0.9,
                 circleStrokeWidth: 2,
                 circleStrokeColor: '#FAF6F1',
@@ -179,10 +172,7 @@ export default function MapView({
         )}
 
         {walkRoute && walkRoute.length >= 2 && (
-          <MapboxGL.ShapeSource
-            id="walk-route-source"
-            shape={buildRouteGeoJSON(walkRoute)}
-          >
+          <MapboxGL.ShapeSource id="walk-route-source" shape={buildRouteGeoJSON(walkRoute)}>
             <MapboxGL.LineLayer
               id="walk-route-line"
               style={{

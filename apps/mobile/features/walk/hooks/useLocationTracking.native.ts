@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import BackgroundGeolocation, {
   type Location,
   type Subscription,
@@ -43,8 +43,7 @@ function haversineDistance(
   const sinLat = Math.sin(dLat / 2);
   const sinLon = Math.sin(dLon / 2);
   const h =
-    sinLat * sinLat +
-    Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * sinLon * sinLon;
+    sinLat * sinLat + Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * sinLon * sinLon;
   return R * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
 }
 
@@ -64,12 +63,9 @@ export function useLocationTracking(): LocationState & LocationActions {
   const pauseStartRef = useRef<number>(0);
   const isPausedRef = useRef<boolean>(false);
 
-  const flushToMMKV = useCallback(
-    (coords: Array<{ latitude: number; longitude: number }>) => {
-      gpsStorage.set(GPS_BUFFER_KEY, JSON.stringify(coords));
-    },
-    [],
-  );
+  const flushToMMKV = useCallback((coords: Array<{ latitude: number; longitude: number }>) => {
+    gpsStorage.set(GPS_BUFFER_KEY, JSON.stringify(coords));
+  }, []);
 
   const processLocation = useCallback(
     (location: Location) => {
@@ -90,8 +86,7 @@ export function useLocationTracking(): LocationState & LocationActions {
           newDistance += haversineDistance(last, point);
         }
 
-        const elapsed =
-          (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
+        const elapsed = (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
         const pace = calculatePace(newDistance, elapsed);
 
         flushToMMKV(newRoute);
@@ -117,14 +112,26 @@ export function useLocationTracking(): LocationState & LocationActions {
 
     setState({ ...INITIAL_STATE, isTracking: true });
 
+    // v5 API: flat options were replaced by nested config groups —
+    // `geolocation` (distanceFilter, desiredAccuracy), `app`
+    // (stopOnTerminate, startOnBoot, heartbeatInterval, preventSuspend),
+    // `logger` (logLevel). Constants moved from UPPER_SNAKE (DESIRED_ACCURACY_HIGH,
+    // LOG_LEVEL_WARNING) to camelCase enum members (DesiredAccuracy.High,
+    // LogLevel.Warning).
     await BackgroundGeolocation.ready({
-      distanceFilter: 10,
-      desiredAccuracy: BackgroundGeolocation.DESIRED_ACCURACY_HIGH,
-      stopOnTerminate: false,
-      startOnBoot: false,
-      heartbeatInterval: 60,
-      preventSuspend: true,
-      logLevel: BackgroundGeolocation.LOG_LEVEL_WARNING,
+      geolocation: {
+        distanceFilter: 10,
+        desiredAccuracy: BackgroundGeolocation.DesiredAccuracy.High,
+      },
+      app: {
+        stopOnTerminate: false,
+        startOnBoot: false,
+        heartbeatInterval: 60,
+        preventSuspend: true,
+      },
+      logger: {
+        logLevel: BackgroundGeolocation.LogLevel.Warning,
+      },
     });
 
     subscriptionRef.current = BackgroundGeolocation.onLocation(processLocation);
