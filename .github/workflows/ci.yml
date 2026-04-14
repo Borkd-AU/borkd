@@ -89,16 +89,18 @@ jobs:
 
       - name: Destructive ops require commit-message override
         run: |
-          # Rule: DROP COLUMN / DROP TABLE / ALTER ... RENAME in any
-          # migration file on this PR means the most recent commit body
-          # must contain the literal tag [allow-destructive-migration].
-          # This forces the 2-PR discipline from _CONVENTIONS.md §3.
-          destructive=$(grep -rniE '(DROP\s+COLUMN|DROP\s+TABLE|ALTER\s+.*RENAME)' supabase/migrations/*.sql 2>/dev/null || true)
+          # DROP COLUMN / DROP TABLE / ALTER ... RENAME in any FORWARD
+          # migration requires [allow-destructive-migration] in the
+          # commit body (2-PR discipline from _CONVENTIONS.md §3).
+          # Rollback siblings (`*_rollback.sql`) are allowed to be
+          # destructive — that's their job.
+          destructive=$(find supabase/migrations -maxdepth 1 -name '[0-9]*.sql' ! -name '*_rollback.sql' -print0 \
+            | xargs -0 grep -nE '(DROP\s+COLUMN|DROP\s+TABLE|ALTER\s+.*RENAME)' 2>/dev/null || true)
           if [ -n "$destructive" ]; then
             if ! git log -1 --format='%B' | grep -q '\[allow-destructive-migration\]'; then
               echo "::error::Destructive migration found but commit message lacks [allow-destructive-migration] marker."
               echo "$destructive"
-              echo "::error::Follow docs/_CONVENTIONS.md §3 (2-PR procedure) and add the marker to the commit body."
+              echo "::error::Follow supabase/migrations/_CONVENTIONS.md §3 (2-PR procedure) and add the marker to the commit body."
               exit 1
             fi
             echo "::notice::Destructive migration permitted by [allow-destructive-migration] marker."
@@ -182,15 +184,24 @@ jobs:
           # `ALTER TABLE public.<name> ENABLE ROW LEVEL SECURITY`.
           # Skip the spatial_ref_sys / tiger / topology schemas that PostGIS
           # ships (we don't own those tables).
+          #
+          # Scan only numbered forward migration files (`[0-9]*.sql`) —
+          # rollback siblings (`*_rollback.sql`) are DROP TABLE by design
+          # and would trip false positives, and markdown (`_CONVENTIONS.md`)
+          # contains example SQL in code fences that is not real schema.
           set -euo pipefail
 
-          CREATED=$(grep -rihoE 'CREATE\s+TABLE\s+(IF\s+NOT\s+EXISTS\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*' supabase/migrations/ \
+          # find ... -print0 | xargs -0 keeps filenames safe across any
+          # platform and is robust to spaces / unusual characters.
+          CREATED=$(find supabase/migrations -maxdepth 1 -name '[0-9]*.sql' ! -name '*_rollback.sql' -print0 \
+            | xargs -0 grep -hiE 'CREATE\s+TABLE\s+(IF\s+NOT\s+EXISTS\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*' 2>/dev/null \
             | grep -oE 'public\.[a-zA-Z_][a-zA-Z0-9_]*' \
-            | sort -u)
+            | sort -u || true)
 
-          ENABLED=$(grep -rihoE 'ALTER\s+TABLE\s+(ONLY\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*\s+ENABLE\s+ROW\s+LEVEL\s+SECURITY' supabase/migrations/ \
+          ENABLED=$(find supabase/migrations -maxdepth 1 -name '[0-9]*.sql' ! -name '*_rollback.sql' -print0 \
+            | xargs -0 grep -hiE 'ALTER\s+TABLE\s+(ONLY\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*\s+ENABLE\s+ROW\s+LEVEL\s+SECURITY' 2>/dev/null \
             | grep -oE 'public\.[a-zA-Z_][a-zA-Z0-9_]*' \
-            | sort -u)
+            | sort -u || true)
 
           MISSING=$(comm -23 <(echo "$CREATED") <(echo "$ENABLED") || true)
 
