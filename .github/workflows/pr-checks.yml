@@ -8,10 +8,17 @@ jobs:
   label-by-path:
     name: Auto Label PR
     runs-on: ubuntu-latest
+    # actions/labeler@v5 needs `.github/labeler.yml` — read from the PR's head
+    # ref (not the virtual `pull/<n>/merge` ref that the default pull_request
+    # trigger wants to checkout, which can 404 when GITHUB_TOKEN scope is
+    # limited). `contents: read` + `pull-requests: write` is the minimum.
     permissions:
+      contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Label by changed files
         uses: actions/labeler@v5
@@ -43,14 +50,22 @@ jobs:
 
       - name: Check conventional commits
         run: |
+          # --no-merges excludes merge commits (which GitHub auto-generates
+          # on the PR merge ref and whose message we don't control).
+          # Scope is optional: `chore: foo` is as valid as `chore(scripts): foo`
+          # per https://www.conventionalcommits.org/en/v1.0.0/#specification
+          TYPE_RE='(feat|fix|refactor|docs|test|chore|style|perf|ci|build|revert)'
+          SCOPE_RE='(\([^)]+\))?'
+          BREAKING_RE='!?'
           ERRORS=0
           while IFS= read -r msg; do
-            if ! echo "$msg" | grep -qE '^(feat|fix|refactor|docs|test|chore|style|perf|ci)\(.+\):'; then
+            if ! echo "$msg" | grep -qE "^${TYPE_RE}${SCOPE_RE}${BREAKING_RE}: .+"; then
               echo "::error::Invalid commit message: $msg"
-              echo "  Expected: type(scope): description"
+              echo "  Expected: type(scope)?: description"
+              echo "  Allowed types: feat, fix, refactor, docs, test, chore, style, perf, ci, build, revert"
               ERRORS=$((ERRORS + 1))
             fi
-          done < <(git log --format='%s' origin/${{ github.base_ref }}..HEAD)
+          done < <(git log --no-merges --format='%s' origin/${{ github.base_ref }}..HEAD)
 
           if [ $ERRORS -gt 0 ]; then
             echo "::error::$ERRORS commit(s) with invalid format"

@@ -12,7 +12,6 @@ concurrency:
 
 env:
   NODE_VERSION: '20'
-  PNPM_VERSION: '10'
 
 jobs:
   check:
@@ -21,9 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -50,7 +50,15 @@ jobs:
 
       - name: Check for secrets in code
         run: |
-          PATTERNS='(sk_live_|sk_test_|pk_live_|pk_test_|eyJhbGciOi[a-zA-Z0-9_-]{50}|service_role|-----BEGIN.*PRIVATE KEY|AKIA[0-9A-Z]{16}|aws_secret_access_key|AIza[0-9A-Za-z_-]{35}|ghp_[a-zA-Z0-9]{36}|gho_[a-zA-Z0-9]{36}|github_pat_|xox[bporas]-)'
+          # Match ACTUAL secret values, not the word "service_role" on its own
+          # (Supabase's public role name — appears in comments, RLS policies,
+          # migration files, and docs legitimately). A real leak looks like an
+          # assignment or an embedded JWT, so we require one of:
+          #   * Stripe/GitHub/AWS/Google/Slack prefixes — cannot be anything else
+          #   * JWT shape + "service_role" literal inside the encoded payload
+          #   * `service_role(_key)?\s*[:=]\s*["']?[A-Za-z0-9._-]{20,}`
+          #   * PEM private key header
+          PATTERNS='(sk_live_|sk_test_|pk_live_|pk_test_|AKIA[0-9A-Z]{16}|aws_secret_access_key\s*[:=]|AIza[0-9A-Za-z_-]{35}|ghp_[a-zA-Z0-9]{36}|gho_[a-zA-Z0-9]{36}|github_pat_|xox[bporas]-|eyJhbGciOi[A-Za-z0-9_=-]+\.[A-Za-z0-9_=-]+\.[A-Za-z0-9_.+/=-]{20,}|service_role[_a-z]*\s*[:=]\s*["'"'"']?[A-Za-z0-9._-]{20,}|-----BEGIN.*PRIVATE KEY-----)'
           if grep -rE "$PATTERNS" \
             --include='*.ts' --include='*.tsx' --include='*.js' --include='*.jsx' --include='*.json' \
             --exclude='package.json' --exclude='package-lock.json' --exclude='pnpm-lock.yaml' \
@@ -105,9 +113,10 @@ jobs:
             exit 1
           fi
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -128,9 +137,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -156,9 +166,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -185,9 +196,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -213,9 +225,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
@@ -239,9 +252,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is resolved from `packageManager` in root package.json.
+      # Do NOT pass `version` here — action-setup@v4 errors with
+      # ERR_PNPM_BAD_PM_VERSION when both are specified.
       - uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - uses: actions/setup-node@v4
         with:
