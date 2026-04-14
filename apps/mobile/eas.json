@@ -12,25 +12,40 @@
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "",
-        "EXPO_PUBLIC_MAPBOX_TOKEN": ""
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "",
+        "EXPO_PUBLIC_POSTHOG_KEY": ""
       }
     },
     "preview": {
       "distribution": "internal",
+      "channel": "preview",
       "ios": {
         "simulator": false
       },
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "",
-        "EXPO_PUBLIC_MAPBOX_TOKEN": ""
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "",
+        "EXPO_PUBLIC_POSTHOG_KEY": ""
       }
     },
-    "production": {
+    "staging": {
+      "extends": "preview",
+      "channel": "staging",
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "",
-        "EXPO_PUBLIC_MAPBOX_TOKEN": ""
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "",
+        "EXPO_PUBLIC_POSTHOG_KEY": ""
+      }
+    },
+    "production": {
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "",
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "",
+        "EXPO_PUBLIC_POSTHOG_KEY": ""
       }
     }
   },
