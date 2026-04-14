@@ -1,1 +1,218 @@
-[]
+[
+  {
+    "name": "Christison Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8518,
+    "lng": 151.2772,
+    "notes": "Existing off-leash area, Vaucluse"
+  },
+  {
+    "name": "Dumaresq Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8757,
+    "lng": 151.2466,
+    "notes": "Existing off-leash area, Rose Bay"
+  },
+  {
+    "name": "Lough Playing Fields",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8922,
+    "lng": 151.2562,
+    "notes": "Existing off-leash area, Centennial Park area"
+  },
+  {
+    "name": "Lower Cooper Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8875,
+    "lng": 151.2580,
+    "notes": "Existing off-leash area, Double Bay"
+  },
+  {
+    "name": "Lyne Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8720,
+    "lng": 151.2713,
+    "notes": "Existing off-leash area, Rose Bay"
+  },
+  {
+    "name": "Rose Bay Foreshore",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8745,
+    "lng": 151.2669,
+    "notes": "Existing off-leash area"
+  },
+  {
+    "name": "Royal Hospital for Women Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8899,
+    "lng": 151.2490,
+    "notes": "Existing off-leash area, Paddington"
+  },
+  {
+    "name": "Steyne Park (northern end)",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8770,
+    "lng": 151.2483,
+    "notes": "Existing off-leash, northern end only, Double Bay"
+  },
+  {
+    "name": "Lighthouse Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8396,
+    "lng": 151.2833,
+    "notes": "Existing off-leash area, Watsons Bay"
+  },
+  {
+    "name": "Rushcutters Bay Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8726,
+    "lng": 151.2295,
+    "notes": "Existing off-leash area"
+  },
+  {
+    "name": "Yarranabbe Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8708,
+    "lng": 151.2337,
+    "notes": "Existing off-leash area, Darling Point"
+  },
+  {
+    "name": "Bellevue Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8825,
+    "lng": 151.2550,
+    "notes": "2025 review: off-leash timed 4:30pm-8:30am (implementing 2026)"
+  },
+  {
+    "name": "Camp Cove Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8412,
+    "lng": 151.2795,
+    "notes": "2025 review: off-leash untimed, Watsons Bay"
+  },
+  {
+    "name": "Cooper Park (upper amphitheatre)",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8866,
+    "lng": 151.2576,
+    "notes": "2025 review: off-leash untimed"
+  },
+  {
+    "name": "Cooper Park North",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8856,
+    "lng": 151.2579,
+    "notes": "2025 review: off-leash untimed"
+  },
+  {
+    "name": "Cooper Park (Fig Tree Lane)",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8870,
+    "lng": 151.2589,
+    "notes": "2025 review: off-leash untimed"
+  },
+  {
+    "name": "Derby Street Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8880,
+    "lng": 151.2515,
+    "notes": "2025 review: off-leash untimed"
+  },
+  {
+    "name": "Gibsons Beach",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "beach",
+    "lat": -33.8405,
+    "lng": 151.2795,
+    "notes": "2025 review: off-leash untimed, Watson's Bay Pilot Station to Marine Parade only"
+  },
+  {
+    "name": "Moncur Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8800,
+    "lng": 151.2486,
+    "notes": "2025 review: off-leash timed 3:30pm-10:30am"
+  },
+  {
+    "name": "Robertson Park & Beach",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8408,
+    "lng": 151.2806,
+    "notes": "2025 review: off-leash timed 4:30pm-8:30am, Watsons Bay"
+  },
+  {
+    "name": "Rose Bay Park and Beach",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8752,
+    "lng": 151.2670,
+    "notes": "2025 review: off-leash untimed"
+  },
+  {
+    "name": "Samuel Park",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8790,
+    "lng": 151.2510,
+    "notes": "2025 review: off-leash untimed, Double Bay"
+  },
+  {
+    "name": "Signal Hill Reserve",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8500,
+    "lng": 151.2780,
+    "notes": "2025 review: off-leash untimed, Vaucluse"
+  },
+  {
+    "name": "Woollahra Oval Nos. 2 & 3",
+    "council": "Woollahra",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8841,
+    "lng": 151.2452,
+    "notes": "2025 review: off-leash timed 3:30pm-10:30am (except bookings)"
+  }
+]

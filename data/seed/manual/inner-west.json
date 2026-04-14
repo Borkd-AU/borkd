@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "name": "Marrickville Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9122,
+    "lng": 151.1574,
+    "notes": "Eastern side, off-leash any time. Chain link fence recently installed"
+  },
+  {
+    "name": "Henson Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9108,
+    "lng": 151.1488,
+    "notes": "Designated off-leash area, Marrickville"
+  },
+  {
+    "name": "McNeilly Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9146,
+    "lng": 151.1522,
+    "notes": "Off-leash area, Marrickville"
+  },
+  {
+    "name": "Hawthorne Canal Reserve",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8872,
+    "lng": 151.1546,
+    "notes": "Off-leash area along canal, Leichhardt"
+  },
+  {
+    "name": "Pioneers Memorial Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8854,
+    "lng": 151.1582,
+    "notes": "On/off-leash areas, Leichhardt"
+  },
+  {
+    "name": "War Memorial Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8822,
+    "lng": 151.1555,
+    "notes": "Off-leash area, Leichhardt"
+  },
+  {
+    "name": "Taylor Street Reserve (Johnstons Creek)",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8830,
+    "lng": 151.1795,
+    "notes": "Off-leash any time except during organised sports, Annandale"
+  },
+  {
+    "name": "Cohen Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8895,
+    "lng": 151.1731,
+    "notes": "Off-leash except during organised sports/training/events"
+  },
+  {
+    "name": "Smith Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8820,
+    "lng": 151.1720,
+    "notes": "Off-leash area, Annandale"
+  },
+  {
+    "name": "Hogan Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8776,
+    "lng": 151.1717,
+    "notes": "Off-leash area, Annandale"
+  },
+  {
+    "name": "Spindlers Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8860,
+    "lng": 151.1750,
+    "notes": "Off-leash area, Annandale"
+  },
+  {
+    "name": "Yeo Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8857,
+    "lng": 151.1292,
+    "notes": "Popular off-leash area, Ashfield"
+  },
+  {
+    "name": "Whites Creek Valley Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8802,
+    "lng": 151.1705,
+    "notes": "Eastern side (Whites Creek/Piper/Smith/Wisdom Streets), off-leash any time"
+  },
+  {
+    "name": "Ann Cashman Reserve",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8995,
+    "lng": 151.1486,
+    "notes": "Off-leash 4pm-10am (5pm-10am DST), weekends/public holidays all day"
+  },
+  {
+    "name": "Hoskins Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8944,
+    "lng": 151.1407,
+    "notes": "Temporary fenced off-leash area, Dulwich Hill (Sep 2024-late 2025)"
+  },
+  {
+    "name": "Lewisham West Dog Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "dog_park",
+    "lat": -33.8938,
+    "lng": 151.1495,
+    "notes": "New fenced off-leash dog park (GreenWay missing links, 2024)"
+  },
+  {
+    "name": "Bay Run Dog Exercise Area (Leichhardt Park)",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8712,
+    "lng": 151.1546,
+    "notes": "Along Bay Run, fenced off-leash area"
+  },
+  {
+    "name": "Camperdown Memorial Rest Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8928,
+    "lng": 151.1804,
+    "notes": "Off-leash area, Newtown"
+  },
+  {
+    "name": "Mackey Park",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9165,
+    "lng": 151.1464,
+    "notes": "Off-leash area, Marrickville South"
+  },
+  {
+    "name": "Sydenham Green",
+    "council": "Inner West",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9215,
+    "lng": 151.1658,
+    "notes": "Off-leash area, Sydenham"
+  }
+]

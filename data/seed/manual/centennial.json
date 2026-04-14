@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "name": "Federation Valley",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8953,
+    "lng": 151.2337,
+    "notes": "Most popular off-leash zone, between Carrington Drive and Grand Drive (northern Centennial Park). 24/7 off-leash, unfenced."
+  },
+  {
+    "name": "Sandstone Ridge",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8965,
+    "lng": 151.2357,
+    "notes": "Popular off-leash zone adjacent to Federation Valley. 24/7 off-leash, unfenced."
+  },
+  {
+    "name": "Grand Drive Outer Zones (Centennial Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8977,
+    "lng": 151.2319,
+    "notes": "Off-leash areas outside the Grand Drive circuit. 24/7 off-leash, unfenced. Keep dogs 10m from ponds and playgrounds."
+  },
+  {
+    "name": "Parkes Drive West (Centennial Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8995,
+    "lng": 151.2308,
+    "notes": "Off-leash zone west of Parkes Drive. 24/7 off-leash."
+  },
+  {
+    "name": "Dickens Drive Green (Centennial Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8995,
+    "lng": 151.2380,
+    "notes": "Off-leash area near Dickens Drive. 24/7 off-leash."
+  },
+  {
+    "name": "Learners Cycleway Surrounds (Centennial Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8932,
+    "lng": 151.2346,
+    "notes": "Off-leash outside 10m of the Learners Cycleway itself. 24/7 off-leash."
+  },
+  {
+    "name": "Kippax Lake Surrounds (Moore Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8953,
+    "lng": 151.2230,
+    "notes": "Off-leash area near Kippax Lake, Moore Park. Keep 10m from water."
+  },
+  {
+    "name": "Moore Park Golf Adjacent",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9003,
+    "lng": 151.2215,
+    "notes": "Off-leash area near Moore Park Golf Club boundary."
+  },
+  {
+    "name": "Queens Park Open Lawns",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.9015,
+    "lng": 151.2540,
+    "notes": "Designated off-leash areas within Queens Park, managed by Centennial Parklands."
+  },
+  {
+    "name": "Dogsville (Centennial Park)",
+    "council": "Centennial Parklands",
+    "category": "good_spot",
+    "subcategory": "off_leash_area",
+    "lat": -33.8978,
+    "lng": 151.2363,
+    "notes": "Unofficial popular gathering spot near Federation Valley, well-known among local dog community."
+  }
+]
