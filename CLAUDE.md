@@ -46,6 +46,29 @@ Details → `docs/GIT_WORKFLOW.md`
 - Commits: `type(scope): description` (conventional)
 - **main/staging/develop 직접 push 금지**
 
+### Worktree layout (multi-branch parallel work)
+
+- `~/Desktop/DEV_Local/borkd/` = main 참고용 clone, **수정 금지**
+- `~/Desktop/DEV_Local/borkd-<scope>/` = feature 브랜치당 1 디렉토리
+- 각 worktree는 자체 `node_modules` + `.turbo` 캐시 → 브랜치 간 충돌 0
+
+**새 feature 시작:**
+```bash
+cd ~/Desktop/DEV_Local/borkd
+git fetch origin
+git worktree add -b feat/<name> ../borkd-<name> origin/develop
+cd ../borkd-<name> && pnpm install
+```
+
+**Feature 완료 (PR 머지 후):**
+```bash
+cd ~/Desktop/DEV_Local/borkd
+git worktree remove ../borkd-<name>
+git branch -d feat/<name>
+```
+
+**현재 활성 worktree:** `git worktree list`로 확인.
+
 ## Security
 
 Details → `docs/SECURITY.md`
