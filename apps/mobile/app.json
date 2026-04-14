@@ -34,8 +34,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/favicon.png"
+      "output": "single"
     },
     "plugins": [
       "expo-router",
@@ -59,8 +58,7 @@
           "license": "YOUR_LICENSE_KEY"
         }
       ],
-      "expo-apple-authentication",
-      "expo-crypto"
+      "expo-apple-authentication"
     ]
   }
 }
