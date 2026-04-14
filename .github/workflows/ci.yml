@@ -85,15 +85,35 @@ jobs:
 
       - name: Check RLS on new migrations
         run: |
-          # Find migrations that CREATE TABLE but don't ENABLE ROW LEVEL SECURITY
-          for migration in supabase/migrations/*.sql; do
-            if grep -qiE 'CREATE\s+TABLE' "$migration" 2>/dev/null; then
-              if ! grep -qiE 'ENABLE\s+ROW\s+LEVEL\s+SECURITY' "$migration" 2>/dev/null; then
-                echo "::error::Migration $migration creates table without enabling RLS!"
-                exit 1
-              fi
-            fi
-          done
+          # RLS is enforced across the whole migration chain, not per file —
+          # tables are often created in an early migration and have RLS
+          # enabled in a later one (the old per-file check broke the moment
+          # we introduced 00001_create_users + 00005_create_rls_policies).
+          #
+          # Rule: for every `CREATE TABLE public.<name>` anywhere in
+          # supabase/migrations/**, some migration must contain
+          # `ALTER TABLE public.<name> ENABLE ROW LEVEL SECURITY`.
+          # Skip the spatial_ref_sys / tiger / topology schemas that PostGIS
+          # ships (we don't own those tables).
+          set -euo pipefail
+
+          CREATED=$(grep -rihoE 'CREATE\s+TABLE\s+(IF\s+NOT\s+EXISTS\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*' supabase/migrations/ \
+            | grep -oE 'public\.[a-zA-Z_][a-zA-Z0-9_]*' \
+            | sort -u)
+
+          ENABLED=$(grep -rihoE 'ALTER\s+TABLE\s+(ONLY\s+)?public\.[a-zA-Z_][a-zA-Z0-9_]*\s+ENABLE\s+ROW\s+LEVEL\s+SECURITY' supabase/migrations/ \
+            | grep -oE 'public\.[a-zA-Z_][a-zA-Z0-9_]*' \
+            | sort -u)
+
+          MISSING=$(comm -23 <(echo "$CREATED") <(echo "$ENABLED") || true)
+
+          if [ -n "${MISSING:-}" ]; then
+            echo "::error::Tables created without RLS enabled anywhere in migrations:"
+            echo "$MISSING"
+            exit 1
+          fi
+
+          echo "RLS enabled on all $(echo "$CREATED" | wc -l | tr -d ' ') public tables."
 
       - name: Check architecture violations
         run: |
