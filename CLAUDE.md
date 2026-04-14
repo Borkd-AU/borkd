@@ -40,11 +40,33 @@ Details → `docs/DATABASE.md`
 
 ## Git Workflow
 
-Details → `docs/GIT_WORKFLOW.md`
+Details → `docs/GIT_WORKFLOW.md` (branching + promotion matrix)
 
-- Branches: `main` → `staging` → `develop` → `feat/*`
+- Branches: `main` → `staging` → `develop` → `feat/*`, `feat-exp/*`, `fix/*`, `ui/*`, `chore/*`, `refactor/*`, `perf/*`, `docs/*`
 - Commits: `type(scope): description` (conventional)
 - **main/staging/develop 직접 push 금지**
+
+### Release + Incident runbooks
+
+| Runbook | 언제 | 목표 시간 |
+|---------|------|----------|
+| `docs/RELEASE.md` | develop → staging → main 승격 | 정기 주 1회 / 격주 |
+| `docs/HOTFIX.md` | 프로덕션 장애 fast-fix | 60분 |
+| `docs/ROLLBACK.md` | 배포 되돌리기 (Vercel / OTA / DB) | 5분 |
+| `docs/INCIDENT.md` | 5단계 incident response | SEV1: 5분 응답 |
+| `docs/WORKTREES.md` | worktree 패턴 + ops 스크립트 | reference |
+| `docs/ENVIRONMENTS.md` | local / preview / staging / prod 서비스 map | reference |
+| `supabase/migrations/_CONVENTIONS.md` | migration 안전성 규칙 | reference |
+
+### Ops scripts
+
+```bash
+./scripts/ops/new-branch.sh <type> <slug>    # from develop
+./scripts/ops/hotfix.sh <slug>               # from main
+./scripts/ops/release.sh <semver>            # from staging + version bump
+./scripts/ops/cleanup.sh                     # remove merged worktrees
+./scripts/ops/rollback-web.sh <project>      # Vercel promote-previous
+```
 
 ### Worktree layout (multi-branch parallel work)
 
