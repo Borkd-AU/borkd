@@ -37,11 +37,14 @@ ALTER TABLE public.pins
   );
 
 -- Idempotent re-seeding: (source, source_id) uniquely identifies a
--- pre-seeded record across reruns. Partial index avoids blocking
--- user-created pins which have NULL source.
-CREATE UNIQUE INDEX idx_pins_source_unique
-  ON public.pins(source, source_id)
-  WHERE source IS NOT NULL AND source_id IS NOT NULL;
+-- pre-seeded record across reruns. Postgres UNIQUE treats NULLs as
+-- distinct (default NULLS DISTINCT), so user-created temporary pins
+-- with NULL source/source_id can coexist without collision. We use a
+-- CONSTRAINT (not partial INDEX) so supabase-js can target it via
+-- onConflict='source,source_id' — partial indexes aren't eligible for
+-- ON CONFLICT.
+ALTER TABLE public.pins
+  ADD CONSTRAINT pins_source_unique UNIQUE (source, source_id);
 
 -- Fast filter for permanent pins by subcategory (map viewport queries)
 CREATE INDEX idx_pins_permanent
@@ -59,6 +62,11 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 -- Returned columns now include pin_type, subcategory, name, attribution
 -- so the mobile app can render venue-shape markers and attribution
 -- footers when Figma design lands.
+--
+-- DROP first because RETURNS TABLE shape changed vs. 00006; CREATE OR
+-- REPLACE refuses to alter column types.
+
+DROP FUNCTION IF EXISTS public.get_pins_in_viewport(FLOAT8, FLOAT8, FLOAT8, FLOAT8, TEXT);
 
 CREATE OR REPLACE FUNCTION public.get_pins_in_viewport(
   min_lng          FLOAT8,
@@ -86,7 +94,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   SELECT
     p.id,
@@ -134,7 +142,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   WITH params AS (
     SELECT 360.0 / POWER(2, zoom_level) AS grid_size

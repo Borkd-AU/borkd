@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER
 LANGUAGE plpgsql
 SECURITY DEFINER
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
 DECLARE
   v_display_name TEXT;
@@ -69,7 +69,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   SELECT
     p.id,
@@ -115,7 +115,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   WITH
   -- Derive grid size from zoom level: coarser at low zoom, finer at high zoom
@@ -169,7 +169,7 @@ CREATE OR REPLACE FUNCTION public.calculate_walk_miles(
 RETURNS INTEGER
 LANGUAGE sql
 IMMUTABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   SELECT LEAST(
     100,
@@ -194,7 +194,7 @@ CREATE OR REPLACE FUNCTION public.complete_walk(
 RETURNS INTEGER  -- miles earned
 LANGUAGE plpgsql
 SECURITY DEFINER
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
 DECLARE
   v_user_id         UUID;
