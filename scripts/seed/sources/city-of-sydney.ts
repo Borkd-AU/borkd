@@ -2,9 +2,9 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PATHS } from '../config';
 import {
-  assertSydneyBbox,
   type CanonicalPin,
   type CosDataset,
+  assertSydneyBbox,
   cosToCanonical,
   defaultNote,
 } from '../transform/canonical';
@@ -85,7 +85,9 @@ export async function fetchCityOfSydney(): Promise<CanonicalPin[]> {
     try {
       raw = await readFile(path, 'utf8');
     } catch {
-      console.warn(`[cos] ${file} not found — skipping (download from data.cityofsydney.nsw.gov.au)`);
+      console.warn(
+        `[cos] ${file} not found — skipping (download from data.cityofsydney.nsw.gov.au)`,
+      );
       continue;
     }
 
@@ -113,9 +115,9 @@ export async function fetchCityOfSydney(): Promise<CanonicalPin[]> {
       }
 
       const objectId =
-        (feature.properties['OBJECTID'] as number | undefined) ??
-        (feature.properties['objectid'] as number | undefined) ??
-        (feature.properties['id'] as number | undefined);
+        (feature.properties.OBJECTID as number | undefined) ??
+        (feature.properties.objectid as number | undefined) ??
+        (feature.properties.id as number | undefined);
       if (objectId === undefined) {
         skipped += 1;
         continue;

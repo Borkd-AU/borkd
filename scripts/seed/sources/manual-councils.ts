@@ -2,33 +2,15 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { z } from 'zod';
 import { PATHS } from '../config';
-import {
-  assertSydneyBbox,
-  type CanonicalPin,
-  defaultNote,
-  slugify,
-} from '../transform/canonical';
+import { type CanonicalPin, assertSydneyBbox, defaultNote, slugify } from '../transform/canonical';
 import { geocode } from '../transform/nominatim';
 
 // Schema mirrors Pin PART 2 Block 5 doc; see plan for council list + rationale.
 const manualEntrySchema = z.object({
   name: z.string().trim().min(1),
-  council: z.enum([
-    'Waverley',
-    'Randwick',
-    'Woollahra',
-    'Inner West',
-    'Centennial Parklands',
-  ]),
+  council: z.enum(['Waverley', 'Randwick', 'Woollahra', 'Inner West', 'Centennial Parklands']),
   category: z.enum(['good_spot', 'amenity']),
-  subcategory: z.enum([
-    'off_leash_area',
-    'dog_park',
-    'park',
-    'beach',
-    'cafe',
-    'fountain',
-  ]),
+  subcategory: z.enum(['off_leash_area', 'dog_park', 'park', 'beach', 'cafe', 'fountain']),
   lat: z.number().min(-34.3).max(-33.4).optional(),
   lng: z.number().min(150.5).max(151.6).optional(),
   address: z.string().trim().min(1).optional(),
@@ -120,9 +102,7 @@ export async function fetchManualCouncils(): Promise<CanonicalPin[]> {
       kept += 1;
     }
 
-    console.log(
-      `[manual] ${file}: kept ${kept} (${geocoded} geocoded), failed ${failed}`,
-    );
+    console.log(`[manual] ${file}: kept ${kept} (${geocoded} geocoded), failed ${failed}`);
   }
 
   return out;

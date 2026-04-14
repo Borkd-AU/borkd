@@ -58,9 +58,7 @@ export async function upsertPermanentPins(pins: CanonicalPin[]): Promise<UpsertS
   let errored = 0;
 
   for (const [i, batch] of batches.entries()) {
-    const { error } = await supabase
-      .from('pins')
-      .upsert(batch, { onConflict: 'source,source_id' });
+    const { error } = await supabase.from('pins').upsert(batch, { onConflict: 'source,source_id' });
     if (error) {
       console.error(`[upsert] batch ${i + 1}/${batches.length} failed: ${error.message}`);
       errored += batch.length;

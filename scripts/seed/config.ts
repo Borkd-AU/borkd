@@ -1,5 +1,5 @@
-import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { config as loadEnv } from 'dotenv';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -19,10 +19,10 @@ function requireEnv(key: string): string {
 
 export const SUPABASE_URL = requireEnv('SUPABASE_URL');
 export const SUPABASE_SERVICE_ROLE_KEY = requireEnv('SUPABASE_SERVICE_ROLE_KEY');
-export const SUPABASE_ANON_KEY = process.env['SUPABASE_ANON_KEY'] ?? '';
+export const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ?? '';
 
 export const NOMINATIM_USER_AGENT =
-  process.env['NOMINATIM_USER_AGENT'] ?? 'Borkd MVP seeder (ryan@borkd.app)';
+  process.env.NOMINATIM_USER_AGENT ?? 'Borkd MVP seeder (ryan@borkd.app)';
 
 /**
  * Matches packages/shared BBOX_SYDNEY. Duplicated (not imported) because

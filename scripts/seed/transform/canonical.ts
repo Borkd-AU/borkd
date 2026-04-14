@@ -45,29 +45,29 @@ export function defaultNote(name: string, subcategory: string): string {
 export function osmToCanonical(
   tags: Record<string, string>,
 ): { category: CanonicalPin['category']; subcategory: string } | null {
-  if (tags['leisure'] === 'dog_park') {
+  if (tags.leisure === 'dog_park') {
     return { category: 'good_spot', subcategory: 'dog_park' };
   }
-  if (tags['natural'] === 'beach') {
+  if (tags.natural === 'beach') {
     return { category: 'good_spot', subcategory: 'beach' };
   }
-  if (tags['amenity'] === 'cafe') {
+  if (tags.amenity === 'cafe') {
     return { category: 'amenity', subcategory: 'cafe' };
   }
-  if (tags['amenity'] === 'restaurant') {
+  if (tags.amenity === 'restaurant') {
     return { category: 'amenity', subcategory: 'restaurant' };
   }
-  if (tags['amenity'] === 'pub') {
+  if (tags.amenity === 'pub') {
     return { category: 'amenity', subcategory: 'pub' };
   }
-  if (tags['amenity'] === 'drinking_water' && tags['dog'] === 'yes') {
+  if (tags.amenity === 'drinking_water' && tags.dog === 'yes') {
     return { category: 'amenity', subcategory: 'fountain' };
   }
-  if (tags['leisure'] === 'park' && tags['dog']) {
+  if (tags.leisure === 'park' && tags.dog) {
     return { category: 'good_spot', subcategory: 'park' };
   }
   // Fallback for dog=yes / dog=unleashed without specific leisure tag
-  if (tags['dog'] && ['yes', 'unleashed', 'off_leash', 'designated'].includes(tags['dog'])) {
+  if (tags.dog && ['yes', 'unleashed', 'off_leash', 'designated'].includes(tags.dog)) {
     return { category: 'good_spot', subcategory: 'off_leash_area' };
   }
   return null; // caller should skip

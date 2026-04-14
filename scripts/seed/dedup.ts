@@ -4,19 +4,14 @@ import type { CanonicalPin } from './transform/canonical';
 /**
  * Haversine distance in meters.
  */
-function haversineM(
-  a: { lat: number; lng: number },
-  b: { lat: number; lng: number },
-): number {
+function haversineM(a: { lat: number; lng: number }, b: { lat: number; lng: number }): number {
   const R = 6371000;
   const toRad = (deg: number): number => (deg * Math.PI) / 180;
   const dLat = toRad(b.lat - a.lat);
   const dLng = toRad(b.lng - a.lng);
   const lat1 = toRad(a.lat);
   const lat2 = toRad(b.lat);
-  const x =
-    Math.sin(dLat / 2) ** 2 +
-    Math.sin(dLng / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
+  const x = Math.sin(dLat / 2) ** 2 + Math.sin(dLng / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
   return 2 * R * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
 }
 
@@ -54,17 +49,13 @@ export type DedupResult = {
  * rows). Keeping them as a Collective Database avoids share-alike spread.
  */
 export function dedupePins(all: CanonicalPin[]): DedupResult {
-  const sorted = [...all].sort(
-    (a, b) => AUTHORITY[b.source] - AUTHORITY[a.source],
-  );
+  const sorted = [...all].sort((a, b) => AUTHORITY[b.source] - AUTHORITY[a.source]);
   const kept: CanonicalPin[] = [];
   const dropped: DroppedPin[] = [];
 
   for (const candidate of sorted) {
     const conflict = kept.find(
-      (k) =>
-        haversineM(candidate, k) < 50 &&
-        nameSimilarity(candidate.name, k.name) > 0.7,
+      (k) => haversineM(candidate, k) < 50 && nameSimilarity(candidate.name, k.name) > 0.7,
     );
     if (conflict) {
       dropped.push({

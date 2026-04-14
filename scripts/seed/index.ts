@@ -30,9 +30,7 @@ function parseArgs(argv: string[]): { source: SourceFilter; dryRun: boolean; ref
 
 async function main(): Promise<void> {
   const { source, dryRun, refresh } = parseArgs(process.argv.slice(2));
-  console.log(
-    `[seed] starting (source=${source}, dry-run=${dryRun}, refresh=${refresh})`,
-  );
+  console.log(`[seed] starting (source=${source}, dry-run=${dryRun}, refresh=${refresh})`);
 
   const all: CanonicalPin[] = [];
 

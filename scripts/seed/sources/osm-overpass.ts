@@ -2,8 +2,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { BBOX_SYDNEY, PATHS } from '../config';
 import {
-  assertSydneyBbox,
   type CanonicalPin,
+  assertSydneyBbox,
   defaultNote,
   osmToCanonical,
 } from '../transform/canonical';
@@ -134,7 +134,7 @@ export async function fetchOsmOverpass(opts: { refresh?: boolean } = {}): Promis
       continue;
     }
 
-    const name = tags['name']?.trim() || `OSM ${mapping.subcategory} ${el.id}`;
+    const name = tags.name?.trim() || `OSM ${mapping.subcategory} ${el.id}`;
 
     out.push({
       source: 'osm',
