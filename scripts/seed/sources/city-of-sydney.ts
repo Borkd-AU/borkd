@@ -22,14 +22,15 @@ type GeoJsonFeatureCollection = {
   features: GeoJsonFeature[];
 };
 
-// GeoJSON filename ↔ our canonical subcategory mapping
+// GeoJSON filename ↔ our canonical subcategory mapping.
+// Name field keys verified 2026-04-14 against live ArcGIS exports.
 const DATASETS: Array<{ file: string; dataset: CosDataset; nameField: string[] }> = [
-  { file: 'cos-off-leash.geojson', dataset: 'off_leash', nameField: ['name', 'NAME', 'PARK_NAME'] },
-  { file: 'cos-parks.geojson', dataset: 'parks', nameField: ['name', 'NAME', 'PARK_NAME'] },
+  { file: 'cos-off-leash.geojson', dataset: 'off_leash', nameField: ['ParkName', 'Name', 'NAME'] },
+  { file: 'cos-parks.geojson', dataset: 'parks', nameField: ['Name', 'NAME', 'ParkName'] },
   {
     file: 'cos-fountains.geojson',
     dataset: 'fountains',
-    nameField: ['description', 'DESCRIPTION', 'NAME', 'location_description'],
+    nameField: ['site_name', 'Location', 'NAME'],
   },
 ];
 
