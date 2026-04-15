@@ -10,7 +10,8 @@
     "seed:cos": "tsx seed/index.ts --source=cos",
     "seed:osm": "tsx seed/index.ts --source=osm",
     "seed:manual": "tsx seed/index.ts --source=manual",
-    "export:geojson": "tsx seed/export-geojson.ts"
+    "export:geojson": "tsx seed/export-geojson.ts",
+    "export:report": "tsx export-pins-report.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
