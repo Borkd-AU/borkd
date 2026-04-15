@@ -8,7 +8,7 @@
 # Effect:
 #   1. Fetches origin.
 #   2. Bumps apps/mobile/app.json `version` to <semver>.
-#   3. Creates ~/Desktop/DEV_Local/borkd-release-v<version>/ worktree
+#   3. Creates ~/Desktop/DEV_Local/borkd/release-v<version>/ worktree
 #      at origin/staging.
 #   4. Creates branch release/v<version>.
 #   5. Commits the version bump.
@@ -35,7 +35,8 @@ if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)?$ ]]; then
 fi
 
 root=$(repo_root)
-worktree_dir="${root%/}-release-v${version}"
+# root is .../borkd/main; release siblings live as .../borkd/release-v<semver>.
+worktree_dir="${root%/main}/release-v${version}"
 branch="release/v${version}"
 
 if [ -e "$worktree_dir" ]; then

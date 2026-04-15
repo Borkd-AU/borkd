@@ -4,13 +4,15 @@
 # Never execute directly.
 set -euo pipefail
 
-# Absolute path to the repo root reference clone.
-# All worktrees live as siblings of this directory.
-REPO_ROOT_DEFAULT="${HOME}/Desktop/DEV_Local/borkd"
+# Absolute path to the Borkd group root.  Every borkd worktree lives
+# somewhere under this directory — the main clone at $BORKD_GROUP/main,
+# and each feature/chore/fix branch at $BORKD_GROUP/<slug>.
+BORKD_GROUP="${HOME}/Desktop/DEV_Local/borkd"
+REPO_ROOT_DEFAULT="${BORKD_GROUP}/main"
 
-# Detect the repo root the script was invoked from. The script may run
-# from any worktree; we always return the MAIN clone path (where
-# worktrees live as ../borkd-<slug>).
+# Detect the main clone regardless of which worktree the script is
+# invoked from. `git worktree list --porcelain` prints the main clone
+# first, so we return that path (falling back to the known location).
 repo_root() {
   local cwd
   cwd=$(git rev-parse --show-toplevel 2>/dev/null || echo "")
@@ -18,8 +20,6 @@ repo_root() {
     echo "$REPO_ROOT_DEFAULT"
     return
   fi
-  # If we're already in a worktree, the main clone is the one whose
-  # .git is a directory (not a file pointing elsewhere).
   local main
   main=$(git worktree list --porcelain | awk '/^worktree/{print $2; exit}')
   echo "${main:-$REPO_ROOT_DEFAULT}"

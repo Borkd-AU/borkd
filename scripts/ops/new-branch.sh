@@ -13,7 +13,7 @@
 #
 # Effect:
 #   1. Fetches origin.
-#   2. Creates ~/Desktop/DEV_Local/borkd-<slug>/ worktree at origin/develop.
+#   2. Creates ~/Desktop/DEV_Local/borkd/<slug>/ worktree at origin/develop.
 #   3. Creates branch <type>/<slug> tracking origin/develop.
 #   4. Runs pnpm install in the new worktree.
 #   5. Opens $EDITOR (defaults to `code`) at the worktree.
@@ -39,7 +39,8 @@ fi
 validate_type "$type"
 
 root=$(repo_root)
-worktree_dir="${root%/}-${slug}"
+# root is .../borkd/main — place siblings alongside, one level up.
+worktree_dir="${root%/main}/${slug}"
 branch="${type}/${slug}"
 
 if [ -e "$worktree_dir" ]; then
