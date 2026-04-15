@@ -8,8 +8,10 @@
 # Differences vs. new-branch.sh:
 #   * Forks from origin/main (not develop) — hotfix lands back on main.
 #   * Branch name: hotfix/<slug>.
-#   * Worktree dir: borkd-hotfix-<slug>/ (prefix makes urgency obvious
-#     when tab-completing).
+#   * Worktree dir: ~/Desktop/DEV_Local/borkd/hotfix-<slug>/ — the
+#     "hotfix-" prefix makes urgency obvious when tab-completing, and
+#     the file lives alongside the other worktrees inside the borkd/
+#     grouping directory.
 #
 # After merging to main, back-merge into develop + staging manually
 # (see docs/HOTFIX.md §11).
@@ -31,7 +33,8 @@ if [ -z "$slug" ]; then
 fi
 
 root=$(repo_root)
-worktree_dir="${root%/}-hotfix-${slug}"
+# root is .../borkd/main; hotfix siblings live as .../borkd/hotfix-<slug>.
+worktree_dir="${root%/main}/hotfix-${slug}"
 branch="hotfix/${slug}"
 
 if [ -e "$worktree_dir" ]; then

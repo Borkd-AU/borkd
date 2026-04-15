@@ -70,22 +70,28 @@ Details → `docs/GIT_WORKFLOW.md` (branching + promotion matrix)
 
 ### Worktree layout (multi-branch parallel work)
 
-- `~/Desktop/DEV_Local/borkd/` = main 참고용 clone, **수정 금지**
-- `~/Desktop/DEV_Local/borkd-<scope>/` = feature 브랜치당 1 디렉토리
+모든 borkd worktree는 **`~/Desktop/DEV_Local/borkd/`** 하나의 grouping
+폴더 안에 모여 있음 — `DEV_Local/` 최상위는 프로젝트당 폴더 하나씩만
+보여서 깔끔함. Details → `docs/WORKTREES.md`.
+
+- `~/Desktop/DEV_Local/borkd/main/` = main 참고용 clone, **수정 금지**
+- `~/Desktop/DEV_Local/borkd/<slug>/` = feature 브랜치당 1 디렉토리
+- `~/Desktop/DEV_Local/borkd/hotfix-<slug>/` = hotfix (main fork)
+- `~/Desktop/DEV_Local/borkd/release-v<ver>/` = release (staging fork)
 - 각 worktree는 자체 `node_modules` + `.turbo` 캐시 → 브랜치 간 충돌 0
 
 **새 feature 시작:**
 ```bash
-cd ~/Desktop/DEV_Local/borkd
+cd ~/Desktop/DEV_Local/borkd/main
 git fetch origin
-git worktree add -b feat/<name> ../borkd-<name> origin/develop
-cd ../borkd-<name> && pnpm install
+git worktree add -b feat/<name> ../<name> origin/develop
+cd ../<name> && pnpm install
 ```
 
 **Feature 완료 (PR 머지 후):**
 ```bash
-cd ~/Desktop/DEV_Local/borkd
-git worktree remove ../borkd-<name>
+cd ~/Desktop/DEV_Local/borkd/main
+git worktree remove ../<name>
 git branch -d feat/<name>
 ```
 
