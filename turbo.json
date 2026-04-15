@@ -1,9 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "EXPO_PUBLIC_MAPBOX_TOKEN",
+    "EXPO_PUBLIC_SUPABASE_URL",
+    "EXPO_PUBLIC_SUPABASE_ANON_KEY",
+    "EXPO_PUBLIC_POSTHOG_KEY",
+    "EXPO_PUBLIC_SENTRY_DSN",
+    "NEXT_PUBLIC_MAPBOX_TOKEN",
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "NEXT_PUBLIC_POSTHOG_KEY",
+    "NEXT_PUBLIC_SENTRY_DSN"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".expo/**"]
+      "outputs": ["dist/**", ".expo/**", ".next/**"]
     },
     "dev": {
       "cache": false,
