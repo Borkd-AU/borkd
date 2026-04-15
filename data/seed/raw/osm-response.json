@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-04-15T02:04:51Z",
+    "timestamp_osm_base": "2026-04-15T02:43:33Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -298,6 +298,17 @@
         "phone": "+61 2 9521 7778",
         "shop": "pet",
         "website": "https://www.kirraweepicapet.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2337790412,
+      "lat": -33.6474083,
+      "lon": 150.8585643,
+      "tags": {
+        "addr:housenumber": "1592",
+        "name": "World4PETS",
+        "shop": "pet"
       }
     },
     {
@@ -4405,6 +4416,45 @@
     },
     {
       "type": "node",
+      "id": 12502510050,
+      "lat": -33.6332108,
+      "lon": 151.3318718,
+      "tags": {
+        "amenity": "drinking_water",
+        "dog": "yes",
+        "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522810609,
+      "lat": -33.6354778,
+      "lon": 151.3311838,
+      "tags": {
+        "amenity": "drinking_water",
+        "dog": "yes",
+        "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12556655171,
+      "lat": -33.6464974,
+      "lon": 151.3134021,
+      "tags": {
+        "addr:country": "AU",
+        "addr:housenumber": "215",
+        "addr:postcode": "2107",
+        "addr:state": "NSW",
+        "addr:street": "Plateau Road",
+        "addr:suburb": "Bilgola Plateau",
+        "amenity": "veterinary",
+        "name": "Bilgola Veterinary Clinic",
+        "website": "https://www.bilgolavet.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 12578543875,
       "lat": -33.9710444,
       "lon": 151.0506301,
@@ -5113,6 +5163,19 @@
     },
     {
       "type": "way",
+      "id": 4042505,
+      "center": {
+        "lat": -33.6454131,
+        "lon": 151.3284863
+      },
+      "tags": {
+        "name": "Bilgola Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 4044016,
       "center": {
         "lat": -33.6905108,
@@ -5189,6 +5252,98 @@
         "operator:type": "government",
         "operator:wikidata": "Q1094194",
         "website": "https://www.cityofsydney.nsw.gov.au/parks/frog-hollow-reserve"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335014,
+      "center": {
+        "lat": -33.6104462,
+        "lon": 151.3321166
+      },
+      "tags": {
+        "name": "Whale Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "wikidata": "Q21957508"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335026,
+      "center": {
+        "lat": -33.6049723,
+        "lon": 151.2939822
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:05",
+        "foot": "yes",
+        "from": "Bonnie Doon",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Bonnie Doon - Basin",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "The Basin",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335060,
+      "center": {
+        "lat": -33.5760173,
+        "lon": 151.3062089
+      },
+      "tags": {
+        "name": "Flannel Flower Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335061,
+      "center": {
+        "lat": -33.5814556,
+        "lon": 151.3091448
+      },
+      "tags": {
+        "name": "West Head Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "wikidata": "Q21956929"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335895,
+      "center": {
+        "lat": -33.5829856,
+        "lon": 151.2760215
+      },
+      "tags": {
+        "name": "Hungry Beach",
+        "natural": "beach",
+        "source": "yahoo_imagery",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4335896,
+      "center": {
+        "lat": -33.5885672,
+        "lon": 151.2725619
+      },
+      "tags": {
+        "natural": "beach",
+        "source": "yahoo_imagery"
       }
     },
     {
@@ -5525,6 +5680,34 @@
     },
     {
       "type": "way",
+      "id": 14059935,
+      "center": {
+        "lat": -33.5901265,
+        "lon": 151.3020302
+      },
+      "tags": {
+        "name": "Great Mackerel Beach",
+        "natural": "beach",
+        "source": "yahoo_imagery",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14061125,
+      "center": {
+        "lat": -33.5959447,
+        "lon": 151.2997204
+      },
+      "tags": {
+        "name": "Currawong Beach",
+        "natural": "beach",
+        "source": "yahoo_imagery",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 14457582,
       "center": {
         "lat": -33.8027702,
@@ -5653,6 +5836,32 @@
         "lon": 151.2370189
       },
       "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26317732,
+      "center": {
+        "lat": -33.5723883,
+        "lon": 151.2405123
+      },
+      "tags": {
+        "name": "Gunyah Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26317788,
+      "center": {
+        "lat": -33.5761611,
+        "lon": 151.2441094
+      },
+      "tags": {
+        "name": "Eleanor Beach",
         "natural": "beach",
         "surface": "sand"
       }
@@ -5933,6 +6142,33 @@
         "surface": "sand",
         "wikidata": "Q5367227",
         "wikipedia": "en:Elouera Beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84272560,
+      "center": {
+        "lat": -33.5561184,
+        "lon": 151.3154884
+      },
+      "tags": {
+        "access": "private",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85372788,
+      "center": {
+        "lat": -33.5901344,
+        "lon": 151.2331295
+      },
+      "tags": {
+        "name": "Fishermans Beach",
+        "natural": "beach",
+        "source": "yahoo_imagery",
+        "surface": "sand"
       }
     },
     {
@@ -6569,6 +6805,21 @@
     },
     {
       "type": "way",
+      "id": 173353364,
+      "center": {
+        "lat": -33.5848759,
+        "lon": 151.3070007
+      },
+      "tags": {
+        "dog": "no",
+        "name": "Resolute Beach",
+        "natural": "beach",
+        "operator": "NSW National Parks and Wildlife Service",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 173921147,
       "center": {
         "lat": -33.8946036,
@@ -6715,6 +6966,33 @@
         "name": "Rose Bay Beach",
         "natural": "beach",
         "source": "bing",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 176762314,
+      "center": {
+        "lat": -33.5643176,
+        "lon": 151.2638743
+      },
+      "tags": {
+        "name": "Little Patonga Beach",
+        "natural": "beach",
+        "source": "bing",
+        "surface": "sand",
+        "wikidata": "Q21957022"
+      }
+    },
+    {
+      "type": "way",
+      "id": 176762317,
+      "center": {
+        "lat": -33.5586845,
+        "lon": 151.2511538
+      },
+      "tags": {
+        "natural": "beach",
         "surface": "sand"
       }
     },
@@ -7183,6 +7461,18 @@
     },
     {
       "type": "way",
+      "id": 184972811,
+      "center": {
+        "lat": -33.5813273,
+        "lon": 151.2431283
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 186985384,
       "center": {
         "lat": -33.7964975,
@@ -7466,6 +7756,32 @@
     },
     {
       "type": "way",
+      "id": 243514378,
+      "center": {
+        "lat": -33.604469,
+        "lon": 151.2926138
+      },
+      "tags": {
+        "natural": "beach",
+        "source": "Bing",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 243514379,
+      "center": {
+        "lat": -33.6021099,
+        "lon": 151.2945224
+      },
+      "tags": {
+        "natural": "beach",
+        "source": "Bing",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 244375006,
       "center": {
         "lat": -33.8857866,
@@ -7494,6 +7810,26 @@
     },
     {
       "type": "way",
+      "id": 247939475,
+      "center": {
+        "lat": -33.5662475,
+        "lon": 151.2958215
+      },
+      "tags": {
+        "dog": "yes",
+        "name": "Palm Beach - Patonga",
+        "network": "Boathouse Ferry",
+        "note": "This route is also used by the Wagstaffe/Etalong service during bad weather only.",
+        "operator": "Boathouse Ferry Co",
+        "operator:wikidata": "Q135013560",
+        "route": "ferry",
+        "source": "survey",
+        "source:location": "extrapolation",
+        "website": "https://www.boathouseferryco.com.au/"
+      }
+    },
+    {
+      "type": "way",
       "id": 249682353,
       "center": {
         "lat": -34.0409506,
@@ -7506,6 +7842,20 @@
         "leisure": "dog_park",
         "name": "Kirrawee Dog Exercise Area",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 250868637,
+      "center": {
+        "lat": -33.5924547,
+        "lon": 151.2229433
+      },
+      "tags": {
+        "area": "yes",
+        "name": "Little Shark Rock Point Beach",
+        "natural": "beach",
+        "surface": "sand"
       }
     },
     {
@@ -7893,6 +8243,30 @@
     },
     {
       "type": "way",
+      "id": 307237045,
+      "center": {
+        "lat": -33.6135661,
+        "lon": 151.1385144
+      },
+      "tags": {
+        "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307246944,
+      "center": {
+        "lat": -33.6136594,
+        "lon": 151.1406025
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "retail",
+        "name": "Berowra Veterinary Clinic"
+      }
+    },
+    {
+      "type": "way",
       "id": 307989647,
       "center": {
         "lat": -33.8936199,
@@ -8056,6 +8430,19 @@
       "tags": {
         "natural": "beach",
         "source": "Bing",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377569431,
+      "center": {
+        "lat": -33.6107854,
+        "lon": 151.3017096
+      },
+      "tags": {
+        "name": "Portugese Beach",
+        "natural": "beach",
         "surface": "sand"
       }
     },
@@ -8251,6 +8638,33 @@
         "source": "survey",
         "source:geometry": "NSW LPI Imagery",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 455660810,
+      "center": {
+        "lat": -33.5733471,
+        "lon": 151.285995
+      },
+      "tags": {
+        "name": "Flint and Steel Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "wikidata": "Q21957111"
+      }
+    },
+    {
+      "type": "way",
+      "id": 455660813,
+      "center": {
+        "lat": -33.5799021,
+        "lon": 151.2809891
+      },
+      "tags": {
+        "name": "White Horse Beach",
+        "natural": "beach",
+        "surface": "sand"
       }
     },
     {
@@ -8664,6 +9078,19 @@
     },
     {
       "type": "way",
+      "id": 575707431,
+      "center": {
+        "lat": -33.5920945,
+        "lon": 151.2254269
+      },
+      "tags": {
+        "natural": "beach",
+        "source": "LPI Imagery April 2018",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 580009733,
       "center": {
         "lat": -33.8717314,
@@ -8888,6 +9315,131 @@
     },
     {
       "type": "way",
+      "id": 615545563,
+      "center": {
+        "lat": -33.5993945,
+        "lon": 151.3095962
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:10",
+        "foot": "yes",
+        "from": "Palm Beach",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Palm Beach - Bennetts",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Bennetts",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 615545565,
+      "center": {
+        "lat": -33.5931124,
+        "lon": 151.3101838
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:10",
+        "foot": "yes",
+        "from": "Mackerel",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Mackerel - Palm Beach",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Palm Beach",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 615545567,
+      "center": {
+        "lat": -33.5937577,
+        "lon": 151.3018947
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:05",
+        "foot": "yes",
+        "from": "Currawong",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Currawong - Mackerel",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Mackerel",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 615545569,
+      "center": {
+        "lat": -33.6016945,
+        "lon": 151.2967307
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:05",
+        "foot": "yes",
+        "from": "The Basin",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Basin - Currawong",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Currawong",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 626536656,
+      "center": {
+        "lat": -33.6011823,
+        "lon": 151.2999224
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:10",
+        "foot": "yes",
+        "from": "Bennetts",
+        "horse": "no",
+        "motor_vehicle": "no",
+        "name": "Bennetts - Currawong",
+        "network": "Palm Beach Ferries",
+        "opening_hours": "Mo-Fr 07:45+",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Currawong",
+        "toll": "yes"
+      }
+    },
+    {
+      "type": "way",
       "id": 652184605,
       "center": {
         "lat": -33.789202,
@@ -8959,6 +9511,23 @@
         "name": "Petite Poodle Parlor",
         "opening_hours": "Tu-Sa 09:00-16:00",
         "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 677184847,
+      "center": {
+        "lat": -33.6242976,
+        "lon": 151.3166931
+      },
+      "tags": {
+        "name": "Paradise Beach",
+        "natural": "beach",
+        "place:nswgnb": "URBAN PLACE",
+        "ref:nswgnb": "44956",
+        "source": "LIP Base Map + Imagery Mar 2019",
+        "surface": "sand",
+        "wikidata": "Q21956867"
       }
     },
     {
@@ -9331,6 +9900,22 @@
     },
     {
       "type": "way",
+      "id": 844134398,
+      "center": {
+        "lat": -33.6191552,
+        "lon": 151.3290714
+      },
+      "tags": {
+        "addr:street": "Barrenjoey Road",
+        "alt_name": "Careel Bay Off-leash dog area",
+        "dog": "yes",
+        "leisure": "dog_park",
+        "name": "Hitchcock Park Dog Park",
+        "website": "https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/hitchcock-park-dog-park"
+      }
+    },
+    {
+      "type": "way",
       "id": 845396867,
       "center": {
         "lat": -34.0069078,
@@ -9511,6 +10096,37 @@
         "name": "Thornleigh Dog Park",
         "operator": "Hornsby Council",
         "operator:type": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 917870228,
+      "center": {
+        "lat": -33.6208121,
+        "lon": 151.2989285
+      },
+      "tags": {
+        "alt_name": "Perrys Beach",
+        "name": "Biba Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 931963244,
+      "center": {
+        "lat": -33.6198471,
+        "lon": 151.3280812
+      },
+      "tags": {
+        "addr:postcode": "2107",
+        "addr:street": "Barrenjoey Road",
+        "barrier": "fence",
+        "leisure": "dog_park",
+        "lit": "no",
+        "name": "Careel Bay Off-leash area - small and shy dog area",
+        "website": "https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/hitchcock-park-dog-park"
       }
     },
     {
@@ -9739,6 +10355,18 @@
     },
     {
       "type": "way",
+      "id": 1017723157,
+      "center": {
+        "lat": -33.6352525,
+        "lon": 151.3065507
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 1017730702,
       "center": {
         "lat": -33.9245084,
@@ -9767,6 +10395,42 @@
       "tags": {
         "natural": "beach",
         "source": "Bing aerial imagery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1019862631,
+      "center": {
+        "lat": -33.6344507,
+        "lon": 151.3107781
+      },
+      "tags": {
+        "name": "Clareville Beach",
+        "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1019863584,
+      "center": {
+        "lat": -33.6039648,
+        "lon": 151.3187563
+      },
+      "tags": {
+        "name": "Sandy Beach",
+        "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1019863586,
+      "center": {
+        "lat": -33.5980039,
+        "lon": 151.318238
+      },
+      "tags": {
+        "name": "Snapperman Beach",
+        "natural": "beach"
       }
     },
     {
@@ -9832,6 +10496,31 @@
     },
     {
       "type": "way",
+      "id": 1025699557,
+      "center": {
+        "lat": -33.6035003,
+        "lon": 151.2546748
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1025699560,
+      "center": {
+        "lat": -33.6027436,
+        "lon": 151.2494257
+      },
+      "tags": {
+        "name": "Refuge Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 1035602259,
       "center": {
         "lat": -33.916086,
@@ -9865,6 +10554,17 @@
       "tags": {
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1051990580,
+      "center": {
+        "lat": -33.5735545,
+        "lon": 151.2892316
+      },
+      "tags": {
+        "natural": "beach"
       }
     },
     {
@@ -10955,6 +11655,23 @@
     },
     {
       "type": "way",
+      "id": 1351377449,
+      "center": {
+        "lat": -33.6336672,
+        "lon": 151.3314562
+      },
+      "tags": {
+        "barrier": "fence",
+        "fence_type": "chain_link",
+        "fixme": "outline only approximate",
+        "leisure": "dog_park",
+        "opening_hours": "24/7",
+        "surface": "grass",
+        "website": "https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/avalon-beach-reserve-dog-park"
+      }
+    },
+    {
+      "type": "way",
       "id": 1354132026,
       "center": {
         "lat": -33.9327399,
@@ -10964,6 +11681,18 @@
         "amenity": "veterinary",
         "building": "yes",
         "name": "Vets for Pets"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354580845,
+      "center": {
+        "lat": -33.5809264,
+        "lon": 151.3248132
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
       }
     },
     {
@@ -11121,6 +11850,43 @@
     },
     {
       "type": "way",
+      "id": 1427506674,
+      "center": {
+        "lat": -33.6024976,
+        "lon": 151.2367435
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427506675,
+      "center": {
+        "lat": -33.5999966,
+        "lon": 151.2420275
+      },
+      "tags": {
+        "name": "Hallets Beach",
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431419122,
+      "center": {
+        "lat": -33.6455909,
+        "lon": 151.2818867
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
       "id": 1445334307,
       "center": {
         "lat": -33.8496149,
@@ -11236,6 +12002,31 @@
         "toilets:wheelchair": "yes",
         "website": "https://theeveleighhotel.com.au/",
         "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1484758177,
+      "center": {
+        "lat": -33.598181,
+        "lon": 151.2998055
+      },
+      "tags": {
+        "bicycle": "yes",
+        "dog": "yes",
+        "duration": "00:05",
+        "foot": "yes",
+        "from": "The Basin",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Basin - Currawong",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "route": "ferry",
+        "to": "Currawong",
+        "toll": "yes"
       }
     },
     {
@@ -11611,6 +12402,34 @@
     },
     {
       "type": "relation",
+      "id": 2978551,
+      "center": {
+        "lat": -33.5910574,
+        "lon": 151.3273795
+      },
+      "tags": {
+        "name": "Palm Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2978552,
+      "center": {
+        "lat": -33.5842442,
+        "lon": 151.3251651
+      },
+      "tags": {
+        "name": "Station Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
       "id": 3359340,
       "center": {
         "lat": -33.7365461,
@@ -11618,6 +12437,21 @@
       },
       "tags": {
         "name": "Fishermans Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5622266,
+      "center": {
+        "lat": -33.6352548,
+        "lon": 151.3335102
+      },
+      "tags": {
+        "lifeguard": "yes",
+        "name": "Avalon Beach",
         "natural": "beach",
         "surface": "sand",
         "type": "multipolygon"
@@ -11703,6 +12537,47 @@
     },
     {
       "type": "relation",
+      "id": 6808214,
+      "center": {
+        "lat": -33.5533466,
+        "lon": 151.273566
+      },
+      "tags": {
+        "name": "Patonga Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 6814179,
+      "center": {
+        "lat": -33.5514292,
+        "lon": 151.3086535
+      },
+      "tags": {
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 6861190,
+      "center": {
+        "lat": -33.5904105,
+        "lon": 151.3216913
+      },
+      "tags": {
+        "name": "Station Beach",
+        "natural": "beach",
+        "surface": "sand",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
       "id": 7071528,
       "center": {
         "lat": -34.0099276,
@@ -11775,6 +12650,43 @@
         "tourism": "attraction",
         "type": "multipolygon",
         "wikidata": "Q21956838"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10968284,
+      "center": {
+        "lat": -33.5981779,
+        "lon": 151.3063371
+      },
+      "tags": {
+        "bicycle": "yes",
+        "colour": "#5AB031",
+        "colour:text": "#FFFFFF",
+        "dog": "yes",
+        "duration": "00:45",
+        "foot": "yes",
+        "from": "Palm Beach Wharf",
+        "gtfs:feed": "AU-NSW-TfNSW",
+        "gtfs:route_id": "4-PLM-B-sj2-2",
+        "gtfs:shape_id": "4-PLM-B-sj2-2.1.R",
+        "gtfs:trip_id:sample": "1.AB72.4-PLM-B-sj2-2.1.R",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Palm Beach - Bennetts - Bonnie Doon - Basin - Currawong - Mackeral",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "public_transport:version": "2",
+        "ref": "PLMB",
+        "ref_trips": "1.AB72.4-PLM-B-sj2-2.1.R",
+        "roundtrip": "yes",
+        "route": "ferry",
+        "to": "Palm Beach Wharf",
+        "toll": "yes",
+        "type": "route",
+        "website": "https://palmbeachferries.com.au/"
       }
     },
     {
@@ -11884,6 +12796,43 @@
         "barrier": "fence",
         "leisure": "dog_park",
         "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 20208913,
+      "center": {
+        "lat": -33.5967589,
+        "lon": 151.3092677
+      },
+      "tags": {
+        "bicycle": "yes",
+        "colour": "#5AB031",
+        "colour:text": "#FFFFFF",
+        "dog": "yes",
+        "duration": "00:45",
+        "foot": "yes",
+        "from": "Palm Beach Wharf",
+        "gtfs:feed": "AU-NSW-TfNSW",
+        "gtfs:route_id": "4-PLM-B-sj2-2",
+        "gtfs:shape_id": "4-PLM-B-sj2-2.1.R",
+        "gtfs:trip_id:sample": "1.AB72.4-PLM-B-sj2-2.1.R",
+        "horse": "no",
+        "interval": "00:60",
+        "motor_vehicle": "no",
+        "name": "Palm Beach - Bennetts - Currawong - Mackeral",
+        "network": "Palm Beach Ferries",
+        "operator": "FantaSea",
+        "operator:wikidata": "Q117335282",
+        "public_transport:version": "2",
+        "ref": "PLMB",
+        "ref_trips": "1.AB72.4-PLM-B-sj2-2.1.R",
+        "roundtrip": "yes",
+        "route": "ferry",
+        "to": "Palm Beach Wharf",
+        "toll": "yes",
+        "type": "route",
+        "website": "https://palmbeachferries.com.au/"
       }
     }
   ]
