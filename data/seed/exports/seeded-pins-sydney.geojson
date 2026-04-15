@@ -42,6 +42,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2135777,
+          -33.8917859
+        ]
+      },
+      "properties": {
+        "id": "00672c01-600a-4701-8298-b004e42c43da",
+        "name": "Surry Hills Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1794382111,
           -33.871820672028
         ]
@@ -143,6 +161,60 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2008756,
+          -33.7962569
+        ]
+      },
+      "properties": {
+        "id": "00cd844d-c6eb-462b-9853-f6148c3be5d0",
+        "name": "Willoughby Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1934393,
+          -33.9039236
+        ]
+      },
+      "properties": {
+        "id": "01220054-533b-4c31-bb80-2e3f1c3a07e6",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.8959987,
+          -33.9271217
+        ]
+      },
+      "properties": {
+        "id": "01367dce-f3c8-4927-beca-64a8874ae806",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -258,6 +330,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1677633,
+          -33.8883399
+        ]
+      },
+      "properties": {
+        "id": "0381be71-d1e7-44b5-b01f-720b9bca1f33",
+        "name": "Sydney Animal Hospitals Inner West",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2441481,
           -33.8738302
         ]
@@ -348,6 +438,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2169286,
+          -33.7605217
+        ]
+      },
+      "properties": {
+        "id": "0498d21b-9164-467d-af07-b813efae74c8",
+        "name": "VetMed",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1786717,
           -33.876027
         ]
@@ -357,6 +465,24 @@
         "name": "OSM off_leash_area 5125995561",
         "category": "good_spot",
         "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.200736,
+          -33.822833
+        ]
+      },
+      "properties": {
+        "id": "0523f372-9905-453c-937a-671ca148df54",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -438,6 +564,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2170968,
+          -33.8777523
+        ]
+      },
+      "properties": {
+        "id": "05c13383-f30c-4d91-bd8f-ca09f7cd4ade",
+        "name": "Pawdressers",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1001559,
+          -33.7080797
+        ]
+      },
+      "properties": {
+        "id": "05cf567e-a0da-478d-b164-37cf91b0b556",
+        "name": "Hornsby Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.212233110017,
           -33.8967353791664
         ]
@@ -485,6 +647,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0753212,
+          -33.8001151
+        ]
+      },
+      "properties": {
+        "id": "069b0daa-25ca-4365-9f11-22a4cfe4d3ff",
+        "name": "Denistone Veterinary Surgery",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -582,6 +762,60 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1510641,
+          -33.9151639
+        ]
+      },
+      "properties": {
+        "id": "077f591e-2338-4dde-ba55-ff222eb0a363",
+        "name": "Pepper & Murphy's Dog Grooming Salon",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.17782,
+          -33.8102182
+        ]
+      },
+      "properties": {
+        "id": "07973dca-d851-423d-ae55-d7daaab8980f",
+        "name": "Dr Paws",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0396525,
+          -33.9344251
+        ]
+      },
+      "properties": {
+        "id": "07d88e66-0685-44b0-ad5e-f60c4e29fb5d",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2688594,
           -33.8989725
         ]
@@ -591,6 +825,24 @@
         "name": "OSM fountain 9494270517",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2952362,
+          -33.7001355
+        ]
+      },
+      "properties": {
+        "id": "085daa26-302e-4519-9318-144014fe9d95",
+        "name": "OSM waste_bin 8639856542",
+        "category": "amenity",
+        "subcategory": "waste_bin",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -654,6 +906,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2068475,
+          -33.9137379
+        ]
+      },
+      "properties": {
+        "id": "0921c12c-6d3f-47cd-884f-081a5b3e8f57",
+        "name": "Yuumi",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9989153,
+          -33.9535654
+        ]
+      },
+      "properties": {
+        "id": "0965b2c3-cd1c-43cb-aebb-6b8a5f3dc9d5",
+        "name": "Panania Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2677955,
+          -33.7886205
+        ]
+      },
+      "properties": {
+        "id": "09773d3f-2e6c-40a3-ac3c-4e5e3ac41e33",
+        "name": "Two by Two Vetinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1413567,
+          -33.727735
+        ]
+      },
+      "properties": {
+        "id": "097974d3-a4e7-435e-bf85-863d2eea59fd",
+        "name": "Turramurra Vet Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.219415999012,
           -33.8814345194355
         ]
@@ -683,6 +1007,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2784014,
+          -33.8593389
+        ]
+      },
+      "properties": {
+        "id": "09a7af15-61ab-4e7f-82ce-f84455020a46",
+        "name": "Vaucluse Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -780,6 +1122,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0255242,
+          -33.8545747
+        ]
+      },
+      "properties": {
+        "id": "0a71f33c-f2e3-41e7-91bd-05cfaecdeb04",
+        "name": "Cagemaster Pet Supplies",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2252624,
           -33.8673551
         ]
@@ -789,6 +1149,24 @@
         "name": "OSM fountain 10742450705",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1272277,
+          -33.9064164
+        ]
+      },
+      "properties": {
+        "id": "0a7d8c0b-1718-4c46-b3f9-736dc488cc03",
+        "name": "DogTech Behaviour Training",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -996,6 +1374,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0732934,
+          -33.8603911
+        ]
+      },
+      "properties": {
+        "id": "0bf9fc70-d046-44b3-8834-e48cc25d9732",
+        "name": "Animal Referral Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2018579,
           -33.8777896
         ]
@@ -1050,6 +1446,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9991862,
+          -33.7932294
+        ]
+      },
+      "properties": {
+        "id": "0d9385b9-de3c-4057-b3fe-4a48fb3f91ec",
+        "name": "PetO Northmead",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1654833,
           -33.8484207
         ]
@@ -1077,6 +1491,24 @@
         "name": "Firmstone Reserve",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1938192,
+          -33.7926644
+        ]
+      },
+      "properties": {
+        "id": "0e77d048-fe43-40ef-9697-90cd3603e05d",
+        "name": "Pet O",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -1212,6 +1644,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.030083,
+          -33.9497445
+        ]
+      },
+      "properties": {
+        "id": "0f9d8126-99ed-4229-a820-f43a0b85a7ec",
+        "name": "Cahors Road Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1098651,
+          -33.6932743
+        ]
+      },
+      "properties": {
+        "id": "0fd56566-0d20-48ed-8bb3-fc25b11e6844",
+        "name": "Asquith Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2319496,
           -33.8962636
         ]
@@ -1338,6 +1806,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.130961,
+          -33.9664385
+        ]
+      },
+      "properties": {
+        "id": "1166916e-ab3a-45ff-8dc2-03ea0c7576fe",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2968455,
           -33.7700088
         ]
@@ -1419,6 +1905,24 @@
         "name": "OSM fountain 13122856612",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0836951,
+          -33.9523141
+        ]
+      },
+      "properties": {
+        "id": "12653aca-2d6f-430c-bc2e-9085c4777c27",
+        "name": "Beverly Hills Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -1518,6 +2022,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1492082,
+          -33.6944536
+        ]
+      },
+      "properties": {
+        "id": "13c1d9d4-a36d-4b7e-b618-1ee5428dbe5f",
+        "name": "OSM waste_bin 11951317408",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.211428358433,
           -33.89170578077
         ]
@@ -1529,6 +2051,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1885451,
+          -33.8671139
+        ]
+      },
+      "properties": {
+        "id": "14373d7d-5d08-43b9-9e53-69918c9392f2",
+        "name": "OSM waste_bin 11861524173",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -1554,6 +2094,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0017915,
+          -33.7371993
+        ]
+      },
+      "properties": {
+        "id": "14a78b5f-d4dd-44e3-b2dd-3c8f411ae157",
+        "name": "OSM veterinary 1318115328",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0860102,
           -33.8983462
         ]
@@ -1563,6 +2121,24 @@
         "name": "OSM dog_park 11033633605",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2442456,
+          -33.8760338
+        ]
+      },
+      "properties": {
+        "id": "14f5f18a-0685-4691-b260-2f742cb5ea54",
+        "name": "Marley and Friends",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -1734,6 +2310,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1812158,
+          -33.9065894
+        ]
+      },
+      "properties": {
+        "id": "156fe01b-c684-4439-b8ad-7f2b76af7ab6",
+        "name": "Pets Palace",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.22679393564,
           -33.8697886087348
         ]
@@ -1745,6 +2339,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.174299,
+          -33.898657
+        ]
+      },
+      "properties": {
+        "id": "1588207a-0347-4ef3-ac2f-c29fcbcee895",
+        "name": "The Cat Protection Society of NSW",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -1968,6 +2580,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1963567,
+          -33.9212098
+        ]
+      },
+      "properties": {
+        "id": "182dfe7b-6f99-4933-a83b-a8a58f5b7771",
+        "name": "Petsville / Birdsville",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.196126195211,
           -33.9002433229438
         ]
@@ -2166,6 +2796,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1569698,
+          -33.8841906
+        ]
+      },
+      "properties": {
+        "id": "1a4b946e-6e65-453b-ba18-0806d0a784ca",
+        "name": "Furry Pawfect",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2173051,
           -33.8815496
         ]
@@ -2274,6 +2922,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0884379,
+          -33.9667509
+        ]
+      },
+      "properties": {
+        "id": "1bb5d608-1a9b-46b4-ad68-6c1c3f0307c1",
+        "name": "Lovely Pets",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1197753,
           -33.8757555
         ]
@@ -2301,6 +2967,24 @@
         "name": "OSM beach 1269883166",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2693645,
+          -33.8703123
+        ]
+      },
+      "properties": {
+        "id": "1c061c8c-2322-46c6-a80d-e6e0a6fdc3b2",
+        "name": "Rose Bay Vet Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -2357,6 +3041,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0971796,
+          -33.7216622
+        ]
+      },
+      "properties": {
+        "id": "1cef9773-4a6c-4677-9a07-2b5494f3c501",
+        "name": "Love That Pet Normanhurst",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -2490,6 +3192,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2443505,
+          -33.8779123
+        ]
+      },
+      "properties": {
+        "id": "1e444ac9-5f23-4579-8253-168d935cb3c4",
+        "name": "Pet Stock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.176271,
           -33.8806986
         ]
@@ -2537,6 +3257,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0749672,
+          -33.8885182
+        ]
+      },
+      "properties": {
+        "id": "1e86dfd5-23ba-4d1a-9d22-2e30410dcad1",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -2688,6 +3426,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9775731,
+          -33.934689
+        ]
+      },
+      "properties": {
+        "id": "1f98ee15-e814-46ee-98f3-7964dd21031f",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.213462058021,
           -33.9013632077602
         ]
@@ -2733,6 +3489,24 @@
         "name": "Cook Park",
         "category": "good_spot",
         "subcategory": "park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0164462,
+          -33.8019423
+        ]
+      },
+      "properties": {
+        "id": "207f5994-45c1-48e1-b8f2-ba1b3ddb76e5",
+        "name": "OSM waste_bin 7325214054",
+        "category": "amenity",
+        "subcategory": "waste_bin",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -2825,6 +3599,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1758612,
+          -33.7534388
+        ]
+      },
+      "properties": {
+        "id": "217e50e9-34c0-4afe-b585-29341e5ea702",
+        "name": "The Village Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -2940,6 +3732,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.8694534,
+          -33.6749255
+        ]
+      },
+      "properties": {
+        "id": "22d6e82b-9edb-4e03-8a66-63197bead38f",
+        "name": "Riverstone Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0875607,
           -33.980482
         ]
@@ -3003,6 +3813,24 @@
         "name": "OSM beach 179913579",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9449169,
+          -33.7330846
+        ]
+      },
+      "properties": {
+        "id": "24071d34-28fe-4bde-a21c-7b1f59f8eec0",
+        "name": "Sydney Animal Hospitals",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -3120,6 +3948,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1325632,
+          -33.9598046
+        ]
+      },
+      "properties": {
+        "id": "25a5b03f-7589-4c0e-a7ea-8fc7306da015",
+        "name": "OSM waste_bin 9189481335",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1597969,
           -33.8501703
         ]
@@ -3167,6 +4013,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9222102,
+          -33.918759
+        ]
+      },
+      "properties": {
+        "id": "264cea76-c067-4f8a-9cce-23827321c089",
+        "name": "Pets Domain",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -3257,6 +4121,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1413816,
+          -33.7276004
+        ]
+      },
+      "properties": {
+        "id": "281ef579-662b-4c6f-843f-099f83fc3455",
+        "name": "Turramurra Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -3516,6 +4398,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1581105,
+          -33.7298378
+        ]
+      },
+      "properties": {
+        "id": "2b761820-0b11-4982-918e-6e5b13b372da",
+        "name": "The Pet Connection",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1420915,
+          -33.8841466
+        ]
+      },
+      "properties": {
+        "id": "2ba12fa2-27c0-496d-98c3-7cb7dc106310",
+        "name": "Haberfield Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.211324989287,
           -33.8661594246906
         ]
@@ -3545,6 +4463,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.03081,
+          -33.9503697
+        ]
+      },
+      "properties": {
+        "id": "2c09ae44-fb48-4c82-b151-d2e35edd002b",
+        "name": "Padstow Pet Centre",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -3671,6 +4607,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9448759,
+          -33.7329041
+        ]
+      },
+      "properties": {
+        "id": "2cd16adf-64a5-42ce-8fa2-d3fc3f4c7f40",
+        "name": "Hills Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -4092,6 +5046,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0210276,
+          -33.6929013
+        ]
+      },
+      "properties": {
+        "id": "3114d3de-7f46-4bca-8397-96149dfe5506",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1987369,
           -33.8844932
         ]
@@ -4119,6 +5091,24 @@
         "name": "OSM beach 954965980",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0766511,
+          -34.0321425
+        ]
+      },
+      "properties": {
+        "id": "31c4b36a-20fa-47ca-92fc-780baa83022d",
+        "name": "Kirrawee Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -4362,6 +5352,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.227859,
+          -33.872023
+        ]
+      },
+      "properties": {
+        "id": "34ad3792-47b4-45ad-99da-031525b2a42a",
+        "name": "Pets Point",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.20494126291,
           -33.8993888410887
         ]
@@ -4373,6 +5381,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1085416,
+          -33.6812362
+        ]
+      },
+      "properties": {
+        "id": "34fe967e-604b-4f6e-861d-592473f2a099",
+        "name": "OSM waste_bin 5177398157",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -4560,6 +5586,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2240244,
+          -33.7489645
+        ]
+      },
+      "properties": {
+        "id": "36c83e8f-e661-4042-8406-d02f7bfd4f28",
+        "name": "Frenchs Forest Vet Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.18579687554,
           -33.9001530556751
         ]
@@ -4587,6 +5631,24 @@
         "name": "OSM beach 1445334307",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2491021,
+          -33.8935295
+        ]
+      },
+      "properties": {
+        "id": "377d1bc6-7b30-492e-932b-278b97d3a999",
+        "name": "Aquapets Aquariums",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -4920,6 +5982,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0792693,
+          -33.971858
+        ]
+      },
+      "properties": {
+        "id": "3af0d439-8d7e-470b-980b-9c7a60804f28",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.20756721019,
           -33.8623989868953
         ]
@@ -4965,6 +6045,60 @@
         "name": "OSM beach 1468725408",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2251184,
+          -33.941794
+        ]
+      },
+      "properties": {
+        "id": "3b552d86-47b9-4bbf-b8ce-ff619f607c53",
+        "name": "Dog Salon - Dog Grooming Pagewood",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1842398,
+          -33.8998741
+        ]
+      },
+      "properties": {
+        "id": "3bc3de14-e34b-4554-900d-1e4ad9934aec",
+        "name": "OSM veterinary 1732566728",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2372894,
+          -33.9354557
+        ]
+      },
+      "properties": {
+        "id": "3c0774f5-1484-4df4-8345-3e3ddc53fc37",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -5190,6 +6324,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2861501,
+          -33.7786802
+        ]
+      },
+      "properties": {
+        "id": "3e2be7b1-1ba1-4a15-b3b7-dc5f69cdfb0d",
+        "name": "Harbord Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2098816,
+          -33.8842194
+        ]
+      },
+      "properties": {
+        "id": "3e334af0-670f-44a9-8c8c-9e226f731e2e",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.181195445928,
           -33.8810955338985
         ]
@@ -5217,6 +6387,24 @@
         "name": "Little Manly Cove",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0016955,
+          -33.7371828
+        ]
+      },
+      "properties": {
+        "id": "3e8693da-fd24-4748-a13f-b0ea38c427f9",
+        "name": "Castle Hill Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -5352,6 +6540,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0888271,
+          -33.8414677
+        ]
+      },
+      "properties": {
+        "id": "4026432c-d113-4f1e-8b97-dbf8baa0fd7e",
+        "name": "Katpet Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.198536910055,
           -33.8844963691057
         ]
@@ -5424,6 +6630,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2011065,
+          -33.8857776
+        ]
+      },
+      "properties": {
+        "id": "41bc3795-5ae3-4a60-80cc-ff9e57673ed6",
+        "name": "Pipo Pet",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1944658,
           -33.7834703
         ]
@@ -5433,6 +6657,24 @@
         "name": "OSM dog_park 488621491",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2331951,
+          -33.8773402
+        ]
+      },
+      "properties": {
+        "id": "431cae53-f045-4bc3-a7c2-749e08c9e8d3",
+        "name": "Dogs in Town",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -5982,6 +7224,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1003753,
+          -33.7088071
+        ]
+      },
+      "properties": {
+        "id": "4927f5fd-59c8-4101-a630-13e854f303e3",
+        "name": "PetO",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.209188608989,
           -33.860428055648
         ]
@@ -5993,6 +7253,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2117055,
+          -33.9117927
+        ]
+      },
+      "properties": {
+        "id": "498a59e8-6be0-4f11-a93d-4dad267abde8",
+        "name": "myVet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -6090,6 +7368,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2326962,
+          -33.9282575
+        ]
+      },
+      "properties": {
+        "id": "4af2e7f3-d144-4395-8206-43cd8b72d371",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1709128,
           -33.8550401
         ]
@@ -6180,6 +7476,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1280767,
+          -33.7608237
+        ]
+      },
+      "properties": {
+        "id": "4c24e66c-bff6-4d3e-9dbb-26b2a649ee26",
+        "name": "OSM veterinary 2075767200",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2865625,
           -33.8150942
         ]
@@ -6261,6 +7575,24 @@
         "name": "Middle Head Cafe",
         "category": "amenity",
         "subcategory": "cafe",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1899376,
+          -33.8820555
+        ]
+      },
+      "properties": {
+        "id": "4cc01a3e-4718-4a3b-b9b3-f7530bb02d1e",
+        "name": "Glebe Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -6486,6 +7818,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.245561,
+          -33.892947
+        ]
+      },
+      "properties": {
+        "id": "4ea3de1b-d5bb-4775-a5de-ac7b90d948a4",
+        "name": "OSM veterinary 552943245",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.178617475656,
           -33.8854792902121
         ]
@@ -6585,6 +7935,42 @@
         "name": "OSM fountain 1815550985",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.934974,
+          -33.7054143
+        ]
+      },
+      "properties": {
+        "id": "4ffc4658-abcd-41f9-8161-24228f75f171",
+        "name": "Kellyville Pets Vet and Grooming Salon",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2533649,
+          -33.9060401
+        ]
+      },
+      "properties": {
+        "id": "50a57901-f3e0-4b21-bad3-0d8eba2b7d9f",
+        "name": "North Randwick Vetinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -6792,6 +8178,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9099172,
+          -33.9152236
+        ]
+      },
+      "properties": {
+        "id": "52d36739-4b9e-478b-874b-50060804c809",
+        "name": "Elizabeth Drive Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2129241,
+          -33.7032267
+        ]
+      },
+      "properties": {
+        "id": "530b0b3e-e7e6-41ba-8b4d-8c0d6ccd1818",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2066752,
           -33.9613809
         ]
@@ -6900,6 +8322,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1192713,
+          -33.9546139
+        ]
+      },
+      "properties": {
+        "id": "5430ccaa-576f-4ab6-8ae4-41805470ec5e",
+        "name": "Bexley Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.189225,
           -33.8758748
         ]
@@ -6963,6 +8403,24 @@
         "name": "OSM fountain 12489880493",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2254257,
+          -33.8711582
+        ]
+      },
+      "properties": {
+        "id": "54b9c0a7-d6e3-458f-a31d-552b919e439c",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -7206,6 +8664,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9483221,
+          -33.9327399
+        ]
+      },
+      "properties": {
+        "id": "5814f157-8da4-4049-8518-21cf89d01b35",
+        "name": "Vets for Pets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2579,
           -33.8856
         ]
@@ -7251,6 +8727,24 @@
         "name": "Hayes Street Beach",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0984556,
+          -33.6977736
+        ]
+      },
+      "properties": {
+        "id": "58d48cd9-51e7-4ffd-b0c4-b35e93578c4a",
+        "name": "OSM pet_shop 66832122",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -7548,6 +9042,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1710925,
+          -33.9187638
+        ]
+      },
+      "properties": {
+        "id": "5c563be5-1029-4eaf-a086-eb607df41877",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2466,
           -33.8757
         ]
@@ -7649,6 +9161,42 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2948355,
+          -33.6984267
+        ]
+      },
+      "properties": {
+        "id": "5d7331ab-a404-4264-9627-80744effda48",
+        "name": "OSM waste_bin 8422280432",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1906302,
+          -33.8153648
+        ]
+      },
+      "properties": {
+        "id": "5d923257-3a0a-4cf3-98e4-8a7a24bbe7e8",
+        "name": "Pet Dentist",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -7818,6 +9366,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1094054,
+          -33.8949389
+        ]
+      },
+      "properties": {
+        "id": "5ecd8773-9f0c-45ed-9103-65442f01841e",
+        "name": "Croydon park veterinary hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2055368,
           -33.8571941
         ]
@@ -7827,6 +9393,24 @@
         "name": "OSM fountain 13202152725",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9933043,
+          -33.7589227
+        ]
+      },
+      "properties": {
+        "id": "5f195b84-4674-4ada-a165-4e5c92f7e68b",
+        "name": "Animal Referral Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -7980,6 +9564,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0715791,
+          -33.7757137
+        ]
+      },
+      "properties": {
+        "id": "608bf58d-528b-4bf4-b6b2-54278fc2ccf8",
+        "name": "Midson Road Veterinary Clinc",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2050024,
+          -33.9227144
+        ]
+      },
+      "properties": {
+        "id": "60d8e9f5-0127-4468-9c5d-88061c57ed6b",
+        "name": "Bath to Bow",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.220855179069,
           -33.8739830975384
         ]
@@ -8045,6 +9665,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0619348,
+          -34.0039452
+        ]
+      },
+      "properties": {
+        "id": "61d06b8c-ebb3-4c2c-8606-2123fb10d37d",
+        "name": "Como Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -8178,6 +9816,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2428507,
+          -33.8767578
+        ]
+      },
+      "properties": {
+        "id": "63879b07-b75b-4e3f-9ffb-e941b6cd1189",
+        "name": "Fido and Fido",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0763109,
+          -33.940697
+        ]
+      },
+      "properties": {
+        "id": "63965199-7bf3-4b83-9e96-157e557af8be",
+        "name": "Aquarium Empire",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.201761653377,
           -33.8580658373037
         ]
@@ -8189,6 +9863,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2533907,
+          -33.9005095
+        ]
+      },
+      "properties": {
+        "id": "63bb397f-7105-49a8-a8b3-4606d3c5f11d",
+        "name": "Puppy Parlour",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -8412,6 +10104,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1202201,
+          -34.0299288
+        ]
+      },
+      "properties": {
+        "id": "659efa97-d174-4312-9de1-658cc0b293e8",
+        "name": "PetO",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.205134346443,
           -33.9022800178771
         ]
@@ -8538,6 +10248,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9203526,
+          -33.9273626
+        ]
+      },
+      "properties": {
+        "id": "669e650c-cad7-42f0-9d33-3cc30e391d26",
+        "name": "Extreme Pets",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1283411,
           -33.8439415
         ]
@@ -8603,6 +10331,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2331422,
+          -33.9276307
+        ]
+      },
+      "properties": {
+        "id": "6703f060-6958-47a5-903d-8ac1422e5a43",
+        "name": "Slippery little suckers",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -8808,6 +10554,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.066116,
+          -33.7487337
+        ]
+      },
+      "properties": {
+        "id": "6a4642e2-08d2-4693-9e52-83b768407615",
+        "name": "Beecroft Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.188395061658,
           -33.8675683249646
         ]
@@ -8907,6 +10671,24 @@
         "name": "Minto Dog Leash Free Area",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1348144,
+          -33.9702281
+        ]
+      },
+      "properties": {
+        "id": "6ad7fb82-67c8-4477-949e-3a651f06f165",
+        "name": "Princes Highway Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -9348,6 +11130,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2143718,
+          -33.6781268
+        ]
+      },
+      "properties": {
+        "id": "6f6ec7a7-866e-4a39-96b9-088e2489c0ff",
+        "name": "OSM veterinary 223408256",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.182019603682,
           -33.8961450784976
         ]
@@ -9492,6 +11292,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1120729,
+          -33.676698
+        ]
+      },
+      "properties": {
+        "id": "71482716-830a-4b7d-9cd7-08360c3642a9",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.176067,
           -33.875604
         ]
@@ -9564,6 +11382,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.8835432,
+          -33.9909293
+        ]
+      },
+      "properties": {
+        "id": "72a596ba-3626-4d10-9612-f19f2a342b4e",
+        "name": "Macquarie Fields Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.205935254127,
           -33.8636384859369
         ]
@@ -9593,6 +11429,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2134747,
+          -33.9036398
+        ]
+      },
+      "properties": {
+        "id": "7374c868-f521-46c5-8260-b09c7e271664",
+        "name": "Pet Palette",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -9744,6 +11598,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1850454,
+          -33.8092159
+        ]
+      },
+      "properties": {
+        "id": "75f1fc7a-a075-43a7-b93d-31d152444820",
+        "name": "Dorgi Town",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0657779,
           -33.8707654
         ]
@@ -9888,6 +11760,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1013145,
+          -33.9426112
+        ]
+      },
+      "properties": {
+        "id": "7848aade-a966-4403-81ca-8d9b06692dd5",
+        "name": "Kingsgrove Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.197058019127,
           -33.888972003057
         ]
@@ -9969,6 +11859,24 @@
         "name": "OSM fountain 1005964148",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0325019,
+          -33.9522703
+        ]
+      },
+      "properties": {
+        "id": "7914ddde-43f2-4d06-ba55-c9f00c01048f",
+        "name": "Padstow Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -10284,6 +12192,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1218605,
+          -33.8985448
+        ]
+      },
+      "properties": {
+        "id": "7cab5d4f-5df8-4225-9ea5-c2c753195870",
+        "name": "OSM waste_bin 11306876779",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2665242,
           -33.8504364
         ]
@@ -10313,6 +12239,60 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2463182,
+          -33.8864309
+        ]
+      },
+      "properties": {
+        "id": "7cf96326-439d-4e9d-9797-fde297a083f7",
+        "name": "Double Bay Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2115519,
+          -33.9226152
+        ]
+      },
+      "properties": {
+        "id": "7d0c4052-a07e-4e99-adfa-a38cd2e3db11",
+        "name": "OSM waste_bin 12069405740",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9581917,
+          -33.8020082
+        ]
+      },
+      "properties": {
+        "id": "7d5cbbdc-2383-43fb-a30e-6b33e7937ec4",
+        "name": "Pendle Hill Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -10374,6 +12354,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.303943,
+          -33.6938051
+        ]
+      },
+      "properties": {
+        "id": "7d889428-5557-4806-8aee-ef09478be0c3",
+        "name": "Pittwater Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1998379,
           -33.8857866
         ]
@@ -10428,6 +12426,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1159026,
+          -33.9038221
+        ]
+      },
+      "properties": {
+        "id": "7e401ede-7e4c-4d40-b056-a9678146eec9",
+        "name": "OSM waste_bin 11328282040",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1224408,
+          -33.8716983
+        ]
+      },
+      "properties": {
+        "id": "7e4e5b5e-e1e4-479a-b6cd-8b2d917018ef",
+        "name": "Fine Pebble Aquarium",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.211892373061,
           -33.89668022401
         ]
@@ -10455,6 +12489,24 @@
         "name": "OSM beach 776875582",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1935297,
+          -33.9039293
+        ]
+      },
+      "properties": {
+        "id": "7efcdf08-d9b3-401e-beae-4e94a7f653de",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -10626,6 +12678,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2558284,
+          -33.8348467
+        ]
+      },
+      "properties": {
+        "id": "802f704d-efaa-44a1-b1d1-bc11244d1a7a",
+        "name": "The Barracks Vet Surgery",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.178373318733,
           -33.8744909524484
         ]
@@ -10691,6 +12761,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0711578,
+          -34.0347012
+        ]
+      },
+      "properties": {
+        "id": "80a7e7b6-82f2-4082-91b9-f895af2001c4",
+        "name": "Kirrawee Pic-A-Pet",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -11022,6 +13110,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0896184,
+          -33.8471366
+        ]
+      },
+      "properties": {
+        "id": "842433a1-580f-4191-a9be-9529e185e6ad",
+        "name": "all paws vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.212785447554,
           -33.8649203152538
         ]
@@ -11202,6 +13308,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3040315,
+          -33.6753821
+        ]
+      },
+      "properties": {
+        "id": "878fa22c-95d3-499e-a246-43dd6080c2e4",
+        "name": "Mona Vale Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2819736,
           -33.6909115
         ]
@@ -11247,6 +13371,24 @@
         "name": "OSM fountain 4925657670",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.8979321,
+          -33.849098
+        ]
+      },
+      "properties": {
+        "id": "8862aa75-52da-4899-8b18-c8c2b1b6ec9b",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -11382,6 +13524,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.8829654,
+          -33.9601302
+        ]
+      },
+      "properties": {
+        "id": "8975f366-89ba-4239-9bac-ca8acd5f1c1b",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.207214250595,
           -33.8875753165763
         ]
@@ -11508,6 +13668,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1047532,
+          -33.966148
+        ]
+      },
+      "properties": {
+        "id": "8aa24367-4fa8-49d2-a7f8-5596ecc88b99",
+        "name": "Animalia",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.197099322812,
           -33.8638642714379
         ]
@@ -11562,6 +13740,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2234092,
+          -33.8745528
+        ]
+      },
+      "properties": {
+        "id": "8b441afa-fecf-440f-8d98-aae8e95df6c6",
+        "name": "Dog De Mi’ow",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1382431,
           -33.9895597
         ]
@@ -11571,6 +13767,24 @@
         "name": "Bona Dog Park",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2498808,
+          -33.8946355
+        ]
+      },
+      "properties": {
+        "id": "8b68e1f3-ce8c-49a9-ab3a-88799e57e55f",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -11778,6 +13992,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2599795,
+          -33.7542645
+        ]
+      },
+      "properties": {
+        "id": "8c86797e-5f85-4c95-80bb-8d4d84a23345",
+        "name": "Beacon Hill Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2109839,
           -33.9013896
         ]
@@ -11787,6 +14019,24 @@
         "name": "The Rope Walk",
         "category": "good_spot",
         "subcategory": "park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1735178,
+          -33.7175034
+        ]
+      },
+      "properties": {
+        "id": "8ce03899-3b60-4f4e-bafc-f7ccde1b74f5",
+        "name": "St. Ives Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -11940,6 +14190,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2317118,
+          -33.9596562
+        ]
+      },
+      "properties": {
+        "id": "8e583d0f-98ed-401b-9f7a-c51704efd84e",
+        "name": "Stefmar Pet Care",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.183361,
           -33.8720413
         ]
@@ -11967,6 +14235,24 @@
         "name": "OSM dog_park 1115172038",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2039648,
+          -33.9084473
+        ]
+      },
+      "properties": {
+        "id": "8ee43c41-ac83-4004-8bf9-54cdc701a641",
+        "name": "OSM waste_bin 9033931154",
+        "category": "amenity",
+        "subcategory": "waste_bin",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -12048,6 +14334,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1682473,
+          -33.7748799
+        ]
+      },
+      "properties": {
+        "id": "8f8d7b97-c8a9-4ef7-8fe8-fd093108c513",
+        "name": "Ark Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.223855281952,
           -33.8660894379178
         ]
@@ -12075,6 +14379,24 @@
         "name": "OSM fountain 5211361079",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2035661,
+          -33.7599726
+        ]
+      },
+      "properties": {
+        "id": "901ede81-4508-4179-b657-cfe80b79f059",
+        "name": "Puppuccino",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -12167,6 +14489,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Inner West Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.907939,
+          -33.663273
+        ]
+      },
+      "properties": {
+        "id": "9153f426-a690-4b95-8e65-5085001df08c",
+        "name": "Box Hill Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -12282,6 +14622,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9265856,
+          -33.8008247
+        ]
+      },
+      "properties": {
+        "id": "9240d595-5976-4f5a-b701-35bea00e8c4e",
+        "name": "Sash",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.105667,
           -33.8371985
         ]
@@ -12291,6 +14649,24 @@
         "name": "OSM beach 820053772",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2386066,
+          -33.8321442
+        ]
+      },
+      "properties": {
+        "id": "92988381-5f0f-4c87-8334-3e1bc09d44af",
+        "name": "Mosman Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -12311,6 +14687,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Woollahra Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2358565,
+          -33.8795348
+        ]
+      },
+      "properties": {
+        "id": "92ea6299-eee9-4451-9bdb-2ff1a0a7cc8f",
+        "name": "OSM pet_shop 12245689960",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -12354,6 +14748,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.188859,
+          -33.8168902
+        ]
+      },
+      "properties": {
+        "id": "932d3b0c-fbc7-45ea-abcf-8f73be238c17",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.18535578063,
           -33.8976985382216
         ]
@@ -12372,6 +14784,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1307522,
+          -33.8698727
+        ]
+      },
+      "properties": {
+        "id": "93880c07-fa08-4ad3-b319-c791b1562241",
+        "name": "Crystal Palace Aquarium Five Dock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2420298,
           -33.8734078
         ]
@@ -12381,6 +14811,24 @@
         "name": "OSM beach 814228916",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2309394,
+          -33.8878051
+        ]
+      },
+      "properties": {
+        "id": "93b4736f-49a1-4919-af43-5cedf91fa34f",
+        "name": "Paddo Pets Dog Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -12419,6 +14867,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1389915,
+          -33.890001
+        ]
+      },
+      "properties": {
+        "id": "94610d30-0a30-406b-b0ea-1f9023ff50de",
+        "name": "Summer Hill Village Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -12516,6 +14982,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2444929,
+          -33.8774433
+        ]
+      },
+      "properties": {
+        "id": "95611c7c-f454-41dd-baca-5013bcaae581",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.205536657236,
           -33.8571887352457
         ]
@@ -12545,6 +15029,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.8721436,
+          -33.6545653
+        ]
+      },
+      "properties": {
+        "id": "95d0023d-9e13-4ead-b914-d6543dcfaad1",
+        "name": "Vineyard Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -12660,6 +15162,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1529382,
+          -33.8969865
+        ]
+      },
+      "properties": {
+        "id": "963811b1-879b-42e5-a1a9-b00348eb9070",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.191012287295,
           -33.9022383114166
         ]
@@ -12743,6 +15263,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3000169,
+          -33.7005766
+        ]
+      },
+      "properties": {
+        "id": "96f86c42-202d-4938-a5c0-77dd1fe702df",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -12858,6 +15396,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1376202,
+          -33.8919085
+        ]
+      },
+      "properties": {
+        "id": "97b034b6-beaf-40ff-a03d-df5effbb4088",
+        "name": "OSM pet_grooming 1158486019",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.200137430114,
           -33.8861545387646
         ]
@@ -12905,6 +15461,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.230331,
+          -33.8293275
+        ]
+      },
+      "properties": {
+        "id": "985b3f43-9a97-45c6-897a-127853741c32",
+        "name": "Cremorne Veterinary Hospital and Council Pound",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -13308,6 +15882,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1080217,
+          -33.7950716
+        ]
+      },
+      "properties": {
+        "id": "9db51b29-8665-453b-b3c7-afe1d89e1e9d",
+        "name": "OSM waste_bin 5487723923",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2120389,
+          -33.7038513
+        ]
+      },
+      "properties": {
+        "id": "9e2360a8-3ef3-40c2-8a34-4335b7740a94",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.205177836981,
           -33.8583962647224
         ]
@@ -13416,6 +16026,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9563732,
+          -33.8132255
+        ]
+      },
+      "properties": {
+        "id": "9ee67637-9154-4071-a5ac-940ccd6cfef9",
+        "name": "Great Western Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.197653244685,
           -33.8906038296945
         ]
@@ -13506,6 +16134,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9068108,
+          -33.7304047
+        ]
+      },
+      "properties": {
+        "id": "9fcc573a-6b05-416e-9a78-d14bd2dc3cac",
+        "name": "Acacia Gardens Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1529509,
           -33.9021549
         ]
@@ -13569,6 +16215,42 @@
         "name": "OSM fountain 10571970364",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0664123,
+          -34.0165036
+        ]
+      },
+      "properties": {
+        "id": "a15fb30e-c34b-4831-9925-297835bf67e7",
+        "name": "Jannali Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1443561,
+          -33.8338853
+        ]
+      },
+      "properties": {
+        "id": "a1a4ba3d-f4cc-4fbf-889f-3d290dc5ba6e",
+        "name": "Qpet Hunters Hill",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -13668,6 +16350,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.03771,
+          -33.739562
+        ]
+      },
+      "properties": {
+        "id": "a25b1d4a-016b-401d-9fa5-851c991819b8",
+        "name": "OSM veterinary 6255220954",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.222675457637,
           -33.8930123019982
         ]
@@ -13679,6 +16379,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9164161,
+          -33.8785572
+        ]
+      },
+      "properties": {
+        "id": "a2b47aa0-b70b-4113-bd53-c7ee69ac3907",
+        "name": "Canley Heights Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -13733,6 +16451,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9769543,
+          -33.8336707
+        ]
+      },
+      "properties": {
+        "id": "a33c007e-6625-485c-89f3-90f3bf70e351",
+        "name": "Holroyd Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -14028,6 +16764,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2687539,
+          -33.8842429
+        ]
+      },
+      "properties": {
+        "id": "a512d5c0-18fa-4d09-bb4b-b66f4a8a0547",
+        "name": "Bondi Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.208864127525,
           -33.9067331534054
         ]
@@ -14039,6 +16793,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2549761,
+          -33.7665006
+        ]
+      },
+      "properties": {
+        "id": "a530822d-c783-4de4-a15c-8465f5e12ed3",
+        "name": "Allambie Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -14147,6 +16919,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1437128,
+          -33.8334876
+        ]
+      },
+      "properties": {
+        "id": "a6a30e58-2e4b-4c16-8562-9488fdd3270c",
+        "name": "Hunters Hill Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -14352,6 +17142,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1324871,
+          -33.8718098
+        ]
+      },
+      "properties": {
+        "id": "a8d317b0-1f74-4c6f-9af2-de1cd5a71973",
+        "name": "Five Dock Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.211335426665,
           -33.8885273160526
         ]
@@ -14424,6 +17232,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1332364,
+          -33.9050178
+        ]
+      },
+      "properties": {
+        "id": "aa4da1d6-f0ac-40e1-91ed-9ccd1a1a6f3a",
+        "name": "Hurlstone Park Vet Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.206207507414,
           -33.8728933391339
         ]
@@ -14435,6 +17261,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0718239,
+          -33.7727194
+        ]
+      },
+      "properties": {
+        "id": "aa5d2502-0009-4277-9704-35ecafd96887",
+        "name": "Epping Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -14568,6 +17412,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1784842,
+          -33.9012892
+        ]
+      },
+      "properties": {
+        "id": "ab2f6f5f-3300-453e-8e58-cc1d77c1fb3c",
+        "name": "The Inner West Cat Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.177448147753,
           -33.8787128352148
         ]
@@ -14613,6 +17475,24 @@
         "name": "OSM dog_park 1446629894",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1424029,
+          -33.9849
+        ]
+      },
+      "properties": {
+        "id": "ac086a26-7419-4ba5-8068-e9c9856c4665",
+        "name": "Living Jungle",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -14849,6 +17729,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1086545,
+          -33.7287303
+        ]
+      },
+      "properties": {
+        "id": "ae514ae6-8f32-4c7f-b008-7254acceaaee",
+        "name": "Fox Valley Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -15119,6 +18017,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1848009,
+          -33.9058076
+        ]
+      },
+      "properties": {
+        "id": "b254983c-d2bf-4710-9a67-bd8a587c6ce8",
+        "name": "OSM waste_bin 12288894064",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -15666,6 +18582,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2934079,
+          -33.7451383
+        ]
+      },
+      "properties": {
+        "id": "b8886e7a-38f2-4d10-a030-797e231a2aec",
+        "name": "Dee Why Vet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1112878,
           -33.834516
         ]
@@ -15675,6 +18609,24 @@
         "name": "OSM beach 1270322754",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1433705,
+          -33.9677311
+        ]
+      },
+      "properties": {
+        "id": "b8e44ef7-8b81-4de1-8757-f182a392e3be",
+        "name": "OSM waste_bin 8841731675",
+        "category": "amenity",
+        "subcategory": "waste_bin",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -15846,6 +18798,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1212176,
+          -33.7769562
+        ]
+      },
+      "properties": {
+        "id": "b9e220f5-c300-4494-b8c6-104e12b9e56c",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.187726704145,
           -33.8922067893164
         ]
@@ -15981,6 +18951,24 @@
         "name": "OSM dog_park 820958530",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1225358,
+          -34.0412116
+        ]
+      },
+      "properties": {
+        "id": "bc2e8a77-21b7-49a8-858c-c035977004b3",
+        "name": "Caringbah Vet Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -16134,6 +19122,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9194504,
+          -33.7812687
+        ]
+      },
+      "properties": {
+        "id": "bd898de3-b11c-4773-a7b1-e21c954b28f8",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.212578154175,
           -33.8648720407654
         ]
@@ -16260,6 +19266,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1805314,
+          -33.8577328
+        ]
+      },
+      "properties": {
+        "id": "be4c7bd0-44eb-41e0-bebd-acdbe1bb9f26",
+        "name": "OSM veterinary 5114250531",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1698953,
+          -33.8157925
+        ]
+      },
+      "properties": {
+        "id": "be55b64a-e3e5-49c3-8c6a-88c7d0e3b1da",
+        "name": "Advanced Vet Care Lane Cove",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2035477,
           -33.8497782
         ]
@@ -16269,6 +19311,24 @@
         "name": "OSM off_leash_area 871670275",
         "category": "good_spot",
         "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2428665,
+          -33.878229
+        ]
+      },
+      "properties": {
+        "id": "be77839f-10da-4742-8458-04576951a48b",
+        "name": "Vet HQ Double Bay",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -16440,6 +19500,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0046622,
+          -33.8074031
+        ]
+      },
+      "properties": {
+        "id": "c07ca234-e733-4963-aa7f-274976bdd31f",
+        "name": "Cottage Animal Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2707,
           -33.9027
         ]
@@ -16505,6 +19583,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2429616,
+          -33.8785954
+        ]
+      },
+      "properties": {
+        "id": "c1f77bc8-1680-489c-9eee-cd03089acc3f",
+        "name": "Vet HQ",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -16656,6 +19752,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.011645,
+          -34.0168437
+        ]
+      },
+      "properties": {
+        "id": "c40e0633-ff37-4e46-a3b2-be7c949cb012",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0026723,
+          -33.7982705
+        ]
+      },
+      "properties": {
+        "id": "c45ec4ad-14a4-4d98-a872-658cdb6b03f7",
+        "name": "Animal Orthopaedic Specialists",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0692363,
           -33.7184405
         ]
@@ -16683,6 +19815,24 @@
         "name": "Manly Beach",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0394581,
+          -33.9343122
+        ]
+      },
+      "properties": {
+        "id": "c549fd19-1a5b-4c65-9110-9ec4e2c56918",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -16890,6 +20040,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2394564,
+          -33.8418455
+        ]
+      },
+      "properties": {
+        "id": "c76ba248-6b1d-4b68-b14f-3722f0139fa1",
+        "name": "Taronga Zoo Wildlife Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1887676,
           -33.7073454
         ]
@@ -16998,6 +20166,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2761842,
+          -33.7957056
+        ]
+      },
+      "properties": {
+        "id": "c8afc7ce-2594-439b-bf3e-0c2944c1e810",
+        "name": "Manly Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.218423536218,
           -33.8718754771183
         ]
@@ -17061,6 +20247,24 @@
         "name": "OSM fountain 10127314652",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0924752,
+          -33.8086744
+        ]
+      },
+      "properties": {
+        "id": "cb7d3a4a-76a5-473f-b47b-43723cc6b284",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -17322,6 +20526,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1580891,
+          -33.9115046
+        ]
+      },
+      "properties": {
+        "id": "cdac2ef8-8a52-40d4-b1df-665071a961f8",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.176445242222,
           -33.8742893254799
         ]
@@ -17394,6 +20616,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1359078,
+          -33.9845846
+        ]
+      },
+      "properties": {
+        "id": "cf4e4862-307a-47c4-8994-83aedf5b95ec",
+        "name": "Ramsgate Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.18256614359,
           -33.879680731018
         ]
@@ -17405,6 +20645,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0896853,
+          -33.8472972
+        ]
+      },
+      "properties": {
+        "id": "cfb43d63-3119-4f30-ae9b-fc4e1fd789d4",
+        "name": "Petite Poodle Parlor",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -17448,6 +20706,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1872965,
+          -33.8685216
+        ]
+      },
+      "properties": {
+        "id": "d01c3600-a931-425b-ae00-a94d4ab4cc7e",
+        "name": "OSM waste_bin 11861500668",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2104007,
           -33.8330957
         ]
@@ -17475,6 +20751,24 @@
         "name": "OSM fountain 9081279317",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3069142,
+          -33.6752738
+        ]
+      },
+      "properties": {
+        "id": "d0e3b97c-fa1b-4216-9f1a-910e8eee74e9",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -17538,6 +20832,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2662446,
+          -33.789202
+        ]
+      },
+      "properties": {
+        "id": "d16b5804-009b-4af6-886e-77b407fab3a3",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.176360281008,
           -33.87451207064
         ]
@@ -17592,6 +20904,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2586355,
+          -33.8865714
+        ]
+      },
+      "properties": {
+        "id": "d28d501c-9cb5-4d20-8972-ea9f00d71b22",
+        "name": "OSM veterinary 13329832001",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0158268,
+          -33.8034282
+        ]
+      },
+      "properties": {
+        "id": "d2df5208-22bb-4d33-bae7-08206f4b52c4",
+        "name": "OSM waste_bin 7325214056",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2428305,
           -33.8905797
         ]
@@ -17621,6 +20969,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1899676,
+          -33.8146646
+        ]
+      },
+      "properties": {
+        "id": "d329bf4b-9aa8-44f2-89a9-0a96cbf66396",
+        "name": "North Shore Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -17727,6 +21093,24 @@
         "name": "OSM fountain 3925010003",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2436647,
+          -33.8905695
+        ]
+      },
+      "properties": {
+        "id": "d474d40e-96e1-4838-93a3-89fcaa85e99c",
+        "name": "Dogue",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -17844,6 +21228,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1092014,
+          -33.8949828
+        ]
+      },
+      "properties": {
+        "id": "d516b2f2-3336-4b8f-b26d-2f2ae07cfda7",
+        "name": "pawz in style",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.225208843187,
           -33.8727321029737
         ]
@@ -17934,6 +21336,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1726683,
+          -33.8872182
+        ]
+      },
+      "properties": {
+        "id": "d5d8f2a9-e481-4558-a9ce-cf0b3c96f2f3",
+        "name": "The Hound Lounge",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.204006470247,
           -33.86312029281
         ]
@@ -17979,6 +21399,24 @@
         "name": "OSM fountain 2352246085",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2502581,
+          -33.7662529
+        ]
+      },
+      "properties": {
+        "id": "d6fc2443-cb4c-4782-b652-00ffbf8009cd",
+        "name": "OSM pet_grooming 13610537578",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -18125,6 +21563,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1468848,
+          -33.7133852
+        ]
+      },
+      "properties": {
+        "id": "d7a67a98-ec50-4804-9561-6c3746f51e97",
+        "name": "Greencross Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -18312,6 +21768,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9855257,
+          -33.7501801
+        ]
+      },
+      "properties": {
+        "id": "d93a7969-101a-41c0-96ca-0a2ff17c64e4",
+        "name": "Chelsea Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2679864,
           -33.8692865
         ]
@@ -18341,6 +21815,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1673294,
+          -33.8147827
+        ]
+      },
+      "properties": {
+        "id": "da3eeb3d-4a80-4435-aaa1-c2ab3b257317",
+        "name": "PetO",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -18816,6 +22308,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9539319,
+          -33.7596576
+        ]
+      },
+      "properties": {
+        "id": "de3e1436-ac29-42eb-8236-952b9e2d24ee",
+        "name": "Seven Hills Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.3245633,
           -33.653998
         ]
@@ -18843,6 +22353,24 @@
         "name": "Daddy Rich Records",
         "category": "good_spot",
         "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.231651,
+          -33.9599754
+        ]
+      },
+      "properties": {
+        "id": "de835065-a9b1-49c7-a935-1af3eda87b64",
+        "name": "Matraville Veterinary Practice",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -18960,6 +22488,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1061875,
+          -33.8651173
+        ]
+      },
+      "properties": {
+        "id": "df030066-47cb-4019-99b0-41c3c42d7e8e",
+        "name": "Burwood & Bay",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1844878,
           -33.8358806
         ]
@@ -18969,6 +22515,24 @@
         "name": "OSM beach 717895644",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2991955,
+          -33.7279695
+        ]
+      },
+      "properties": {
+        "id": "df6ccd8e-b5c1-4de1-a885-0f60eec5e21e",
+        "name": "Veterinary Surgery",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -19068,6 +22632,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2407303,
+          -33.9421776
+        ]
+      },
+      "properties": {
+        "id": "dfe8dd7c-5981-4295-b81e-e0f3ffb1e5aa",
+        "name": "Southeast Sydney Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2370189,
           -33.8397025
         ]
@@ -19077,6 +22659,24 @@
         "name": "OSM beach 25830610",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1760139,
+          -33.8984234
+        ]
+      },
+      "properties": {
+        "id": "e027110e-e283-4cbc-bbe6-140ee63f9bcf",
+        "name": "Hair of the Dog",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -19140,6 +22740,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1456712,
+          -33.79693
+        ]
+      },
+      "properties": {
+        "id": "e0d7fab1-0cb1-49c8-beb6-f9468c41786f",
+        "name": "SASH Vets",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2601,
           -33.9273
         ]
@@ -19151,6 +22769,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Randwick Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9091713,
+          -33.7656128
+        ]
+      },
+      "properties": {
+        "id": "e11a48ac-e2e7-4b5f-8243-6aa80932fdc7",
+        "name": "City Pet & Aquarium",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -19284,6 +22920,60 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2504585,
+          -33.7978671
+        ]
+      },
+      "properties": {
+        "id": "e1d62aaa-d2b0-4a32-8aad-23f8daf80ef8",
+        "name": "Seaforth Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0578996,
+          -33.836462
+        ]
+      },
+      "properties": {
+        "id": "e231d747-9a48-4e37-89cc-abf4a1e87fb2",
+        "name": "OSM waste_bin 8018405947",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1758722,
+          -33.8760765
+        ]
+      },
+      "properties": {
+        "id": "e25a3776-72e1-4191-a47a-43a761007e41",
+        "name": "Pet O",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1524831,
           -33.9521799
         ]
@@ -19329,6 +23019,24 @@
         "name": "OSM beach 987563680",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0861327,
+          -33.7240212
+        ]
+      },
+      "properties": {
+        "id": "e2d22f11-3064-44cd-8366-3eee144aca2c",
+        "name": "Thornleigh Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -19770,6 +23478,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1591289,
+          -33.8965346
+        ]
+      },
+      "properties": {
+        "id": "e6dbecdd-8aef-44e7-9ba5-8430eb2b74cc",
+        "name": "Petvet",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.22926938565,
           -33.8745206700383
         ]
@@ -19968,6 +23694,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2252803,
+          -33.8847266
+        ]
+      },
+      "properties": {
+        "id": "e8e87011-7315-4565-abdd-f4b847eb927a",
+        "name": "Paddington Cat Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2103877,
+          -33.8228278
+        ]
+      },
+      "properties": {
+        "id": "e901e865-ec93-44b7-a600-79e0d48cb77f",
+        "name": "Cammeray Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0961974,
           -33.9146396
         ]
@@ -20004,6 +23766,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1265461,
+          -33.7864371
+        ]
+      },
+      "properties": {
+        "id": "e9491fa8-5b34-4f0f-a5b9-cc2f8584c7bd",
+        "name": "Macquarie Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1841025,
+          -33.7973368
+        ]
+      },
+      "properties": {
+        "id": "e953ce4e-5096-44ea-a39d-f8fca27e03d5",
+        "name": "Pet Town",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2601892,
           -33.919311
         ]
@@ -20013,6 +23811,24 @@
         "name": "OSM fountain 11228465951",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1299917,
+          -33.9670523
+        ]
+      },
+      "properties": {
+        "id": "ea355e96-1d75-49d6-869e-93cdc9ea74b3",
+        "name": "Drools - Dog Grooming & Day Care",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -20094,6 +23910,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2017789,
+          -33.8863648
+        ]
+      },
+      "properties": {
+        "id": "eae6f3b1-7d33-450a-a504-90522d8da26b",
+        "name": "Fuzzy Monsters",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.206835536077,
           -33.8562008341751
         ]
@@ -20121,6 +23955,42 @@
         "name": "OSM fountain 7504946647",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1289155,
+          -33.8905958
+        ]
+      },
+      "properties": {
+        "id": "eb86c094-60eb-44a7-898a-dd582a4d5919",
+        "name": "PetO",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1421957,
+          -33.859489
+        ]
+      },
+      "properties": {
+        "id": "eb939a29-c09c-4740-bada-799257578cee",
+        "name": "All Natural Vet Care",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -20274,6 +24144,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2942334,
+          -33.6989606
+        ]
+      },
+      "properties": {
+        "id": "ecfc9c02-2268-4174-9e3e-aa0ffbbcc731",
+        "name": "OSM waste_bin 8639856547",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.182020480902,
           -33.9075263063776
         ]
@@ -20339,6 +24227,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.090892,
+          -33.8930566
+        ]
+      },
+      "properties": {
+        "id": "eda29cce-676b-4938-9fbb-009bf0621fc2",
+        "name": "Enfield Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -20418,6 +24324,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1294728,
+          -33.8685892
+        ]
+      },
+      "properties": {
+        "id": "ee25a342-8021-42a8-9172-2e3e27e83fc8",
+        "name": "Hollywood Pets",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2072587,
           -33.844189
         ]
@@ -20445,6 +24369,42 @@
         "name": "OSM fountain 4934130176",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2760117,
+          -33.755671
+        ]
+      },
+      "properties": {
+        "id": "ee3d4540-1312-410d-9fc9-47389bdd356a",
+        "name": "Northern District Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.100726,
+          -33.6979459
+        ]
+      },
+      "properties": {
+        "id": "ee67d11f-a373-4fdb-b03e-1f951ece95ef",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -20580,6 +24540,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2367511,
+          -33.9323106
+        ]
+      },
+      "properties": {
+        "id": "ef4eba5a-143f-4651-b359-cbba331659bc",
+        "name": "Anzac Parade Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           150.9611536,
           -33.7308323
         ]
@@ -20607,6 +24585,24 @@
         "name": "OSM dog_park 12999069551",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2938196,
+          -33.698627
+        ]
+      },
+      "properties": {
+        "id": "efbff980-2d3d-4df8-bf34-bf9a2f351e2a",
+        "name": "OSM waste_bin 8422280433",
+        "category": "amenity",
+        "subcategory": "waste_bin",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -20778,6 +24774,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1853544,
+          -33.8775318
+        ]
+      },
+      "properties": {
+        "id": "f13431eb-ba13-46e7-a1bc-f52e49544a7b",
+        "name": "Pets on the Point",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.211754967777,
           -33.8764463254646
         ]
@@ -20825,6 +24839,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2799974,
+          -33.6966195
+        ]
+      },
+      "properties": {
+        "id": "f161e131-f636-43ec-8c55-0dba3b78ea46",
+        "name": "Elanora Vet Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -21156,6 +25188,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1822375,
+          -33.8857851
+        ]
+      },
+      "properties": {
+        "id": "f4507fee-e56c-4664-8a1b-2cf5f3fd8afb",
+        "name": "University of Sydney Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1731,
           -33.8895
         ]
@@ -21237,6 +25287,24 @@
         "name": "OSM beach 1226442706",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1604552,
+          -33.8716946
+        ]
+      },
+      "properties": {
+        "id": "f5016bf5-4949-484e-9e4b-3e8c9f72981b",
+        "name": "Orange Dogs",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -21498,6 +25566,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2138294,
+          -33.6995316
+        ]
+      },
+      "properties": {
+        "id": "f6bcd8fd-0194-45a2-a541-84f37ccbc294",
+        "name": "OSM veterinary 9687581767",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9928707,
+          -33.7374561
+        ]
+      },
+      "properties": {
+        "id": "f6d1936a-c5a0-4d06-beb7-2ca9bd5bb0c0",
+        "name": "OSM waste_bin 12955646331",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.198354224329,
           -33.8897584511404
         ]
@@ -21534,6 +25638,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.002409,
+          -33.7980408
+        ]
+      },
+      "properties": {
+        "id": "f732c5bd-a2e7-4893-92fc-b0d613e19cb0",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.209912650909,
           -33.8615964588139
         ]
@@ -21545,6 +25667,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0033256,
+          -33.9329629
+        ]
+      },
+      "properties": {
+        "id": "f751ebf8-50a9-4b0d-995c-34bd1fcd78d3",
+        "name": "Paws and Claws Warehouse",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -21642,6 +25782,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2276289,
+          -33.8721391
+        ]
+      },
+      "properties": {
+        "id": "f828fb87-8939-40a7-a3f0-ff6d1b023dd2",
+        "name": "Potts Point Veterniary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0279529,
+          -33.9610332
+        ]
+      },
+      "properties": {
+        "id": "f8448ba6-cdcc-454e-871c-82fa87de87ef",
+        "name": "Scissorhands Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.210848111817,
           -33.9195691654513
         ]
@@ -21671,6 +25847,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9367164,
+          -33.7754874
+        ]
+      },
+      "properties": {
+        "id": "f8bcd6db-76ea-405a-a1e0-731af659779c",
+        "name": "Sheridan's Dog Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -21779,6 +25973,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.102983,
+          -33.908079
+        ]
+      },
+      "properties": {
+        "id": "f9acb108-1ad4-4dee-936f-a9efdb73e992",
+        "name": "Petbarn",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -22002,6 +26214,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0825668,
+          -33.8069793
+        ]
+      },
+      "properties": {
+        "id": "fbf843bc-6973-40b1-91ed-e8364370161e",
+        "name": "West Ryde Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           150.862742,
           -33.9245084
         ]
@@ -22065,6 +26295,24 @@
         "name": "OSM fountain 5235549025",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0876986,
+          -33.9645988
+        ]
+      },
+      "properties": {
+        "id": "fcbd09cf-1643-49d9-8113-1a3fbfdefeb5",
+        "name": "K-PUP Dog Grooming",
+        "category": "amenity",
+        "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -22164,6 +26412,60 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.957629,
+          -33.7994925
+        ]
+      },
+      "properties": {
+        "id": "fe8e7e6e-0908-4623-b292-b5629d4f1169",
+        "name": "Pendle Hill veterinary hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1310487,
+          -33.9361024
+        ]
+      },
+      "properties": {
+        "id": "feca7994-1a22-4b5a-b82c-9145878826c1",
+        "name": "OSM waste_bin 7885798987",
+        "category": "amenity",
+        "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0126537,
+          -33.8073781
+        ]
+      },
+      "properties": {
+        "id": "fed7a054-0b4e-4be4-9cb4-4cea7b678da5",
+        "name": "Parramatta Veterinary Hospital",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2775085,
           -33.8514496
         ]
@@ -22182,6 +26484,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.9229542,
+          -33.6863415
+        ]
+      },
+      "properties": {
+        "id": "fefe851a-9810-426a-96a1-d85ecae23aad",
+        "name": "Petstock",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0783988,
           -33.8165264
         ]
@@ -22191,6 +26511,24 @@
         "name": "Dog Off-Leash Area",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1039372,
+          -33.9781818
+        ]
+      },
+      "properties": {
+        "id": "ff0a9723-feee-45b1-b492-d1b3f87568f6",
+        "name": "OSM veterinary 10814493918",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
