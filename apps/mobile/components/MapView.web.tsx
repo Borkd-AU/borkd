@@ -1,3 +1,4 @@
+import type { Bbox } from '@borkd/shared';
 import type React from 'react';
 import { useCallback, useMemo } from 'react';
 import ReactMap, {
@@ -29,6 +30,12 @@ export interface MapViewProps {
   pins?: MapPin[];
   onPinPress?: (pinId: string) => void;
   onMapPress?: (coords: { latitude: number; longitude: number }) => void;
+  /**
+   * Fired after pan/zoom gestures settle on a new viewport. Derived from
+   * the mapbox-gl `getBounds()` helper exposed on the map instance via
+   * `event.target`. Consumers should debounce before refetching data.
+   */
+  onViewportChange?: (bbox: Bbox) => void;
   walkRoute?: Array<{ latitude: number; longitude: number }>;
   showUserLocation?: boolean;
   children?: React.ReactNode;
@@ -69,6 +76,7 @@ export default function MapView({
   pins = [],
   onPinPress,
   onMapPress,
+  onViewportChange,
   walkRoute,
   showUserLocation: _showUserLocation = false,
   children,
@@ -80,6 +88,24 @@ export default function MapView({
       onMapPress({ latitude: lat, longitude: lng });
     },
     [onMapPress],
+  );
+
+  // react-map-gl's ViewStateChangeEvent exposes the underlying mapbox-gl
+  // Map instance via `event.target`. Calling `getBounds()` there is the
+  // canonical way to read the visible bbox after a pan/zoom gesture.
+  const handleMoveEnd = useCallback(
+    (event: ViewStateChangeEvent) => {
+      if (!onViewportChange) return;
+      const bounds = event.target.getBounds();
+      if (!bounds) return;
+      onViewportChange({
+        min_lng: bounds.getWest(),
+        min_lat: bounds.getSouth(),
+        max_lng: bounds.getEast(),
+        max_lat: bounds.getNorth(),
+      });
+    },
+    [onViewportChange],
   );
 
   const routeGeoJSON = useMemo(() => {
@@ -111,6 +137,7 @@ export default function MapView({
         mapStyle={MAPBOX_STYLE}
         mapboxAccessToken={MAPBOX_TOKEN}
         onClick={handleClick}
+        onMoveEnd={onViewportChange ? handleMoveEnd : undefined}
         attributionControl={false}
       >
         {pins.map((pin) => (

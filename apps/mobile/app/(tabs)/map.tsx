@@ -1,5 +1,5 @@
 import type { Bbox } from '@borkd/shared';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import MapView from '../../components/MapView';
@@ -7,7 +7,7 @@ import { PinDetailSheet } from '../../features/map/components';
 import { useMapPins } from '../../features/map/hooks';
 
 // Sydney CBD default viewport (centre + ~5 km radius) used before the
-// map emits its first onRegionDidChange / onMove event.
+// map emits its first viewport-change event.
 const DEFAULT_BBOX: Bbox = {
   min_lng: 151.15,
   min_lat: -33.92,
@@ -15,26 +15,47 @@ const DEFAULT_BBOX: Bbox = {
   max_lat: -33.82,
 };
 
+// Delay between the user releasing a pan/zoom gesture and the next
+// Supabase refetch. 300 ms is long enough to swallow the burst of
+// callbacks that @rnmapbox emits while a camera animation settles, but
+// short enough that the pin list feels responsive after the gesture
+// ends. Keep in sync with the comment in MapView.{native,web}.tsx.
+const VIEWPORT_DEBOUNCE_MS = 300;
+
 /**
  * Community Map tab.
  *
- * Data layer: `useMapPins` fetches pins inside the current viewport from
- * the staging Supabase and feeds them to MapView. Tapping a pin opens a
- * minimal `PinDetailSheet` — the detail data is already in the viewport
- * payload, so no extra network call is issued.
+ * Interaction wiring:
+ *   MapView.onViewportChange  → debounce 300 ms → setBbox → refetch pins
+ *   MapView.onPinPress        → setSelectedPinId → PinDetailSheet
  *
- * Marker styling, cluster colours, and the long-form detail screen are
- * still pending Steph's design pass. No Mapbox token configured → map
- * tiles render grey, but the full interaction path (viewport → pin tap
- * → sheet → close) is exercisable.
+ * The detail sheet reads from the already-fetched pins list (same query
+ * that populated the markers), so tapping a pin issues no extra network
+ * request. Marker styling, cluster colours, and the long-form detail
+ * screen are still pending Steph's design pass — the functional wiring
+ * is complete and exercisable once a Mapbox token is configured.
  */
 export default function MapScreen() {
-  // TODO: swap for a real `onRegionDidChange` callback from MapView once
-  // the underlying Mapbox components expose viewport change events in
-  // both .native and .web variants. Using a static bbox is enough to
-  // smoke-test the Supabase RPC wiring.
-  const [bbox] = useState<Bbox>(DEFAULT_BBOX);
+  const [bbox, setBbox] = useState<Bbox>(DEFAULT_BBOX);
   const [selectedPinId, setSelectedPinId] = useState<string | null>(null);
+  const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Debounce: hold the incoming bbox in a ref-backed timer and only
+  // commit it to React state (which is what triggers the Supabase
+  // refetch via useMapPins' queryKey) once the gesture has settled.
+  const handleViewportChange = useCallback((nextBbox: Bbox) => {
+    if (debounceTimer.current) clearTimeout(debounceTimer.current);
+    debounceTimer.current = setTimeout(() => {
+      setBbox(nextBbox);
+      debounceTimer.current = null;
+    }, VIEWPORT_DEBOUNCE_MS);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (debounceTimer.current) clearTimeout(debounceTimer.current);
+    };
+  }, []);
 
   const { data: pins, isLoading, error } = useMapPins({ bbox });
 
@@ -72,7 +93,11 @@ export default function MapScreen() {
   return (
     <SafeAreaView className="flex-1 bg-cream" edges={['top']}>
       <View className="flex-1">
-        <MapView pins={markers} onPinPress={handlePinPress} />
+        <MapView
+          pins={markers}
+          onPinPress={handlePinPress}
+          onViewportChange={handleViewportChange}
+        />
         {/*
           Lightweight status strip. Will move into the shared HUD overlay
           once the map design lands.
