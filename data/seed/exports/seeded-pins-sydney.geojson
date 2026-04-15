@@ -186,6 +186,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2997204,
+          -33.5959447
+        ]
+      },
+      "properties": {
+        "id": "00d30bb7-ce1c-4796-9949-60074d4dd56b",
+        "name": "Currawong Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1934393,
           -33.9039236
         ]
@@ -251,6 +269,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Inner West Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2823365,
+          -33.7851201
+        ]
+      },
+      "properties": {
+        "id": "0234cc88-fa88-429c-ab9b-6cf46a80f1ae",
+        "name": "Lagoon Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -582,6 +618,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          150.8585643,
+          -33.6474083
+        ]
+      },
+      "properties": {
+        "id": "05c88b6c-831c-4977-8060-4535ae66c845",
+        "name": "World4PETS",
+        "category": "amenity",
+        "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1001559,
           -33.7080797
         ]
@@ -647,6 +701,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3070007,
+          -33.5848759
+        ]
+      },
+      "properties": {
+        "id": "067dc430-1b62-45ea-85de-ef3d61b9827b",
+        "name": "Resolute Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -827,6 +899,24 @@
         "subcategory": "fountain",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.311833,
+          -33.682969
+        ]
+      },
+      "properties": {
+        "id": "0854bb95-45e7-49f2-954d-f5eecc013174",
+        "name": "Mona Vale Beach South",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -1219,6 +1309,24 @@
       "properties": {
         "id": "0aec0c2c-9573-4285-9ffa-d9d31dd0028e",
         "name": "Little Congwong Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2441094,
+          -33.5761611
+        ]
+      },
+      "properties": {
+        "id": "0b2cf6b2-f819-4825-8cc4-99c2478b9608",
+        "name": "Eleanor Beach",
         "category": "good_spot",
         "subcategory": "beach",
         "source": "osm",
@@ -2022,6 +2130,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2546748,
+          -33.6035003
+        ]
+      },
+      "properties": {
+        "id": "1374cf7b-c8f0-41e6-bb90-8c7c8775b365",
+        "name": "OSM beach 1025699557",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1492082,
           -33.6944536
         ]
@@ -2087,6 +2213,42 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2482962,
+          -33.765681
+        ]
+      },
+      "properties": {
+        "id": "1488205c-60a6-4396-994f-e4eabc3c49db",
+        "name": "Allambie Heights Oval",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2006687,
+          -33.9339156
+        ]
+      },
+      "properties": {
+        "id": "149fa2e9-92a7-4845-9bdd-465834abe56a",
+        "name": "Sparks Street Reserve",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -2670,6 +2832,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2511538,
+          -33.5586845
+        ]
+      },
+      "properties": {
+        "id": "19551159-c01c-4644-9aaf-897537c6a7e3",
+        "name": "OSM beach 176762317",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.195982002612,
           -33.8707739258797
         ]
@@ -2904,6 +3084,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2952094,
+          -33.7001896
+        ]
+      },
+      "properties": {
+        "id": "1b718a80-79b7-4dfc-a63c-a9d5c3b3df73",
+        "name": "Progress Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1184398,
           -33.841886
         ]
@@ -3030,6 +3228,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2229433,
+          -33.5924547
+        ]
+      },
+      "properties": {
+        "id": "1c96d899-6d73-4f36-98c3-dcd74979ac55",
+        "name": "Little Shark Rock Point Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.223345469068,
           -33.8688242970446
         ]
@@ -3138,6 +3354,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3018947,
+          -33.5937577
+        ]
+      },
+      "properties": {
+        "id": "1dac3ad1-7253-45db-9379-406aa227c266",
+        "name": "Currawong - Mackerel",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.184593520699,
           -33.8782770378539
         ]
@@ -3185,6 +3419,24 @@
         "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1943224,
+          -33.9524458
+        ]
+      },
+      "properties": {
+        "id": "1e0ad9d8-ff03-43e3-8805-abaa83596cc3",
+        "name": "Sir Joseph Banks Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -3354,6 +3606,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2745465,
+          -33.7076713
+        ]
+      },
+      "properties": {
+        "id": "1ec6e239-3240-4b01-9db6-3c2ce68a7c7a",
+        "name": "Deep Creek Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.219121460506,
           -33.8861310504135
         ]
@@ -3444,6 +3714,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3313085,
+          -33.6340053
+        ]
+      },
+      "properties": {
+        "id": "2049ee79-4fcf-4a4a-92f2-73845e36ff0d",
+        "name": "Avalon Beach Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.213462058021,
           -33.9013632077602
         ]
@@ -3507,6 +3795,24 @@
         "name": "OSM waste_bin 7325214054",
         "category": "amenity",
         "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2367435,
+          -33.6024976
+        ]
+      },
+      "properties": {
+        "id": "20d29d72-a1cd-471f-831a-fc5da6fa803b",
+        "name": "OSM beach 1427506674",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -3653,6 +3959,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1554579,
+          -33.9323389
+        ]
+      },
+      "properties": {
+        "id": "22817025-0618-4960-b185-81fbc46b1994",
+        "name": "Cahill Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -3831,6 +4155,24 @@
         "name": "Sydney Animal Hospitals",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2926138,
+          -33.604469
+        ]
+      },
+      "properties": {
+        "id": "2409994b-f135-4dc9-8e19-009a809feee5",
+        "name": "OSM beach 243514378",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -4164,6 +4506,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2213612,
+          -33.7596336
+        ]
+      },
+      "properties": {
+        "id": "28c62e0c-c840-42c6-8322-40f9c8baf757",
+        "name": "Currie Road Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2097264,
           -33.857358
         ]
@@ -4398,6 +4758,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2958215,
+          -33.5662475
+        ]
+      },
+      "properties": {
+        "id": "2b532d8e-7652-4e42-ba1a-cdfd45504e71",
+        "name": "Palm Beach - Patonga",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1581105,
           -33.7298378
         ]
@@ -4481,6 +4859,24 @@
         "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.30423,
+          -33.7404725
+        ]
+      },
+      "properties": {
+        "id": "2c10336b-2162-46be-a491-e58fbfd7f741",
+        "name": "Griffith Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -4643,6 +5039,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3086535,
+          -33.5514292
+        ]
+      },
+      "properties": {
+        "id": "2d05154a-5ab3-4021-80bc-703ae46ac511",
+        "name": "OSM beach 6814179",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -5226,6 +5640,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.235691,
+          -33.7822434
+        ]
+      },
+      "properties": {
+        "id": "32a0e277-c78d-4796-8020-1574ac087286",
+        "name": "Seaforth Oval",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0785461,
           -33.8541316
         ]
@@ -5233,6 +5665,24 @@
       "properties": {
         "id": "32e7a1b3-916d-42db-aa20-88c8c4cf0a54",
         "name": "OSM dog_park 1160813032",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3314562,
+          -33.6336672
+        ]
+      },
+      "properties": {
+        "id": "331989b1-d245-4f7b-b6d2-8cdbcb4183c3",
+        "name": "OSM dog_park 1351377449",
         "category": "good_spot",
         "subcategory": "dog_park",
         "source": "osm",
@@ -5577,6 +6027,24 @@
         "name": "OSM fountain 10981976734",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3154884,
+          -33.5561184
+        ]
+      },
+      "properties": {
+        "id": "36bd23d9-b4ca-4610-b44e-cf0b3e130f36",
+        "name": "OSM beach 84272560",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -6216,6 +6684,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2405123,
+          -33.5723883
+        ]
+      },
+      "properties": {
+        "id": "3cb82d9a-7c8d-4579-88ac-732d25ca7d7f",
+        "name": "Gunyah Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.206692868243,
           -33.9206125743821
         ]
@@ -6227,6 +6713,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2760215,
+          -33.5829856
+        ]
+      },
+      "properties": {
+        "id": "3d095494-eeef-45bf-9cb3-43bf74c224e1",
+        "name": "Hungry Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -6263,6 +6767,24 @@
         "subcategory": "fountain",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3290714,
+          -33.6191552
+        ]
+      },
+      "properties": {
+        "id": "3d4798ea-0288-42fe-91c0-22fc1370b867",
+        "name": "Hitchcock Park Dog Park",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -6522,6 +7044,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2967307,
+          -33.6016945
+        ]
+      },
+      "properties": {
+        "id": "3ffa3dad-bc3c-4942-a1af-b9c7b57c7772",
+        "name": "Basin - Currawong",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.222283755523,
           -33.8769278912695
         ]
@@ -6639,6 +7179,24 @@
         "name": "Pipo Pet",
         "category": "amenity",
         "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3101838,
+          -33.5931124
+        ]
+      },
+      "properties": {
+        "id": "420510c2-7a59-4379-a68d-2982053660de",
+        "name": "Mackerel - Palm Beach",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -6810,6 +7368,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2998055,
+          -33.598181
+        ]
+      },
+      "properties": {
+        "id": "4407954a-c3a7-45a0-a197-7e82a5e77f24",
+        "name": "Basin - Currawong",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.184680262441,
           -33.9039366992423
         ]
@@ -6929,6 +7505,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3166931,
+          -33.6242976
+        ]
+      },
+      "properties": {
+        "id": "4595e425-9261-4baf-99a9-7665fea5bb94",
+        "name": "Paradise Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -7134,6 +7728,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3284863,
+          -33.6454131
+        ]
+      },
+      "properties": {
+        "id": "47c5c0e3-c1f7-4fe5-b6fa-25e45cb63778",
+        "name": "Bilgola Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2149829,
           -33.7407588
         ]
@@ -7145,6 +7757,24 @@
         "subcategory": "dog_park",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1305566,
+          -33.9320584
+        ]
+      },
+      "properties": {
+        "id": "481dda99-b6bf-44f6-b4b4-6303b19bc664",
+        "name": "Ron Gosling Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -7433,6 +8063,24 @@
         "subcategory": "cafe",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2150057,
+          -33.7406036
+        ]
+      },
+      "properties": {
+        "id": "4bf8492f-8e9f-488a-ac5a-7848d2084690",
+        "name": "Frenchs Forest Showground",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -7764,6 +8412,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3321166,
+          -33.6104462
+        ]
+      },
+      "properties": {
+        "id": "4de54731-d69f-4914-8c91-798bbf6183b3",
+        "name": "Whale Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2525624,
           -33.8884124
         ]
@@ -7847,6 +8513,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1419329,
+          -33.9747073
+        ]
+      },
+      "properties": {
+        "id": "4eb5e831-87f8-4bf0-b572-adc082e0ef5b",
+        "name": "Civic Avenue Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -8099,6 +8783,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2528112,
+          -33.8066821
+        ]
+      },
+      "properties": {
+        "id": "52701546-da08-484c-890a-0a38e82125fe",
+        "name": "Clontarf Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -8538,6 +9240,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3062089,
+          -33.5760173
+        ]
+      },
+      "properties": {
+        "id": "5613ed00-aaca-47d4-b9ce-34f15d454efa",
+        "name": "Flannel Flower Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.3000457,
           -33.7508215
         ]
@@ -8603,6 +9323,24 @@
         "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2215273,
+          -33.9286389
+        ]
+      },
+      "properties": {
+        "id": "57229167-1cdf-4965-a4a3-6c2b2d3581dc",
+        "name": "Astrolabe Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -8871,6 +9609,24 @@
         "name": "Corner Beach",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1385144,
+          -33.6135661
+        ]
+      },
+      "properties": {
+        "id": "59c78468-9356-4fe8-9980-da4166873e32",
+        "name": "OSM dog_park 307237045",
+        "category": "good_spot",
+        "subcategory": "dog_park",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -9348,6 +10104,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3095962,
+          -33.5993945
+        ]
+      },
+      "properties": {
+        "id": "5ea449e8-162a-4740-829e-469fa4d29e63",
+        "name": "Palm Beach - Bennetts",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1139727,
           -33.7381642
         ]
@@ -9431,6 +10205,24 @@
         "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1939784,
+          -33.9230362
+        ]
+      },
+      "properties": {
+        "id": "5f6be587-846e-4570-a801-a3ea8c6b9cf5",
+        "name": "Hughes Avenue Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -10266,6 +11058,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3091448,
+          -33.5814556
+        ]
+      },
+      "properties": {
+        "id": "66b48b27-bcf9-4e48-a070-b57a449f1c00",
+        "name": "West Head Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1283411,
           -33.8439415
         ]
@@ -10554,6 +11364,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.1083436,
+          -33.9373152
+        ]
+      },
+      "properties": {
+        "id": "69e3ca21-ce81-4690-98fb-80aeb5b7db78",
+        "name": "Kingsgrove Avenue Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.066116,
           -33.7487337
         ]
@@ -10563,6 +11391,24 @@
         "name": "Beecroft Vet",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2809891,
+          -33.5799021
+        ]
+      },
+      "properties": {
+        "id": "6a4c2c6e-f0d8-4c68-9ad0-1cfdf81b39f6",
+        "name": "White Horse Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -11238,6 +12084,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3318718,
+          -33.6332108
+        ]
+      },
+      "properties": {
+        "id": "70c46699-f92d-4e01-971e-3097e6c28cde",
+        "name": "OSM fountain 12502510050",
+        "category": "amenity",
+        "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.19254635206,
           -33.8664216383813
         ]
@@ -11274,6 +12138,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2721549,
+          -33.6574982
+        ]
+      },
+      "properties": {
+        "id": "713de9b8-d2e7-44f6-b6db-82ceaa78f87a",
+        "name": "McCarrs Creek Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1486,
           -33.8995
         ]
@@ -11285,6 +12167,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Inner West Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2939822,
+          -33.6049723
+        ]
+      },
+      "properties": {
+        "id": "7144fa49-6977-419b-8f67-697425c7efa3",
+        "name": "Bonnie Doon - Basin",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -11526,6 +12426,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3020302,
+          -33.5901265
+        ]
+      },
+      "properties": {
+        "id": "748a0aad-6027-4049-823d-7051a2fec871",
+        "name": "Great Mackerel Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.20512577943,
           -33.9012712833632
         ]
@@ -11625,6 +12543,24 @@
         "name": "OSM dog_park 1188911154",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2999224,
+          -33.6011823
+        ]
+      },
+      "properties": {
+        "id": "7610a106-4a2d-48bc-bdcd-deb1baa918d9",
+        "name": "Bennetts - Currawong",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -11749,6 +12685,24 @@
       "properties": {
         "id": "783986ca-f02d-428c-a744-ebe766fe58f5",
         "name": "Cruwee Cove",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3251651,
+          -33.5842442
+        ]
+      },
+      "properties": {
+        "id": "7847070e-152d-480f-9d48-fca09182a4ae",
+        "name": "Station Beach",
         "category": "good_spot",
         "subcategory": "beach",
         "source": "osm",
@@ -13056,6 +14010,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3008974,
+          -33.5902735
+        ]
+      },
+      "properties": {
+        "id": "8389fc6c-8738-4def-88f5-ebcfea953119",
+        "name": "Mackerel Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.209548730299,
           -33.9081378414018
         ]
@@ -13119,6 +14091,24 @@
         "name": "all paws vet",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3092677,
+          -33.5967589
+        ]
+      },
+      "properties": {
+        "id": "842b32bd-241c-4555-86b6-7e612bd179a5",
+        "name": "Palm Beach - Bennetts - Currawong - Mackeral",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -13209,6 +14199,24 @@
         "name": "Secret Cove",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3311838,
+          -33.6354778
+        ]
+      },
+      "properties": {
+        "id": "85b52202-b1c7-458f-9844-52c263aa9ae2",
+        "name": "OSM fountain 12522810609",
+        "category": "amenity",
+        "subcategory": "fountain",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -13677,6 +14685,24 @@
         "name": "Animalia",
         "category": "amenity",
         "subcategory": "pet_shop",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2725619,
+          -33.5885672
+        ]
+      },
+      "properties": {
+        "id": "8aa54b6f-f7f6-468a-bbcd-8836d8c1147e",
+        "name": "OSM beach 4335896",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -14478,6 +15504,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3017096,
+          -33.6107854
+        ]
+      },
+      "properties": {
+        "id": "90e8ae2c-2499-46f4-8e87-96bac6222e2c",
+        "name": "Portugese Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1555,
           -33.8822
         ]
@@ -14615,6 +15659,24 @@
         "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.20939,
+          -33.7647173
+        ]
+      },
+      "properties": {
+        "id": "9233ba46-45f4-4289-807f-ce8bc6fcdc37",
+        "name": "Forestville War Memorial Playing Fields",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -14802,6 +15864,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3134021,
+          -33.6464974
+        ]
+      },
+      "properties": {
+        "id": "93a6a9c9-c996-4865-97cd-941f036ea52f",
+        "name": "Bilgola Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2420298,
           -33.8734078
         ]
@@ -14829,6 +15909,24 @@
         "name": "Paddo Pets Dog Grooming",
         "category": "amenity",
         "subcategory": "pet_grooming",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.285995,
+          -33.5733471
+        ]
+      },
+      "properties": {
+        "id": "93da2d8b-bf32-46a6-a40d-634a2e9a21c8",
+        "name": "Flint and Steel Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -14982,6 +16080,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2624828,
+          -33.7538634
+        ]
+      },
+      "properties": {
+        "id": "955280f4-7af9-406c-8002-a53135d9b1c9",
+        "name": "Beacon Hill Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2078937,
+          -33.9434144
+        ]
+      },
+      "properties": {
+        "id": "955a5812-aaa2-4818-aeff-f7e665195820",
+        "name": "Gaiarine Gardens",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "manual",
+        "attribution": "© Bayside Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2444929,
           -33.8774433
         ]
@@ -15047,6 +16181,24 @@
         "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1382401,
+          -33.9895563
+        ]
+      },
+      "properties": {
+        "id": "95e6cf19-609a-4d54-8634-d6e2324cecb2",
+        "name": "Bona Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -15515,6 +16667,24 @@
         "subcategory": "off_leash_area",
         "source": "manual",
         "attribution": "© Randwick Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.18787,
+          -33.9292556
+        ]
+      },
+      "properties": {
+        "id": "98b83b8f-96ee-4b53-bfd4-ba77f18885e7",
+        "name": "High Street Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -16206,6 +17376,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3084768,
+          -33.658793
+        ]
+      },
+      "properties": {
+        "id": "a0a769ba-cc4b-4cca-80bb-207879041623",
+        "name": "Dearin Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2331356,
           -33.8935407
         ]
@@ -16217,6 +17405,24 @@
         "subcategory": "fountain",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3089883,
+          -33.6860674
+        ]
+      },
+      "properties": {
+        "id": "a14b5230-ac1c-4472-a6bb-901279c435ff",
+        "name": "Robert Dunn Reserve (South Mona Vale Headland)",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -17124,6 +18330,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3107781,
+          -33.6344507
+        ]
+      },
+      "properties": {
+        "id": "a87278f9-43e4-47df-a4dc-89fc208ad127",
+        "name": "Clareville Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2817,
           -33.8772
         ]
@@ -17151,6 +18375,24 @@
         "name": "Five Dock Veterinary Hospital",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2892316,
+          -33.5735545
+        ]
+      },
+      "properties": {
+        "id": "a938f85d-8306-420e-857c-d0ae8fd2238a",
+        "name": "OSM beach 1051990580",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -17862,6 +19104,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3216913,
+          -33.5904105
+        ]
+      },
+      "properties": {
+        "id": "af864a6a-cd9c-45d9-9e73-d63d6ab78c07",
+        "name": "Station Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2490497,
           -33.8670703
         ]
@@ -18051,6 +19311,24 @@
         "name": "OSM beach 302028910",
         "category": "good_spot",
         "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1406025,
+          -33.6136594
+        ]
+      },
+      "properties": {
+        "id": "b2774bfb-d388-48ca-b6a0-db5e46690823",
+        "name": "Berowra Veterinary Clinic",
+        "category": "amenity",
+        "subcategory": "veterinary",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -18474,6 +19752,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2777101,
+          -33.751745
+        ]
+      },
+      "properties": {
+        "id": "b748ced0-617f-46b1-abe9-5182c0486521",
+        "name": "Beverley Job Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.192353147282,
           -33.8820296992178
         ]
@@ -18852,6 +20148,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2531493,
+          -33.8052807
+        ]
+      },
+      "properties": {
+        "id": "ba62ee1f-f71c-482a-8985-a387af262910",
+        "name": "Sandy Bay",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.212419565609,
           -33.8792068262488
         ]
@@ -18951,6 +20265,24 @@
         "name": "OSM dog_park 820958530",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2420275,
+          -33.5999966
+        ]
+      },
+      "properties": {
+        "id": "bc1df88b-8e22-4e76-8498-8d23d56ce75f",
+        "name": "Hallets Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -19338,6 +20670,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2818867,
+          -33.6455909
+        ]
+      },
+      "properties": {
+        "id": "be903f87-e2c3-4161-aede-7b387bf95b6f",
+        "name": "OSM beach 1431419122",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.248815,
           -33.8709958
         ]
@@ -19509,6 +20859,24 @@
         "name": "Cottage Animal Hospital",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3063371,
+          -33.5981779
+        ]
+      },
+      "properties": {
+        "id": "c0be477e-9a4c-4948-99fd-e2b736910ae1",
+        "name": "Palm Beach - Bennetts - Bonnie Doon - Basin - Currawong - Mackeral",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -19770,6 +21138,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2929026,
+          -33.7678913
+        ]
+      },
+      "properties": {
+        "id": "c4119a05-1785-4f0c-8ba6-53d890f36de1",
+        "name": "Adams Street Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0026723,
           -33.7982705
         ]
@@ -19817,6 +21203,24 @@
         "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2818519,
+          -33.7839269
+        ]
+      },
+      "properties": {
+        "id": "c53b283b-8eab-4103-abad-95aae864a435",
+        "name": "Hinkler Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -20094,6 +21498,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2947726,
+          -33.7689778
+        ]
+      },
+      "properties": {
+        "id": "c81d3604-157e-44a7-9e68-1b3f49648e59",
+        "name": "Flora and Ritchie Roberts Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.3099208,
           -33.6991808
         ]
@@ -20119,6 +21541,24 @@
       "properties": {
         "id": "c830d43c-c726-4360-a47f-8921348b8aa8",
         "name": "Maroubra Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.318238,
+          -33.5980039
+        ]
+      },
+      "properties": {
+        "id": "c832196e-6762-41de-8f2e-235b8adf7042",
+        "name": "Snapperman Beach",
         "category": "good_spot",
         "subcategory": "beach",
         "source": "osm",
@@ -20175,6 +21615,24 @@
         "name": "Manly Veterinary Clinic",
         "category": "amenity",
         "subcategory": "veterinary",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3248132,
+          -33.5809264
+        ]
+      },
+      "properties": {
+        "id": "c90a0946-e780-4698-adf2-5a7e14e58250",
+        "name": "OSM beach 1354580845",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -20256,6 +21714,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2945224,
+          -33.6021099
+        ]
+      },
+      "properties": {
+        "id": "cb5a23cb-1702-4a90-bef8-04fce1913c9d",
+        "name": "OSM beach 243514379",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0924752,
           -33.8086744
         ]
@@ -20267,6 +21743,24 @@
         "subcategory": "pet_shop",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2649163,
+          -33.730687
+        ]
+      },
+      "properties": {
+        "id": "cb910316-c7fb-4b34-a6f2-4de14770f350",
+        "name": "Truman Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -20598,6 +22092,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2254269,
+          -33.5920945
+        ]
+      },
+      "properties": {
+        "id": "cf353556-3193-4ed0-85aa-a3d9fe110b3d",
+        "name": "OSM beach 575707431",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.302549,
+          -33.663736
+        ]
+      },
+      "properties": {
+        "id": "cf3f40b8-4b47-462f-8fcc-cc586c31801a",
+        "name": "Rowland Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.21297307364,
           -33.8620895751416
         ]
@@ -20715,6 +22245,24 @@
         "name": "OSM waste_bin 11861500668",
         "category": "amenity",
         "subcategory": "waste_bin",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2331295,
+          -33.5901344
+        ]
+      },
+      "properties": {
+        "id": "d02626ce-e697-4f50-be3d-c11d71e55ed9",
+        "name": "Fishermans Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -21408,6 +22956,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3187563,
+          -33.6039648
+        ]
+      },
+      "properties": {
+        "id": "d6cd4163-c50b-4d38-abe6-8057629cbd4c",
+        "name": "Sandy Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.2502581,
           -33.7662529
         ]
@@ -21419,6 +22985,24 @@
         "subcategory": "pet_grooming",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2200637,
+          -33.9409433
+        ]
+      },
+      "properties": {
+        "id": "d704bb1a-8279-444f-a7d7-e218f8067d27",
+        "name": "Mutch Park",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "manual",
+        "attribution": "© Bayside Council"
       }
     },
     {
@@ -21597,6 +23181,24 @@
         "name": "OSM fountain 10692050014",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3273795,
+          -33.5910574
+        ]
+      },
+      "properties": {
+        "id": "d7b85c30-e970-4fa6-a5a6-2c9ed620bd1b",
+        "name": "Palm Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -22038,6 +23640,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2283159,
+          -33.9370755
+        ]
+      },
+      "properties": {
+        "id": "dbac4c57-4e84-4a94-a937-4c15d96f73af",
+        "name": "Firmstone Reserve",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "manual",
+        "attribution": "© Bayside Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.198145010124,
           -33.8867402522068
         ]
@@ -22229,6 +23849,24 @@
         "subcategory": "park",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2786201,
+          -33.7887226
+        ]
+      },
+      "properties": {
+        "id": "dd976cc0-1591-465e-b7b1-1f5b0ca99ae7",
+        "name": "LM Graham Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
       }
     },
     {
@@ -22974,6 +24612,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2494257,
+          -33.6027436
+        ]
+      },
+      "properties": {
+        "id": "e25fff67-7752-4d49-9811-c7a6f63481e6",
+        "name": "Refuge Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1524831,
           -33.9521799
         ]
@@ -23111,6 +24767,24 @@
         "subcategory": "park",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2989285,
+          -33.6208121
+        ]
+      },
+      "properties": {
+        "id": "e3b30a0d-cc44-4e7f-9a35-8585e4b871d5",
+        "name": "Biba Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -23856,6 +25530,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2431283,
+          -33.5813273
+        ]
+      },
+      "properties": {
+        "id": "ea67f21a-126d-4c0e-89e9-ab54ac34292f",
+        "name": "OSM beach 184972811",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.261011,
           -33.8298105
         ]
@@ -24306,6 +25998,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2648471,
+          -33.7986413
+        ]
+      },
+      "properties": {
+        "id": "ee0d00c1-0ce1-42c0-8acf-46b5a04ba00e",
+        "name": "North Harbour Reserve",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.180828744341,
           -33.897058969303
         ]
@@ -24666,6 +26376,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3330483,
+          -33.6238498
+        ]
+      },
+      "properties": {
+        "id": "f0267869-cff1-465b-b898-552bd5aa92dd",
+        "name": "Hitchcock Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.196923705282,
           -33.8888680071421
         ]
@@ -24864,6 +26592,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.2668796,
+          -33.8092525
+        ]
+      },
+      "properties": {
+        "id": "f186e3bc-6067-41be-a35a-3c8c06b65be7",
+        "name": "Tania Park",
+        "category": "good_spot",
+        "subcategory": "off_leash_area",
+        "source": "manual",
+        "attribution": "© Northern Beaches Council"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.196687611183,
           -33.8757623211485
         ]
@@ -24893,6 +26639,24 @@
         "subcategory": "off_leash_area",
         "source": "city_of_sydney",
         "attribution": "© City of Sydney (CC BY 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.273566,
+          -33.5533466
+        ]
+      },
+      "properties": {
+        "id": "f1ef3529-c634-46c2-96e1-ca79b134f3b3",
+        "name": "Patonga Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
       }
     },
     {
@@ -25161,6 +26925,24 @@
         "name": "OSM dog_park 13323300269",
         "category": "good_spot",
         "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3335102,
+          -33.6352548
+        ]
+      },
+      "properties": {
+        "id": "f407d103-5a0a-4de0-9652-f70049696194",
+        "name": "Avalon Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }
@@ -25908,6 +27690,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3065507,
+          -33.6352525
+        ]
+      },
+      "properties": {
+        "id": "f92bda79-692b-4271-be51-b71535555b02",
+        "name": "OSM beach 1017723157",
+        "category": "good_spot",
+        "subcategory": "beach",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1983301,
           -33.8345204
         ]
@@ -26340,6 +28140,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.3280812,
+          -33.6198471
+        ]
+      },
+      "properties": {
+        "id": "fd989451-9ea3-46c9-8e56-a6bf076e6c2c",
+        "name": "Careel Bay Off-leash area - small and shy dog area",
+        "category": "good_spot",
+        "subcategory": "dog_park",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.249,
           -33.8899
         ]
@@ -26403,6 +28221,24 @@
         "name": "OSM fountain 6968827929",
         "category": "amenity",
         "subcategory": "fountain",
+        "source": "osm",
+        "attribution": "© OpenStreetMap contributors (ODbL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2638743,
+          -33.5643176
+        ]
+      },
+      "properties": {
+        "id": "fe85cc40-1970-41c2-8e8c-e9b28aba8f29",
+        "name": "Little Patonga Beach",
+        "category": "good_spot",
+        "subcategory": "beach",
         "source": "osm",
         "attribution": "© OpenStreetMap contributors (ODbL)"
       }

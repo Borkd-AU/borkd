@@ -1,0 +1,18 @@
+[
+  { "name": "Astrolabe Park", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Astrolabe Park, Daceyville", "notes": "Off-leash park, Daceyville" },
+  { "name": "Bona Park", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Bona Park, Sans Souci", "notes": "Fenced dog area, Sans Souci" },
+  { "name": "Cahill Park", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Cahill Park, Wolli Creek", "notes": "Off-leash, Wolli Creek" },
+  { "name": "Civic Avenue Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Scarborough Park, Kogarah", "notes": "Civic Avenue Reserve within Scarborough Park — off-leash" },
+  { "name": "Firmstone Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "dog_park", "address": "Firmstone Reserve, Pagewood", "notes": "Off-leash dog park, Pagewood" },
+  { "name": "Frys Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Frys Reserve, Kogarah", "notes": "Off-leash reserve, Warialda Street" },
+  { "name": "Gaiarine Gardens", "council": "Bayside", "category": "good_spot", "subcategory": "dog_park", "address": "Gaiarine Gardens, Pagewood", "notes": "Off-leash dog park" },
+  { "name": "Sir Joseph Banks Park", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Sir Joseph Banks Park, Botany", "notes": "Designated off-leash section at Hayden Place" },
+  { "name": "High Street Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "High Street Reserve, Mascot", "notes": "Off-leash reserve, Mascot" },
+  { "name": "Kingsgrove Avenue Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Kingsgrove Avenue Reserve, Kingsgrove", "notes": "Off-leash park" },
+  { "name": "Mutch Park", "council": "Bayside", "category": "good_spot", "subcategory": "dog_park", "address": "Mutch Park, Pagewood", "notes": "Off-leash dog park" },
+  { "name": "Shepard Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Shepard Reserve, Bardwell Valley", "notes": "Off-leash reserve" },
+  { "name": "Sparks Street Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "dog_park", "address": "Sparks Street Reserve, Mascot", "notes": "Off-leash dog park" },
+  { "name": "Lady Robinsons Beach (Kyeemagh)", "council": "Bayside", "category": "good_spot", "subcategory": "beach", "address": "Lady Robinsons Beach, Kyeemagh", "notes": "24/7 off-leash beach area between gates 60–61" },
+  { "name": "Ron Gosling Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Ron Gosling Reserve, Bardwell Park", "notes": "Off-leash reserve, Water Street" },
+  { "name": "Hughes Avenue Reserve", "council": "Bayside", "category": "good_spot", "subcategory": "off_leash_area", "address": "Hughes Avenue Reserve, Mascot", "notes": "Off-leash park" }
+]
