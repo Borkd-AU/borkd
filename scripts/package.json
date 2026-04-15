@@ -1,0 +1,27 @@
+{
+  "name": "@borkd/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-off scripts for Borkd (seeding, data import). Intentionally outside pnpm-workspace.yaml so node_modules stay isolated from apps/*.",
+  "scripts": {
+    "seed": "tsx seed/index.ts",
+    "seed:dry": "tsx seed/index.ts --dry-run",
+    "seed:cos": "tsx seed/index.ts --source=cos",
+    "seed:osm": "tsx seed/index.ts --source=osm",
+    "seed:manual": "tsx seed/index.ts --source=manual",
+    "export:geojson": "tsx seed/export-geojson.ts",
+    "export:report": "tsx export-pins-report.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5",
+    "fastest-levenshtein": "^1.0.16",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}

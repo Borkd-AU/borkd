@@ -1,4 +1,4 @@
-CREATE TABLE public.pins (
+CREATE TABLE IF NOT EXISTS public.pins (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
   walk_id UUID REFERENCES public.walks(id) ON DELETE SET NULL,
@@ -23,14 +23,15 @@ CREATE TABLE public.pins (
 );
 
 -- Spatial index for map queries
-CREATE INDEX idx_pins_location ON public.pins USING GIST(location);
+CREATE INDEX IF NOT EXISTS idx_pins_location ON public.pins USING GIST(location);
 
 -- Category + expiry for filtered queries
-CREATE INDEX idx_pins_category_active ON public.pins(category) WHERE is_expired = FALSE;
+CREATE INDEX IF NOT EXISTS idx_pins_category_active ON public.pins(category) WHERE is_expired = FALSE;
 
 -- User pins
-CREATE INDEX idx_pins_user_id ON public.pins(user_id);
+CREATE INDEX IF NOT EXISTS idx_pins_user_id ON public.pins(user_id);
 
+DROP TRIGGER IF EXISTS pins_updated_at ON public.pins;
 CREATE TRIGGER pins_updated_at
   BEFORE UPDATE ON public.pins
   FOR EACH ROW EXECUTE FUNCTION update_updated_at();

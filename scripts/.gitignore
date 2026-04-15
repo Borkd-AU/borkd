@@ -1,0 +1,9 @@
+# Local-only environment (gitignored by root too, but explicit)
+.env.local
+.env.*.local
+
+# Generated output — CSV exports, GeoJSON, dropped-pin logs
+data/exports/
+data/seed/raw/
+data/seed/manual/.geocoded.json
+data/seed/dropped.json

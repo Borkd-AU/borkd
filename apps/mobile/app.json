@@ -3,6 +3,9 @@
     "name": "Borkd",
     "slug": "borkd",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,7 +21,9 @@
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Borkd uses your location to track your dog walks and show nearby community pins.",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "Borkd needs background location access to accurately track your walk route while your phone is in your pocket.",
-        "UIBackgroundModes": ["location"]
+        "UIBackgroundModes": [
+          "location"
+        ]
       }
     },
     "android": {
@@ -29,13 +34,14 @@
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
-        "ACCESS_BACKGROUND_LOCATION"
+        "ACCESS_BACKGROUND_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
       ]
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/favicon.png"
+      "output": "single"
     },
     "plugins": [
       "expo-router",
@@ -59,8 +65,14 @@
           "license": "YOUR_LICENSE_KEY"
         }
       ],
-      "expo-apple-authentication",
-      "expo-crypto"
-    ]
+      "expo-apple-authentication"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5405d866-d040-410b-8f7f-804c79afde9d"
+      }
+    },
+    "owner": "ryansong9706"
   }
 }

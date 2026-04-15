@@ -8,10 +8,17 @@ jobs:
   label-by-path:
     name: Auto Label PR
     runs-on: ubuntu-latest
+    # actions/labeler@v5 needs `.github/labeler.yml` — read from the PR's head
+    # ref (not the virtual `pull/<n>/merge` ref that the default pull_request
+    # trigger wants to checkout, which can 404 when GITHUB_TOKEN scope is
+    # limited). `contents: read` + `pull-requests: write` is the minimum.
     permissions:
+      contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Label by changed files
         uses: actions/labeler@v5
@@ -43,16 +50,104 @@ jobs:
 
       - name: Check conventional commits
         run: |
+          # --no-merges excludes merge commits (which GitHub auto-generates
+          # on the PR merge ref and whose message we don't control).
+          # Scope is optional: `chore: foo` is as valid as `chore(scripts): foo`
+          # per https://www.conventionalcommits.org/en/v1.0.0/#specification
+          TYPE_RE='(feat|fix|refactor|docs|test|chore|style|perf|ci|build|revert)'
+          SCOPE_RE='(\([^)]+\))?'
+          BREAKING_RE='!?'
           ERRORS=0
           while IFS= read -r msg; do
-            if ! echo "$msg" | grep -qE '^(feat|fix|refactor|docs|test|chore|style|perf|ci)\(.+\):'; then
+            if ! echo "$msg" | grep -qE "^${TYPE_RE}${SCOPE_RE}${BREAKING_RE}: .+"; then
               echo "::error::Invalid commit message: $msg"
-              echo "  Expected: type(scope): description"
+              echo "  Expected: type(scope)?: description"
+              echo "  Allowed types: feat, fix, refactor, docs, test, chore, style, perf, ci, build, revert"
               ERRORS=$((ERRORS + 1))
             fi
-          done < <(git log --format='%s' origin/${{ github.base_ref }}..HEAD)
+          done < <(git log --no-merges --format='%s' origin/${{ github.base_ref }}..HEAD)
 
           if [ $ERRORS -gt 0 ]; then
             echo "::error::$ERRORS commit(s) with invalid format"
             exit 1
           fi
+
+  branch-policy:
+    name: Branch Policy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enforce branch type → PR target rules
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          # Promotion rules from docs/GIT_WORKFLOW.md §Promotion matrix.
+          # Rules:
+          #   * hotfix/*  → main only (prod fire fast-path)
+          #   * release/* → main only (from staging)
+          #   * any other type → develop (integration)
+          #   * develop → staging (plain branch name, no prefix)
+          #   * staging → main (plain branch name, no prefix)
+          # Exceptions:
+          #   * Back-merge PRs (main → staging, main → develop after hotfix)
+          #     are opened with the plain branch names and whitelisted below.
+          echo "Head: $HEAD_REF  →  Base: $BASE_REF"
+
+          case "$HEAD_REF" in
+            hotfix/*)
+              if [ "$BASE_REF" != "main" ]; then
+                echo "::error::hotfix/* branches must target main, not $BASE_REF."
+                exit 1
+              fi
+              ;;
+            release/*)
+              if [ "$BASE_REF" != "main" ]; then
+                echo "::error::release/* branches must target main, not $BASE_REF."
+                exit 1
+              fi
+              ;;
+            main|staging|develop)
+              # Back-merge / promotion PRs — allow any protected-branch target.
+              ;;
+            feat/*|feat-exp/*|fix/*|ui/*|chore/*|refactor/*|perf/*|docs/*|test/*|style/*|build/*|ci/*)
+              if [ "$BASE_REF" != "develop" ]; then
+                echo "::error::$HEAD_REF must target develop, not $BASE_REF."
+                echo "::error::Only hotfix/* and release/* may target main."
+                exit 1
+              fi
+              ;;
+            *)
+              echo "::error::Unrecognised branch prefix: $HEAD_REF"
+              echo "::error::Allowed prefixes: feat, feat-exp, fix, hotfix, ui, chore, refactor, perf, docs, test, style, build, ci, release"
+              exit 1
+              ;;
+          esac
+
+      - name: Experimental features require a flag key
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          # feat-exp/* branches must introduce a new entry in
+          # packages/shared/src/feature-flags.ts so the code path is
+          # gated and killable without redeploy. This check only fires
+          # once feature-flags.ts exists (lands in a later PR); until
+          # then it's a soft pass to avoid blocking the setup PRs.
+          if [[ "$HEAD_REF" != feat-exp/* ]]; then
+            echo "Not a feat-exp/* branch — skipping flag check."
+            exit 0
+          fi
+          if [ ! -f packages/shared/src/feature-flags.ts ]; then
+            echo "::warning::feature-flags.ts not yet in the repo; skipping check (lands in the PostHog setup PR)."
+            exit 0
+          fi
+          diff=$(git diff origin/${{ github.base_ref }}...HEAD -- packages/shared/src/feature-flags.ts)
+          if ! echo "$diff" | grep -qE '^\+\s+[A-Z_]+:\s'; then
+            echo "::error::feat-exp/* branches must register a new flag key in packages/shared/src/feature-flags.ts."
+            echo "::error::See docs/GIT_WORKFLOW.md §Experimental features."
+            exit 1
+          fi
+          echo "Found new flag key in the diff."

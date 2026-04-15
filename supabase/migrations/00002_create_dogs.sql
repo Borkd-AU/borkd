@@ -1,4 +1,4 @@
-CREATE TABLE public.dogs (
+CREATE TABLE IF NOT EXISTS public.dogs (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
   name TEXT NOT NULL,
@@ -12,8 +12,9 @@ CREATE TABLE public.dogs (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE INDEX idx_dogs_user_id ON public.dogs(user_id);
+CREATE INDEX IF NOT EXISTS idx_dogs_user_id ON public.dogs(user_id);
 
+DROP TRIGGER IF EXISTS dogs_updated_at ON public.dogs;
 CREATE TRIGGER dogs_updated_at
   BEFORE UPDATE ON public.dogs
   FOR EACH ROW EXECUTE FUNCTION update_updated_at();

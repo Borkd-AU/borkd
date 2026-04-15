@@ -1,4 +1,4 @@
-import { LayoutDashboard, Users, MapPin, TrendingUp } from 'lucide-react';
+import { LayoutDashboard, MapPin, TrendingUp, Users } from 'lucide-react';
 
 const stats = [
   { label: 'Total Users', value: '—', icon: Users, color: 'bg-sage/20 text-sage-dark' },

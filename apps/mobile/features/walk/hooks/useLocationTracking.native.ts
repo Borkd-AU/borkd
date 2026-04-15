@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import BackgroundGeolocation, {
   type Location,
   type Subscription,
@@ -32,20 +32,25 @@ const INITIAL_STATE: LocationState = {
   averagePace: 0,
 };
 
+// Earth radius in metres + degree-to-radian factor hoisted to module scope so
+// they aren't rebuilt on every haversine call. Over a 30-min walk at 1 Hz we
+// call this ~1800 times — the savings are small per-call but add up, and
+// inlining `toRad` avoids the repeated arrow-function allocation.
+const EARTH_RADIUS_M = 6371000;
+const DEG_TO_RAD = Math.PI / 180;
+
 function haversineDistance(
   a: { latitude: number; longitude: number },
   b: { latitude: number; longitude: number },
 ): number {
-  const R = 6371000;
-  const toRad = (deg: number) => (deg * Math.PI) / 180;
-  const dLat = toRad(b.latitude - a.latitude);
-  const dLon = toRad(b.longitude - a.longitude);
+  const dLat = (b.latitude - a.latitude) * DEG_TO_RAD;
+  const dLon = (b.longitude - a.longitude) * DEG_TO_RAD;
   const sinLat = Math.sin(dLat / 2);
   const sinLon = Math.sin(dLon / 2);
-  const h =
-    sinLat * sinLat +
-    Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * sinLon * sinLon;
-  return R * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+  const cosLatA = Math.cos(a.latitude * DEG_TO_RAD);
+  const cosLatB = Math.cos(b.latitude * DEG_TO_RAD);
+  const h = sinLat * sinLat + cosLatA * cosLatB * sinLon * sinLon;
+  return EARTH_RADIUS_M * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
 }
 
 function calculatePace(distanceMeters: number, durationSeconds: number): number {
@@ -55,6 +60,13 @@ function calculatePace(distanceMeters: number, durationSeconds: number): number 
   return durationMin / distanceKm;
 }
 
+// Write the in-memory route buffer back to MMKV at most this often.
+// GPS fires at ~1 Hz and `JSON.stringify` over the full buffer is O(n); a
+// 30-minute walk ends at ~1800 points, so unthrottled writes get expensive
+// toward the end. Crash-recovery only needs coarse granularity — the last
+// few seconds of route can be re-interpolated on resume.
+const FLUSH_INTERVAL_MS = 1000;
+
 export function useLocationTracking(): LocationState & LocationActions {
   const [state, setState] = useState<LocationState>(INITIAL_STATE);
   const subscriptionRef = useRef<Subscription | null>(null);
@@ -63,13 +75,14 @@ export function useLocationTracking(): LocationState & LocationActions {
   const pausedDurationRef = useRef<number>(0);
   const pauseStartRef = useRef<number>(0);
   const isPausedRef = useRef<boolean>(false);
+  const lastFlushAtRef = useRef<number>(0);
 
-  const flushToMMKV = useCallback(
-    (coords: Array<{ latitude: number; longitude: number }>) => {
-      gpsStorage.set(GPS_BUFFER_KEY, JSON.stringify(coords));
-    },
-    [],
-  );
+  const flushToMMKV = useCallback((coords: Array<{ latitude: number; longitude: number }>) => {
+    const now = Date.now();
+    if (now - lastFlushAtRef.current < FLUSH_INTERVAL_MS) return;
+    lastFlushAtRef.current = now;
+    gpsStorage.set(GPS_BUFFER_KEY, JSON.stringify(coords));
+  }, []);
 
   const processLocation = useCallback(
     (location: Location) => {
@@ -90,8 +103,7 @@ export function useLocationTracking(): LocationState & LocationActions {
           newDistance += haversineDistance(last, point);
         }
 
-        const elapsed =
-          (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
+        const elapsed = (Date.now() - startTimeRef.current) / 1000 - pausedDurationRef.current;
         const pace = calculatePace(newDistance, elapsed);
 
         flushToMMKV(newRoute);
@@ -114,17 +126,30 @@ export function useLocationTracking(): LocationState & LocationActions {
     startTimeRef.current = Date.now();
     pausedDurationRef.current = 0;
     isPausedRef.current = false;
+    lastFlushAtRef.current = 0;
 
     setState({ ...INITIAL_STATE, isTracking: true });
 
+    // v5 API: flat options were replaced by nested config groups —
+    // `geolocation` (distanceFilter, desiredAccuracy), `app`
+    // (stopOnTerminate, startOnBoot, heartbeatInterval, preventSuspend),
+    // `logger` (logLevel). Constants moved from UPPER_SNAKE (DESIRED_ACCURACY_HIGH,
+    // LOG_LEVEL_WARNING) to camelCase enum members (DesiredAccuracy.High,
+    // LogLevel.Warning).
     await BackgroundGeolocation.ready({
-      distanceFilter: 10,
-      desiredAccuracy: BackgroundGeolocation.DESIRED_ACCURACY_HIGH,
-      stopOnTerminate: false,
-      startOnBoot: false,
-      heartbeatInterval: 60,
-      preventSuspend: true,
-      logLevel: BackgroundGeolocation.LOG_LEVEL_WARNING,
+      geolocation: {
+        distanceFilter: 10,
+        desiredAccuracy: BackgroundGeolocation.DesiredAccuracy.High,
+      },
+      app: {
+        stopOnTerminate: false,
+        startOnBoot: false,
+        heartbeatInterval: 60,
+        preventSuspend: true,
+      },
+      logger: {
+        logLevel: BackgroundGeolocation.LogLevel.Warning,
+      },
     });
 
     subscriptionRef.current = BackgroundGeolocation.onLocation(processLocation);

@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER
 LANGUAGE plpgsql
 SECURITY DEFINER
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
 DECLARE
   v_display_name TEXT;
@@ -69,7 +69,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   SELECT
     p.id,
@@ -115,7 +115,7 @@ RETURNS TABLE (
 )
 LANGUAGE sql
 STABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   WITH
   -- Derive grid size from zoom level: coarser at low zoom, finer at high zoom
@@ -169,7 +169,7 @@ CREATE OR REPLACE FUNCTION public.calculate_walk_miles(
 RETURNS INTEGER
 LANGUAGE sql
 IMMUTABLE
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
   SELECT LEAST(
     100,
@@ -194,7 +194,7 @@ CREATE OR REPLACE FUNCTION public.complete_walk(
 RETURNS INTEGER  -- miles earned
 LANGUAGE plpgsql
 SECURITY DEFINER
-SET search_path = ''
+SET search_path = public, extensions
 AS $$
 DECLARE
   v_user_id         UUID;
@@ -307,6 +307,12 @@ ON CONFLICT (id) DO NOTHING;
 
 
 -- ── avatars bucket policies ───────────────────────────────────
+-- Policies: DROP first so this migration is re-runnable.
+
+DROP POLICY IF EXISTS "avatars: public read"   ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner upload"  ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner update"  ON storage.objects;
+DROP POLICY IF EXISTS "avatars: owner delete"  ON storage.objects;
 
 -- Public read
 CREATE POLICY "avatars: public read"
@@ -343,6 +349,11 @@ CREATE POLICY "avatars: owner delete"
 
 -- ── pin-photos bucket policies ────────────────────────────────
 
+DROP POLICY IF EXISTS "pin-photos: public read"   ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner upload"  ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner update"  ON storage.objects;
+DROP POLICY IF EXISTS "pin-photos: owner delete"  ON storage.objects;
+
 -- Public read
 CREATE POLICY "pin-photos: public read"
   ON storage.objects FOR SELECT
@@ -378,6 +389,11 @@ CREATE POLICY "pin-photos: owner delete"
 
 -- ── walk-selfies bucket policies ──────────────────────────────
 -- Private bucket — only the owner can upload or read their files.
+
+DROP POLICY IF EXISTS "walk-selfies: owner read"   ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner upload" ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner update" ON storage.objects;
+DROP POLICY IF EXISTS "walk-selfies: owner delete" ON storage.objects;
 
 -- Owner read only (no public SELECT)
 CREATE POLICY "walk-selfies: owner read"

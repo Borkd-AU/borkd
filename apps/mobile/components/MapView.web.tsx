@@ -1,5 +1,6 @@
-import React, { useCallback, useMemo } from 'react';
-import { View } from 'react-native';
+import type { Bbox } from '@borkd/shared';
+import type React from 'react';
+import { useCallback, useMemo } from 'react';
 import ReactMap, {
   Marker,
   Source,
@@ -8,6 +9,7 @@ import ReactMap, {
   type ViewStateChangeEvent,
 } from 'react-map-gl';
 import type { LineLayer as LineLayerSpec } from 'react-map-gl';
+import { View } from 'react-native';
 
 const SYDNEY_CBD = { latitude: -33.8688, longitude: 151.2093 };
 const DEFAULT_ZOOM = 13;
@@ -28,6 +30,12 @@ export interface MapViewProps {
   pins?: MapPin[];
   onPinPress?: (pinId: string) => void;
   onMapPress?: (coords: { latitude: number; longitude: number }) => void;
+  /**
+   * Fired after pan/zoom gestures settle on a new viewport. Derived from
+   * the mapbox-gl `getBounds()` helper exposed on the map instance via
+   * `event.target`. Consumers should debounce before refetching data.
+   */
+  onViewportChange?: (bbox: Bbox) => void;
   walkRoute?: Array<{ latitude: number; longitude: number }>;
   showUserLocation?: boolean;
   children?: React.ReactNode;
@@ -44,8 +52,12 @@ function getPinColor(category: string): string {
   return pinCategoryColors[category] ?? pinCategoryColors.default;
 }
 
+// react-map-gl v7 requires `source` on the LineLayerSpec even when the
+// <Layer> is nested inside a <Source>. The parent Source id below is
+// 'walk-route-source' — keep them in sync.
 const routeLayerStyle: LineLayerSpec = {
   id: 'walk-route-line',
+  source: 'walk-route-source',
   type: 'line',
   paint: {
     'line-color': '#7A9E7E',
@@ -64,6 +76,7 @@ export default function MapView({
   pins = [],
   onPinPress,
   onMapPress,
+  onViewportChange,
   walkRoute,
   showUserLocation: _showUserLocation = false,
   children,
@@ -75,6 +88,24 @@ export default function MapView({
       onMapPress({ latitude: lat, longitude: lng });
     },
     [onMapPress],
+  );
+
+  // react-map-gl's ViewStateChangeEvent exposes the underlying mapbox-gl
+  // Map instance via `event.target`. Calling `getBounds()` there is the
+  // canonical way to read the visible bbox after a pan/zoom gesture.
+  const handleMoveEnd = useCallback(
+    (event: ViewStateChangeEvent) => {
+      if (!onViewportChange) return;
+      const bounds = event.target.getBounds();
+      if (!bounds) return;
+      onViewportChange({
+        min_lng: bounds.getWest(),
+        min_lat: bounds.getSouth(),
+        max_lng: bounds.getEast(),
+        max_lat: bounds.getNorth(),
+      });
+    },
+    [onViewportChange],
   );
 
   const routeGeoJSON = useMemo(() => {
@@ -106,6 +137,7 @@ export default function MapView({
         mapStyle={MAPBOX_STYLE}
         mapboxAccessToken={MAPBOX_TOKEN}
         onClick={handleClick}
+        onMoveEnd={onViewportChange ? handleMoveEnd : undefined}
         attributionControl={false}
       >
         {pins.map((pin) => (
