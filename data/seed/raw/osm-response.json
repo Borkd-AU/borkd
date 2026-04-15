@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-04-14T13:56:45Z",
+    "timestamp_osm_base": "2026-04-15T02:04:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -45,6 +45,16 @@
         "name": "The Abercrombie Hotel",
         "opening_hours": "Su-Th 12:00-2:00, Fr-Sa 12:00-05:00",
         "website": "https://www.abercrombie.sydney/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 359416621,
+      "lat": -33.7304047,
+      "lon": 150.9068108,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Acacia Gardens Veterinary Hospital"
       }
     },
     {
@@ -125,6 +135,18 @@
     },
     {
       "type": "node",
+      "id": 515929955,
+      "lat": -33.8857851,
+      "lon": 151.1822375,
+      "tags": {
+        "addr:housenumber": "65",
+        "addr:street": "Parramatta Road",
+        "amenity": "veterinary",
+        "name": "University of Sydney Veterinary Clinic"
+      }
+    },
+    {
+      "type": "node",
       "id": 529144157,
       "lat": -33.7416106,
       "lon": 151.31494,
@@ -194,6 +216,16 @@
     },
     {
       "type": "node",
+      "id": 1732566728,
+      "lat": -33.8998741,
+      "lon": 151.1842398,
+      "tags": {
+        "amenity": "veterinary",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
       "id": 1736838307,
       "lat": -33.9002702,
       "lon": 151.1898078,
@@ -213,6 +245,59 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1833885955,
+      "lat": -34.0039452,
+      "lon": 151.0619348,
+      "tags": {
+        "addr:housenumber": "62",
+        "addr:street": "Wolger Street",
+        "amenity": "veterinary",
+        "name": "Como Veterinary Clinic",
+        "phone": "+61 2 9589 0022",
+        "source_ref:name": "http://img855.imageshack.us/img855/8814/gopr1026.jpg",
+        "website": "https://sutherlandvet.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1904257235,
+      "lat": -33.7175034,
+      "lon": 151.1735178,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "St. Ives Vet",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa,Su 09:00-12:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2075767200,
+      "lat": -33.7608237,
+      "lon": 151.1280767,
+      "tags": {
+        "amenity": "veterinary",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2310875906,
+      "lat": -34.0347012,
+      "lon": 151.0711578,
+      "tags": {
+        "addr:housenumber": "161",
+        "addr:street": "Oak Road",
+        "addr:unit": "1",
+        "email": "kirraweepicapet@gmail.com",
+        "name": "Kirrawee Pic-A-Pet",
+        "opening_hours": "\"Contact Store\"",
+        "phone": "+61 2 9521 7778",
+        "shop": "pet",
+        "website": "https://www.kirraweepicapet.com/"
       }
     },
     {
@@ -290,6 +375,218 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2610663262,
+      "lat": -33.7054143,
+      "lon": 150.934974,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Kellyville Pets Vet and Grooming Salon",
+        "source": "voice"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2610663639,
+      "lat": -33.6545653,
+      "lon": 150.8721436,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Vineyard Vet",
+        "source": "voice"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2625901404,
+      "lat": -33.822833,
+      "lon": 151.200736,
+      "tags": {
+        "addr:country": "AU",
+        "addr:housenumber": "160",
+        "addr:postcode": "2065",
+        "addr:state": "NSW",
+        "addr:street": "Willoughby Road",
+        "addr:suburb": "Crows Nest",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 08:30-17:00; Su 09:00-17:00",
+        "operator": "Petbarn",
+        "shop": "pet",
+        "source": "Survey;local knowledge",
+        "website": "https://www.petbarn.com.au/store-finder/crows-nest"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2741779522,
+      "lat": -33.7864371,
+      "lon": 151.1265461,
+      "tags": {
+        "addr:housenumber": "384",
+        "addr:street": "Lane Cove Road",
+        "amenity": "veterinary",
+        "name": "Macquarie Veterinary Hospital",
+        "opening_hours": "Mo,Tu,Th,Fr 08:00-20:00; We 08:00-19:00; Sa 09:00-17:00; Su 09:00-13:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2865650233,
+      "lat": -33.8785572,
+      "lon": 150.9164161,
+      "tags": {
+        "addr:postcode": "2166",
+        "addr:street": "Harden Street",
+        "addr:suburb": "Canley Heights",
+        "amenity": "veterinary",
+        "name": "Canley Heights Veterinary Clinic",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2903672060,
+      "lat": -33.6749255,
+      "lon": 150.8694534,
+      "tags": {
+        "addr:postcode": "2765",
+        "addr:street": "Garfield Road East",
+        "addr:suburb": "Riverstone",
+        "amenity": "veterinary",
+        "name": "Riverstone Veterinary Hospital",
+        "opening_hours": "Mo-Fr 08:30-18:00; Sa,Su,PH off",
+        "source": "survey",
+        "website": "https://www.riverstonevets.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2914244662,
+      "lat": -33.7501801,
+      "lon": 150.9855257,
+      "tags": {
+        "addr:housenumber": "472",
+        "addr:postcode": "2153",
+        "addr:street": "Windsor Road",
+        "addr:suburb": "Baulkham Hills",
+        "amenity": "veterinary",
+        "name": "Chelsea Veterinary Clinic",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2916728268,
+      "lat": -33.8651173,
+      "lon": 151.1061875,
+      "tags": {
+        "addr:housenumber": "48",
+        "addr:postcode": "2137",
+        "addr:street": "Burwood Road",
+        "addr:suburb": "Concord",
+        "amenity": "veterinary",
+        "name": "Burwood & Bay",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3112456057,
+      "lat": -33.7980408,
+      "lon": 151.002409,
+      "tags": {
+        "addr:postcode": "2151",
+        "addr:street": "Church Street",
+        "addr:suburb": "North Parramatta",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3112456068,
+      "lat": -33.7982705,
+      "lon": 151.0026723,
+      "tags": {
+        "addr:housenumber": "557",
+        "addr:postcode": "2151",
+        "addr:street": "Church Street",
+        "addr:suburb": "North Parramatta",
+        "amenity": "veterinary",
+        "name": "Animal Orthopaedic Specialists",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3163982515,
+      "lat": -33.6979459,
+      "lon": 151.100726,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3275282201,
+      "lat": -33.9065894,
+      "lon": 151.1812158,
+      "tags": {
+        "name": "Pets Palace",
+        "opening_hours": "Mo-Su,PH 08:30-19:15",
+        "shop": "pet",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3692582693,
+      "lat": -33.727735,
+      "lon": 151.1413567,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "2074",
+        "addr:state": "NSW",
+        "addr:street": "Princes Street",
+        "addr:suburb": "Turramurra",
+        "amenity": "veterinary",
+        "name": "Turramurra Vet Clinic",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3865940130,
+      "lat": -33.9601302,
+      "lon": 150.8829654,
+      "tags": {
+        "addr:unit": "18B",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3888701089,
+      "lat": -33.8334876,
+      "lon": 151.1437128,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Hunters Hill Veterinary Clinic"
       }
     },
     {
@@ -403,6 +700,30 @@
     },
     {
       "type": "node",
+      "id": 4292223894,
+      "lat": -33.7596576,
+      "lon": 150.9539319,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Seven Hills Veterinary Clinic",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4307611734,
+      "lat": -33.7216622,
+      "lon": 151.0971796,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:postcode": "2076",
+        "addr:street": "Normanhurst Road",
+        "amenity": "veterinary",
+        "name": "Love That Pet Normanhurst"
+      }
+    },
+    {
+      "type": "node",
       "id": 4308462671,
       "lat": -33.7082258,
       "lon": 151.0916594,
@@ -422,6 +743,21 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4465678614,
+      "lat": -33.9909293,
+      "lon": 150.8835432,
+      "tags": {
+        "addr:housenumber": "Shop 5, 55-67",
+        "addr:postcode": "2564",
+        "addr:street": "Saywell Road",
+        "addr:suburb": "Macquarie Fields",
+        "amenity": "veterinary",
+        "name": "Macquarie Fields Veterinary Clinic",
+        "phone": "+61 2 9605 5302"
       }
     },
     {
@@ -462,6 +798,40 @@
     },
     {
       "type": "node",
+      "id": 4546121789,
+      "lat": -33.9271217,
+      "lon": 150.8959987,
+      "tags": {
+        "name": "Petbarn",
+        "name:en": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4547826396,
+      "lat": -33.918759,
+      "lon": 150.9222102,
+      "tags": {
+        "name": "Pets Domain",
+        "name:en": "Pets Domain",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4595561798,
+      "lat": -33.663273,
+      "lon": 150.907939,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Box Hill Vet",
+        "name:en": "Box Hill Vet"
+      }
+    },
+    {
+      "type": "node",
       "id": 4621509490,
       "lat": -33.802638,
       "lon": 151.2527971,
@@ -485,6 +855,17 @@
     },
     {
       "type": "node",
+      "id": 4743856021,
+      "lat": -33.8965346,
+      "lon": 151.1591289,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Petvet",
+        "name:en": "Petvet"
+      }
+    },
+    {
+      "type": "node",
       "id": 4770749022,
       "lat": -33.8737936,
       "lon": 151.2004976,
@@ -497,6 +878,33 @@
     },
     {
       "type": "node",
+      "id": 4828675012,
+      "lat": -33.940697,
+      "lon": 151.0763109,
+      "tags": {
+        "name": "Aquarium Empire",
+        "opening_hours": "Mo-Sa 10:00-17:30, Su 10:00-16:00",
+        "phone": "+61 2 9759 3009",
+        "shop": "pet",
+        "website": "http://aquariumempire.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4925657661,
+      "lat": -33.8774433,
+      "lon": 151.2444929,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "check_date": "2023-08-18",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 4925657670,
       "lat": -33.873783,
       "lon": 151.2422628,
@@ -505,6 +913,16 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4927535468,
+      "lat": -33.8593389,
+      "lon": 151.2784014,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Vaucluse Veterinary Clinic"
       }
     },
     {
@@ -536,6 +954,30 @@
     },
     {
       "type": "node",
+      "id": 4944004476,
+      "lat": -33.8703123,
+      "lon": 151.2693645,
+      "tags": {
+        "amenity": "veterinary",
+        "check_date": "2025-02",
+        "name": "Rose Bay Vet Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4948186713,
+      "lat": -33.7748799,
+      "lon": 151.1682473,
+      "tags": {
+        "addr:housenumber": "352",
+        "addr:street": "Pacific Highway",
+        "amenity": "veterinary",
+        "name": "Ark Veterinary Hospital",
+        "phone": "+61 2 9416 1300"
+      }
+    },
+    {
+      "type": "node",
       "id": 4975063505,
       "lat": -33.8281468,
       "lon": 151.0833123,
@@ -544,6 +986,33 @@
         "dog": "yes",
         "fountain": "bubbler",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5055878122,
+      "lat": -33.9523141,
+      "lon": 151.0836951,
+      "tags": {
+        "addr:housenumber": "158",
+        "addr:postcode": "2209",
+        "addr:street": "Stoney Creek Road",
+        "amenity": "veterinary",
+        "check_date": "2026-01-31",
+        "email": "reception@bhah.com.au",
+        "name": "Beverly Hills Animal Hospital",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-16:00; Su off",
+        "phone": "+61 2 9580 3109",
+        "website": "https://www.bhah.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5114250531,
+      "lat": -33.8577328,
+      "lon": 151.1805314,
+      "tags": {
+        "amenity": "veterinary"
       }
     },
     {
@@ -583,6 +1052,16 @@
     },
     {
       "type": "node",
+      "id": 5177398157,
+      "lat": -33.6812362,
+      "lon": 151.1085416,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
       "id": 5203966144,
       "lat": -33.8368327,
       "lon": 151.0595598,
@@ -614,6 +1093,16 @@
         "amenity": "drinking_water",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5338208460,
+      "lat": -33.8935295,
+      "lon": 151.2491021,
+      "tags": {
+        "name": "Aquapets Aquariums",
+        "shop": "pet"
       }
     },
     {
@@ -656,6 +1145,17 @@
     },
     {
       "type": "node",
+      "id": 5487723923,
+      "lat": -33.7950716,
+      "lon": 151.1080217,
+      "tags": {
+        "amenity": "waste_basket",
+        "check_date": "2025-03-08",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
       "id": 5544028517,
       "lat": -33.9059563,
       "lon": 151.2080486,
@@ -674,6 +1174,16 @@
         "amenity": "drinking_water",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5608349161,
+      "lat": -33.8917859,
+      "lon": 151.2135777,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Surry Hills Vet"
       }
     },
     {
@@ -700,6 +1210,16 @@
     },
     {
       "type": "node",
+      "id": 5809897122,
+      "lat": -33.7656128,
+      "lon": 150.9091713,
+      "tags": {
+        "name": "City Pet & Aquarium",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
       "id": 5813784901,
       "lat": -33.8834067,
       "lon": 151.191716,
@@ -721,6 +1241,31 @@
     },
     {
       "type": "node",
+      "id": 5829134018,
+      "lat": -33.9702281,
+      "lon": 151.1348144,
+      "tags": {
+        "amenity": "veterinary",
+        "check_date": "2024-09-24",
+        "name": "Princes Highway Vet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839753275,
+      "lat": -33.8969865,
+      "lon": 151.1529382,
+      "tags": {
+        "amenity": "veterinary",
+        "branch": "Vets",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "brand:wikipedia": "en:Greencross",
+        "name": "Greencross Vets"
+      }
+    },
+    {
+      "type": "node",
       "id": 5862426459,
       "lat": -33.9057809,
       "lon": 151.1808797,
@@ -735,6 +1280,159 @@
     },
     {
       "type": "node",
+      "id": 5889366546,
+      "lat": -33.8773402,
+      "lon": 151.2331951,
+      "tags": {
+        "name": "Dogs in Town",
+        "shop": "pet_grooming",
+        "website": "https://dogsintown.com.au/pages/edgecliff"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5898635855,
+      "lat": -33.8847266,
+      "lon": 151.2252803,
+      "tags": {
+        "addr:housenumber": "210",
+        "addr:street": "Oxford Street",
+        "amenity": "veterinary",
+        "check_date": "2024-08-04",
+        "name": "Paddington Cat Hospital",
+        "wikidata": "Q30260636"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5901274125,
+      "lat": -33.8878051,
+      "lon": 151.2309394,
+      "tags": {
+        "name": "Paddo Pets Dog Grooming",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5902886018,
+      "lat": -33.8905695,
+      "lon": 151.2436647,
+      "tags": {
+        "name": "Dogue",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5903363364,
+      "lat": -33.8946355,
+      "lon": 151.2498808,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5907932712,
+      "lat": -33.9664385,
+      "lon": 151.130961,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "check_date": "2025-02-12",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5907933070,
+      "lat": -33.9670523,
+      "lon": 151.1299917,
+      "tags": {
+        "addr:housenumber": "202",
+        "addr:postcode": "2217",
+        "addr:state": "NSW",
+        "addr:street": "Railway Parade",
+        "addr:suburb": "Kogarah",
+        "check_date": "2025-05-13",
+        "name": "Drools - Dog Grooming & Day Care",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5926809379,
+      "lat": -33.8069793,
+      "lon": 151.0825668,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "West Ryde Veterinary Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6004908494,
+      "lat": -33.9005095,
+      "lon": 151.2533907,
+      "tags": {
+        "name": "Puppy Parlour",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6004908589,
+      "lat": -33.9060401,
+      "lon": 151.2533649,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "North Randwick Vetinary Clinic",
+        "phone": "+61 2 9314 5112"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6008657251,
+      "lat": -33.7032267,
+      "lon": 151.2129241,
+      "tags": {
+        "addr:housenumber": "4-6",
+        "addr:postcode": "2085",
+        "addr:state": "NSW",
+        "addr:street": "Niangala Close",
+        "addr:suburb": "Belrose",
+        "addr:unit": "202/204",
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "level": "4",
+        "level:ref": "2",
+        "name": "Petstock",
+        "shop": "pet",
+        "website": "https://www.petstock.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6037701516,
+      "lat": -33.8086744,
+      "lon": 151.0924752,
+      "tags": {
+        "addr:housenumber": "927",
+        "addr:street": "Victoria Road",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/store-finder/west-ryde"
+      }
+    },
+    {
+      "type": "node",
       "id": 6136324718,
       "lat": -33.8719308,
       "lon": 151.2477318,
@@ -745,6 +1443,16 @@
         "dog": "yes",
         "fountain": "bubbler",
         "survey:date": "2023-07-14"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6139557984,
+      "lat": -33.7886205,
+      "lon": 151.2677955,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Two by Two Vetinary Hospital"
       }
     },
     {
@@ -773,6 +1481,29 @@
     },
     {
       "type": "node",
+      "id": 6202560952,
+      "lat": -33.676698,
+      "lon": 151.1120729,
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6255220954,
+      "lat": -33.739562,
+      "lon": 151.03771,
+      "tags": {
+        "addr:housenumber": "138",
+        "addr:street": "Castle Hill Road",
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "node",
       "id": 6273873638,
       "lat": -33.7345899,
       "lon": 151.2789961,
@@ -782,6 +1513,23 @@
         "check_date": "2026-03-28",
         "dog": "designated",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6334657993,
+      "lat": -33.7371828,
+      "lon": 151.0016955,
+      "tags": {
+        "addr:country": "AU",
+        "addr:housenumber": "1",
+        "addr:postcode": "2154",
+        "addr:state": "NSW",
+        "addr:street": "Francis Street",
+        "addr:suburb": "Castle Hill",
+        "amenity": "veterinary",
+        "name": "Castle Hill Veterinary Hospital",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa,Su 07:00-18:00"
       }
     },
     {
@@ -801,6 +1549,64 @@
     },
     {
       "type": "node",
+      "id": 6571450736,
+      "lat": -33.8146646,
+      "lon": 151.1899676,
+      "tags": {
+        "amenity": "veterinary",
+        "check_date": "2024-08-08",
+        "name": "North Shore Veterinary Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6654106651,
+      "lat": -33.7451383,
+      "lon": 151.2934079,
+      "tags": {
+        "addr:housenumber": "815",
+        "addr:street": "Pittwater Road",
+        "amenity": "veterinary",
+        "fixme": "location fuzzy",
+        "name": "Dee Why Vet",
+        "phone": "+61 2 9972 2044",
+        "website": "https://www.amsvet.com.au/dee-why-vet.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6717791068,
+      "lat": -33.9050178,
+      "lon": 151.1332364,
+      "tags": {
+        "addr:country": "AU",
+        "addr:housenumber": "739",
+        "addr:postcode": "2203",
+        "addr:state": "NSW",
+        "addr:street": "New Canterbury Road",
+        "addr:suburb": "Dulwich Hill",
+        "amenity": "veterinary",
+        "email": "hpvets@optusnet.com.au",
+        "name": "Hurlstone Park Vet Hospital",
+        "opening_hours": "Mo-Fr 08:00-19:30; Sa-Su 09:30-12:00",
+        "phone": "+61 2 9558 4181",
+        "website": "https://hurlstoneparkveterinaryhospital.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6745597016,
+      "lat": -34.0168437,
+      "lon": 151.011645,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
       "id": 6771807352,
       "lat": -33.9090651,
       "lon": 151.2059609,
@@ -811,6 +1617,33 @@
         "dog": "yes",
         "name": "Buku",
         "opening_hours": "Mo-We 07:00-14:00; Th,Fr 07:00-14:00,16:00-20:00; Sa 07:30-14:00,16:00-20:00; Su 07:30-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6779380538,
+      "lat": -33.8779123,
+      "lon": 151.2443505,
+      "tags": {
+        "name": "Pet Stock",
+        "shop": "pet",
+        "website": "https://www.petstock.com.au/store/petstock-double-bay-2206"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6822809949,
+      "lat": -33.8842429,
+      "lon": 151.2687539,
+      "tags": {
+        "addr:housenumber": "339",
+        "addr:postcode": "2026",
+        "addr:state": "NSW",
+        "addr:street": "Old South Head Road",
+        "addr:suburb": "North Bondi",
+        "amenity": "veterinary",
+        "name": "Bondi Vet",
+        "phone": "+61 2 9130 2001"
       }
     },
     {
@@ -836,6 +1669,27 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6952935460,
+      "lat": -33.6938051,
+      "lon": 151.303943,
+      "tags": {
+        "addr:street": "Pittwater Road",
+        "amenity": "veterinary",
+        "name": "Pittwater Animal Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6952953068,
+      "lat": -33.755671,
+      "lon": 151.2760117,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Northern District Veterinary Hospital"
       }
     },
     {
@@ -872,6 +1726,119 @@
         "bottle": "no",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7176473942,
+      "lat": -33.9343122,
+      "lon": 151.0394581,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7176473943,
+      "lat": -33.9344251,
+      "lon": 151.0396525,
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "name": "Greencross Vets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7200328545,
+      "lat": -33.7542645,
+      "lon": 151.2599795,
+      "tags": {
+        "addr:housenumber": "197",
+        "addr:postcode": "2100",
+        "addr:street": "Warringah Road",
+        "addr:suburb": "Beacon Hill",
+        "amenity": "veterinary",
+        "emergency": "yes",
+        "name": "Beacon Hill Veterinary Hospital",
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa 08:30-16:00; Su 09:30-13:00",
+        "phone": "+61 2 9452 5556",
+        "website": "https://beaconhillvet.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7237677314,
+      "lat": -33.7005766,
+      "lon": 151.3000169,
+      "tags": {
+        "addr:street": "Pittwater Road",
+        "branch": "Narrabeen",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "entrance": "shop",
+        "grooming": "yes",
+        "level": "0",
+        "name": "Petbarn",
+        "opening_hours": "Mo-We, Fr 09:00-18:00; Th 09:00-19:00; Sa, Su 09:00-17:00",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7284933066,
+      "lat": -33.6929013,
+      "lon": 151.0210276,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7325214054,
+      "lat": -33.8019423,
+      "lon": 151.0164462,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7325214055,
+      "lat": -33.8021143,
+      "lon": 151.0162435,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7325214056,
+      "lat": -33.8034282,
+      "lon": 151.0158268,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7472380229,
+      "lat": -33.6966195,
+      "lon": 151.2799974,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Elanora Vet Clinic"
       }
     },
     {
@@ -940,6 +1907,20 @@
     },
     {
       "type": "node",
+      "id": 7726482861,
+      "lat": -33.8760765,
+      "lon": 151.1758722,
+      "tags": {
+        "addr:housenumber": "1A",
+        "addr:street": "The Crescent",
+        "name": "Pet O",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00; Su 09:00-17:00",
+        "shop": "pet",
+        "website": "https://peto.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 7763919986,
       "lat": -33.8743181,
       "lon": 151.2409946,
@@ -961,6 +1942,49 @@
         "amenity": "drinking_water",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7802359154,
+      "lat": -33.8775318,
+      "lon": 151.1853544,
+      "tags": {
+        "name": "Pets on the Point",
+        "shop": "pet_grooming",
+        "website": "https://www.petsonthepoint.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7837076163,
+      "lat": -33.6753821,
+      "lon": 151.3040315,
+      "tags": {
+        "addr:housenumber": "22",
+        "addr:street": "Park Street",
+        "amenity": "veterinary",
+        "name": "Mona Vale Veterinary Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7885798987,
+      "lat": -33.9361024,
+      "lon": 151.1310487,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7912062700,
+      "lat": -33.7786802,
+      "lon": 151.2861501,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Harbord Veterinary Clinic"
       }
     },
     {
@@ -989,6 +2013,16 @@
     },
     {
       "type": "node",
+      "id": 8018405947,
+      "lat": -33.836462,
+      "lon": 151.0578996,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
       "id": 8175259665,
       "lat": -33.7802902,
       "lon": 151.2705522,
@@ -1000,6 +2034,52 @@
         "fee": "no",
         "indoor": "no",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8334234161,
+      "lat": -33.9036398,
+      "lon": 151.2134747,
+      "tags": {
+        "mobile": "+61 402 745 719",
+        "name": "Pet Palette",
+        "opening_hours": "Mo-Su 10:00-18:00",
+        "phone": "+61 2 8861 5725",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401323691,
+      "lat": -33.7973368,
+      "lon": 151.1841025,
+      "tags": {
+        "level": "2",
+        "level:ref": "4",
+        "name": "Pet Town",
+        "shop": "pet",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8422280432,
+      "lat": -33.6984267,
+      "lon": 151.2948355,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8422280433,
+      "lat": -33.698627,
+      "lon": 151.2938196,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
       }
     },
     {
@@ -1028,6 +2108,52 @@
     },
     {
       "type": "node",
+      "id": 8628508433,
+      "lat": -33.7330846,
+      "lon": 150.9449169,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Sydney Animal Hospitals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8639856542,
+      "lat": -33.7001355,
+      "lon": 151.2952362,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8639856547,
+      "lat": -33.6989606,
+      "lon": 151.2942334,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8784419349,
+      "lat": -33.9212098,
+      "lon": 151.1963567,
+      "tags": {
+        "addr:housenumber": "684",
+        "addr:postcode": "2015",
+        "addr:state": "NSW",
+        "addr:street": "Botany Road",
+        "addr:suburb": "Alexandria",
+        "check_date": "2024-09-16",
+        "name": "Petsville / Birdsville",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
       "id": 8826190982,
       "lat": -33.765353,
       "lon": 151.2090343,
@@ -1035,6 +2161,23 @@
         "amenity": "watering_place",
         "dog": "yes",
         "man_made": "water_tap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8827458018,
+      "lat": -33.890001,
+      "lon": 151.1389915,
+      "tags": {
+        "addr:housenumber": "29",
+        "addr:postcode": "2130",
+        "addr:street": "Grosvenor Crescent",
+        "amenity": "veterinary",
+        "email": "contact@summerhillvillagevet.com",
+        "name": "Summer Hill Village Vet",
+        "opening_hours": "Mo 08:00-21:00; Tu-Fr 08:00-19:00; Sa 09:00-14:00",
+        "phone": "+61 2 9797 2555",
+        "website": "https://summerhillvillagevet.com/"
       }
     },
     {
@@ -1055,6 +2198,16 @@
       "lon": 151.1126239,
       "tags": {
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8841731675,
+      "lat": -33.9677311,
+      "lon": 151.1433705,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
       }
     },
     {
@@ -1106,6 +2259,18 @@
     },
     {
       "type": "node",
+      "id": 8852103423,
+      "lat": -33.7812687,
+      "lon": 150.9194504,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
       "id": 8871576717,
       "lat": -33.8596958,
       "lon": 151.2218015,
@@ -1114,6 +2279,39 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8886320365,
+      "lat": -33.8092159,
+      "lon": 151.1850454,
+      "tags": {
+        "name": "Dorgi Town",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9033931154,
+      "lat": -33.9084473,
+      "lon": 151.2039648,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9062375740,
+      "lat": -33.6752738,
+      "lon": 151.3069142,
+      "tags": {
+        "addr:street": "Darley Street",
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "name": "Petstock",
+        "shop": "pet"
       }
     },
     {
@@ -1130,6 +2328,70 @@
     },
     {
       "type": "node",
+      "id": 9141060401,
+      "lat": -33.9117927,
+      "lon": 151.2117055,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "myVet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9189481335,
+      "lat": -33.9598046,
+      "lon": 151.1325632,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9296796312,
+      "lat": -33.9039236,
+      "lon": 151.1934393,
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "brand:wikipedia": "en:Greencross",
+        "level": "1",
+        "name": "Greencross Vets",
+        "opening_hours": "Mo-Fr 08:30-18:00; Sa 08:30-13:00; Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9308863640,
+      "lat": -33.8545747,
+      "lon": 151.0255242,
+      "tags": {
+        "addr:postcode": "2144",
+        "addr:state": "NSW",
+        "addr:street": "Rawson Street",
+        "addr:unit": "4/247-249",
+        "email": "sales@cagemaster.com.au",
+        "fixme": "Added POI based on OSM note. Please verify if the location is accurate. Please also verify that the adress tags match with the website.",
+        "name": "Cagemaster Pet Supplies",
+        "opening_hours": "Mo-Su 10:00-17:00",
+        "phone": "+61 481 245 845",
+        "shop": "pet",
+        "website": "https://www.cagemaster.com.au/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9375714069,
+      "lat": -33.7279695,
+      "lon": 151.2991955,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Veterinary Surgery"
+      }
+    },
+    {
+      "type": "node",
       "id": 9380637518,
       "lat": -33.8905797,
       "lon": 151.2428305,
@@ -1138,6 +2400,107 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9393679351,
+      "lat": -33.934689,
+      "lon": 150.9775731,
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9401035359,
+      "lat": -33.9610332,
+      "lon": 151.0279529,
+      "tags": {
+        "addr:housenumber": "146-150",
+        "addr:street": "Alma Road",
+        "addr:unit": "9",
+        "contact:facebook": "https://www.facebook.com/ScissorhandsGrooming",
+        "name": "Scissorhands Grooming",
+        "phone": "+61 2 8739 9505",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9421576943,
+      "lat": -33.9522703,
+      "lon": 151.0325019,
+      "tags": {
+        "addr:housenumber": "47",
+        "addr:postcode": "2211",
+        "addr:state": "NSW",
+        "addr:street": "Howard Road",
+        "addr:suburb": "Padstow",
+        "amenity": "veterinary",
+        "name": "Padstow Veterinary Clinic",
+        "phone": "+61 2 9774 4881"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9427960245,
+      "lat": -33.9497445,
+      "lon": 151.030083,
+      "tags": {
+        "addr:housenumber": "90",
+        "addr:postcode": "2211",
+        "addr:state": "NSW",
+        "addr:street": "Cahors Road",
+        "addr:suburb": "Padstow",
+        "amenity": "veterinary",
+        "name": "Cahors Road Animal Hospital",
+        "phone": "+61 2 8730 8280"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9427960248,
+      "lat": -33.9503697,
+      "lon": 151.03081,
+      "tags": {
+        "addr:housenumber": "122",
+        "addr:postcode": "2211",
+        "addr:state": "NSW",
+        "addr:street": "Cahors Road",
+        "addr:suburb": "Padstow",
+        "name": "Padstow Pet Centre",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9460454333,
+      "lat": -33.859489,
+      "lon": 151.1421957,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "All Natural Vet Care"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9461862918,
+      "lat": -33.7534388,
+      "lon": 151.1758612,
+      "tags": {
+        "addr:housenumber": "50",
+        "addr:street": "Koola Avenue",
+        "addr:unit": "3",
+        "amenity": "veterinary",
+        "check_date": "2025-02-07",
+        "name": "The Village Vet",
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa 08:30-13:00; Su,PH off",
+        "phone": "+61 2 8350 5678",
+        "website": "https://thevillagevet.com.au/"
       }
     },
     {
@@ -1168,6 +2531,18 @@
         "fee": "no",
         "fountain": "bubbler",
         "survey:date": "2022-02-09"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9467595163,
+      "lat": -33.849098,
+      "lon": 150.8979321,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
       }
     },
     {
@@ -1255,6 +2630,129 @@
     },
     {
       "type": "node",
+      "id": 9509638224,
+      "lat": -33.9329629,
+      "lon": 151.0033256,
+      "tags": {
+        "name": "Paws and Claws Warehouse",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9518378593,
+      "lat": -33.8872182,
+      "lon": 151.1726683,
+      "tags": {
+        "name": "The Hound Lounge",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa,Su off",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9567291212,
+      "lat": -33.9227144,
+      "lon": 151.2050024,
+      "tags": {
+        "addr:housenumber": "339B",
+        "addr:postcode": "2018",
+        "addr:state": "NSW",
+        "addr:street": "Gardeners Road",
+        "addr:suburb": "Rosebery",
+        "name": "Bath to Bow",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9567326934,
+      "lat": -33.9137379,
+      "lon": 151.2068475,
+      "tags": {
+        "name": "Yuumi",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9571764392,
+      "lat": -33.9012892,
+      "lon": 151.1784842,
+      "tags": {
+        "addr:housenumber": "451",
+        "addr:street": "King Street",
+        "amenity": "veterinary",
+        "name": "The Inner West Cat Hospital",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-13:00; Su,PH off",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9582148041,
+      "lat": -33.79693,
+      "lon": 151.1456712,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "SASH Vets",
+        "opening_hours": "24/7",
+        "phone": "+61 2 9889 0289",
+        "website": "https://sashvets.com/locations/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9611865603,
+      "lat": -33.8418455,
+      "lon": 151.2394564,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Taronga Zoo Wildlife Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9672972467,
+      "lat": -33.9273626,
+      "lon": 150.9203526,
+      "tags": {
+        "name": "Extreme Pets",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9674102182,
+      "lat": -33.7754874,
+      "lon": 150.9367164,
+      "tags": {
+        "name": "Sheridan's Dog Grooming",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9687581767,
+      "lat": -33.6995316,
+      "lon": 151.2138294,
+      "tags": {
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9880095201,
+      "lat": -34.0165036,
+      "lon": 151.0664123,
+      "tags": {
+        "amenity": "veterinary",
+        "level": "1",
+        "name": "Jannali Veterinary Clinic"
+      }
+    },
+    {
+      "type": "node",
       "id": 9963119682,
       "lat": -33.907215,
       "lon": 151.2696363,
@@ -1332,6 +2830,17 @@
     },
     {
       "type": "node",
+      "id": 10053633558,
+      "lat": -33.8777523,
+      "lon": 151.2170968,
+      "tags": {
+        "description": "Dog grooming and daycare",
+        "name": "Pawdressers",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
       "id": 10057230321,
       "lat": -33.8488548,
       "lon": 151.2054577,
@@ -1360,6 +2869,36 @@
         "operator:type": "public",
         "operator:website": "https://www.northsydney.nsw.gov.au",
         "operator:wikidata": "Q114395"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10072871282,
+      "lat": -33.8716946,
+      "lon": 151.1604552,
+      "tags": {
+        "addr:postcode": "2040",
+        "addr:state": "NSW",
+        "addr:street": "Orange Grove Plaza",
+        "addr:suburb": "Lilyfield",
+        "name": "Orange Dogs",
+        "opening_hours": "Tu,Sa 09:00-16:00; We,Th 07:00-18:30; Su off",
+        "phone": "+61 468 711 775",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10096957970,
+      "lat": -33.971858,
+      "lon": 151.0792693,
+      "tags": {
+        "alt_name": "Mortdale Veterinary Hospital",
+        "amenity": "veterinary",
+        "branch": "Mortdale",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "name": "Greencross Vets"
       }
     },
     {
@@ -1599,6 +3138,30 @@
     },
     {
       "type": "node",
+      "id": 10580904979,
+      "lat": -33.872023,
+      "lon": 151.227859,
+      "tags": {
+        "addr:postcode": "2011",
+        "addr:unit": "4",
+        "name": "Pets Point",
+        "opening_hours": "Mo-Fr 07:30-18:30; Sa-Su 08:00-15:30",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10591120332,
+      "lat": -33.8147827,
+      "lon": 151.1673294,
+      "tags": {
+        "name": "PetO",
+        "shop": "pet",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
       "id": 10603039076,
       "lat": -33.8332329,
       "lon": 150.9784949,
@@ -1611,6 +3174,20 @@
         "operator": "Sydney Water",
         "operator:wikidata": "Q14476248",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10650396146,
+      "lat": -33.8711582,
+      "lon": 151.2254257,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "level": "-1",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/store-finder/potts-point"
       }
     },
     {
@@ -1628,6 +3205,16 @@
         "fountain": "bubbler",
         "indoor": "no",
         "lit": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10677199281,
+      "lat": -33.9645988,
+      "lon": 151.0876986,
+      "tags": {
+        "name": "K-PUP Dog Grooming",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -1761,6 +3348,43 @@
     },
     {
       "type": "node",
+      "id": 10786067064,
+      "lat": -33.8168902,
+      "lon": 151.188859,
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "level:ref": "LG",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10814493918,
+      "lat": -33.9781818,
+      "lon": 151.1039372,
+      "tags": {
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10865929508,
+      "lat": -33.8008247,
+      "lon": 150.9265856,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:state": "NSW",
+        "addr:street": "Rowood Road",
+        "addr:suburb": "Prospect",
+        "amenity": "veterinary",
+        "name": "Sash",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
       "id": 10920999143,
       "lat": -33.8694729,
       "lon": 151.1990037,
@@ -1779,6 +3403,29 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10948424184,
+      "lat": -33.8842194,
+      "lon": 151.2098816,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10950825788,
+      "lat": -33.8338853,
+      "lon": 151.1443561,
+      "tags": {
+        "name": "Qpet Hunters Hill",
+        "shop": "pet_grooming",
+        "start_date": "1959"
       }
     },
     {
@@ -1871,6 +3518,23 @@
     },
     {
       "type": "node",
+      "id": 11028800693,
+      "lat": -33.8883399,
+      "lon": 151.1677633,
+      "tags": {
+        "addr:housenumber": "1A",
+        "addr:street": "Northumberland Ave",
+        "amenity": "veterinary",
+        "description": "Welcome to our Inner West Sydney vet hospital where we provide veterinary care and animal emergency care for pets in Camperdown, Annandale, Stanmore, Petersham, Summer Hill, Leichhardt, Dulwich Hill, Haberfield and surrounding suburbs of Sydney.",
+        "name": "Sydney Animal Hospitals Inner West",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa,Su 08:00-18:00; PH 10:00-16:00",
+        "phone": "+61 2 9516 1466",
+        "website": "https://sydneyanimalhospitals.com.au/contact/inner-west/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
       "id": 11033633605,
       "lat": -33.8983462,
       "lon": 151.0860102,
@@ -1904,6 +3568,19 @@
         "opening_hours:signed": "no",
         "shop": "music",
         "website": "https://daddyrichrecords.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11121100250,
+      "lat": -33.8721391,
+      "lon": 151.2276289,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Potts Point Veterniary Hospital",
+        "opening_hours": "Mo-Th 07:00-19:00; Fr 07:00-18:00; Sa 09:00-17:00",
+        "phone": "+61 2 8097 0060",
+        "website": "https://pottspointvet.com.au"
       }
     },
     {
@@ -1948,6 +3625,28 @@
         "amenity": "drinking_water",
         "bottle": "yes",
         "dog": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11132952014,
+      "lat": -33.8864309,
+      "lon": 151.2463182,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Double Bay Vet",
+        "phone": "+61 2 9363 4045",
+        "website": "https://doublebayvet.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11137294643,
+      "lat": -33.7962569,
+      "lon": 151.2008756,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Willoughby Veterinary Hospital"
       }
     },
     {
@@ -2056,6 +3755,19 @@
     },
     {
       "type": "node",
+      "id": 11237567356,
+      "lat": -33.7665006,
+      "lon": 151.2549761,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Allambie Vet",
+        "opening_hours": "Mo-Fr 07:30-19:00, Sa 08:00-17:00",
+        "phone": "+61 2 9905 0505",
+        "website": "https://allambievet.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 11249249274,
       "lat": -33.8884124,
       "lon": 151.2525624,
@@ -2104,6 +3816,16 @@
     },
     {
       "type": "node",
+      "id": 11306876779,
+      "lat": -33.8985448,
+      "lon": 151.1218605,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
       "id": 11310700475,
       "lat": -33.8737392,
       "lon": 151.2291867,
@@ -2141,6 +3863,16 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11328282040,
+      "lat": -33.9038221,
+      "lon": 151.1159026,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
       }
     },
     {
@@ -2242,6 +3974,20 @@
     },
     {
       "type": "node",
+      "id": 11422600290,
+      "lat": -33.9064164,
+      "lon": 151.1272277,
+      "tags": {
+        "addr:housenumber": "36-38",
+        "addr:street": "Canterbury Road",
+        "name": "DogTech Behaviour Training",
+        "phone": "+61 2 8018 5200",
+        "shop": "pet",
+        "website": "https://dogtech.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 11471865595,
       "lat": -33.8906118,
       "lon": 151.2341421,
@@ -2249,6 +3995,19 @@
         "amenity": "drinking_water",
         "bottle": "yes",
         "dog": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11482318313,
+      "lat": -33.8414677,
+      "lon": 151.0888271,
+      "tags": {
+        "name": "Katpet Grooming",
+        "opening_hours": "We-Mo 11:00-17:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2325,6 +4084,16 @@
     },
     {
       "type": "node",
+      "id": 11733381091,
+      "lat": -33.8760338,
+      "lon": 151.2442456,
+      "tags": {
+        "name": "Marley and Friends",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
       "id": 11799028247,
       "lat": -33.8899937,
       "lon": 151.1982805,
@@ -2337,6 +4106,67 @@
     },
     {
       "type": "node",
+      "id": 11815953161,
+      "lat": -33.8698727,
+      "lon": 151.1307522,
+      "tags": {
+        "name": "Crystal Palace Aquarium Five Dock",
+        "pet": "fish",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11816199579,
+      "lat": -33.8685892,
+      "lon": 151.1294728,
+      "tags": {
+        "name": "Hollywood Pets",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11861500668,
+      "lat": -33.8685216,
+      "lon": 151.1872965,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11861524173,
+      "lat": -33.8671139,
+      "lon": 151.1885451,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898347302,
+      "lat": -33.9151639,
+      "lon": 151.1510641,
+      "tags": {
+        "name": "Pepper & Murphy's Dog Grooming Salon",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951317408,
+      "lat": -33.6944536,
+      "lon": 151.1492082,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
       "id": 12039042911,
       "lat": -33.8044548,
       "lon": 151.2463905,
@@ -2344,6 +4174,29 @@
         "amenity": "drinking_water",
         "bottle": "yes",
         "dog": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12061321619,
+      "lat": -33.8863648,
+      "lon": 151.2017789,
+      "tags": {
+        "name": "Fuzzy Monsters",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12069405740,
+      "lat": -33.9226152,
+      "lon": 151.2115519,
+      "tags": {
+        "amenity": "waste_basket",
+        "bags": "yes",
+        "fixme": "same object as the garbage bin, don't know how to express that there's degradable plastic bags available",
+        "operator": "City of Sydney",
+        "waste": "dog_excrement"
       }
     },
     {
@@ -2368,6 +4221,16 @@
         "dog": "yes",
         "fee": "no",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12112143831,
+      "lat": -33.7599726,
+      "lon": 151.2035661,
+      "tags": {
+        "name": "Puppuccino",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2459,6 +4322,25 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12245689960,
+      "lat": -33.8795348,
+      "lon": 151.2358565,
+      "tags": {
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12288894064,
+      "lat": -33.9058076,
+      "lon": 151.1848009,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
       }
     },
     {
@@ -2556,6 +4438,18 @@
     },
     {
       "type": "node",
+      "id": 12706486443,
+      "lat": -33.9187638,
+      "lon": 151.1710925,
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
       "id": 12735607565,
       "lat": -33.885213,
       "lon": 151.1999448,
@@ -2597,11 +4491,51 @@
     },
     {
       "type": "node",
+      "id": 12952735151,
+      "lat": -33.8767578,
+      "lon": 151.2428507,
+      "tags": {
+        "name": "Fido and Fido",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12955646331,
+      "lat": -33.7374561,
+      "lon": 150.9928707,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12976008981,
+      "lat": -33.8153648,
+      "lon": 151.1906302,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Pet Dentist"
+      }
+    },
+    {
+      "type": "node",
       "id": 12999069551,
       "lat": -33.6839671,
       "lon": 150.9518734,
       "tags": {
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13016230931,
+      "lat": -33.8745528,
+      "lon": 151.2234092,
+      "tags": {
+        "name": "Dog De Mi’ow",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2703,6 +4637,37 @@
     },
     {
       "type": "node",
+      "id": 13140202192,
+      "lat": -33.8857776,
+      "lon": 151.2011065,
+      "tags": {
+        "addr:housenumber": "18",
+        "addr:street": "Park Lane",
+        "addr:unit": "103",
+        "check_date": "2025-09",
+        "name": "Pipo Pet",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13154454991,
+      "lat": -33.7329041,
+      "lon": 150.9448759,
+      "tags": {
+        "addr:housenumber": "1-3",
+        "addr:street": "Celebration Drive",
+        "addr:suburb": "Bella Vista",
+        "addr:unit": "7",
+        "name": "Hills Grooming",
+        "opening_hours": "Mo-Sa 08:00-16:00",
+        "phone": "+61 2 9688 6685",
+        "shop": "pet_grooming",
+        "website": "https://hillsgrooming.com.au"
+      }
+    },
+    {
+      "type": "node",
       "id": 13202152725,
       "lat": -33.8571941,
       "lon": 151.2055368,
@@ -2735,6 +4700,16 @@
     },
     {
       "type": "node",
+      "id": 13318563596,
+      "lat": -33.8785954,
+      "lon": 151.2429616,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Vet HQ"
+      }
+    },
+    {
+      "type": "node",
       "id": 13323300269,
       "lat": -33.7853149,
       "lon": 151.2871449,
@@ -2742,6 +4717,46 @@
         "animal": "swimming",
         "dog": "unleashed",
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13329832001,
+      "lat": -33.8865714,
+      "lon": 151.2586355,
+      "tags": {
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13343363559,
+      "lat": -33.7994925,
+      "lon": 150.957629,
+      "tags": {
+        "addr:housenumber": "8",
+        "amenity": "veterinary",
+        "name": "Pendle Hill veterinary hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13358372126,
+      "lat": -33.8949389,
+      "lon": 151.1094054,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Croydon park veterinary hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13358383444,
+      "lat": -33.8949828,
+      "lon": 151.1092014,
+      "tags": {
+        "name": "pawz in style",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2761,6 +4776,22 @@
     },
     {
       "type": "node",
+      "id": 13394088022,
+      "lat": -33.9426112,
+      "lon": 151.1013145,
+      "tags": {
+        "addr:housenumber": "267",
+        "addr:street": "Kingsgrove Road",
+        "amenity": "veterinary",
+        "check_date": "2025-12-20",
+        "name": "Kingsgrove Animal Hospital",
+        "opening_hours": "Mo-Fr 08:30-18:00; Sa 09:00-16:00; Su off",
+        "phone": "+61 2 9789 6648",
+        "website": "https://kingsvet.com.au/contact/"
+      }
+    },
+    {
+      "type": "node",
       "id": 13394322593,
       "lat": -33.9521799,
       "lon": 151.1524831,
@@ -2771,6 +4802,35 @@
         "dog": "yes",
         "fee": "no",
         "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13426113101,
+      "lat": -33.8157925,
+      "lon": 151.1698953,
+      "tags": {
+        "addr:housenumber": "143",
+        "addr:street": "Longueville Road",
+        "amenity": "veterinary",
+        "email": "hello@avclanecove.com.au",
+        "name": "Advanced Vet Care Lane Cove",
+        "phone": "+61 2 8552 7800",
+        "website": "https://advancedvetcarelanecove.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13428255941,
+      "lat": -33.8228278,
+      "lon": 151.2103877,
+      "tags": {
+        "addr:housenumber": "427",
+        "addr:street": "Miller Street",
+        "amenity": "veterinary",
+        "name": "Cammeray Veterinary Hospital",
+        "opening_hours": "Mo-Fr 08:00-18:00, Sa 08:00-13:00",
+        "website": "https://www.cammerayvet.com/"
       }
     },
     {
@@ -2788,6 +4848,96 @@
     },
     {
       "type": "node",
+      "id": 13438624867,
+      "lat": -33.9152236,
+      "lon": 150.9099172,
+      "tags": {
+        "addr:postcode": "2170",
+        "addr:street": "Woodlands Road",
+        "addr:suburb": "Liverpool",
+        "amenity": "veterinary",
+        "name": "Elizabeth Drive Animal Hospital",
+        "opening_hours": "Mo-Fr 09:30-17:30; Sa 09:30-13:00",
+        "phone": "+61 2 9602 7018",
+        "website": "https://www.veterinaryhospital.com.au"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13452088424,
+      "lat": -33.9667509,
+      "lon": 151.0884379,
+      "tags": {
+        "addr:housenumber": "13",
+        "addr:postcode": "2222",
+        "addr:street": "The Strand",
+        "amenity": "animal_boarding",
+        "check_date": "2026-01-13",
+        "name": "Lovely Pets",
+        "phone": "+61 2 9570 3233",
+        "shop": "pet_grooming",
+        "website": "https://www.instagram.com/lovelypets_sydney/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13457737377,
+      "lat": -33.9115046,
+      "lon": 151.1580891,
+      "tags": {
+        "brand": "Petbarn",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13461456318,
+      "lat": -34.0412116,
+      "lon": 151.1225358,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Caringbah Vet Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13481047759,
+      "lat": -33.7769562,
+      "lon": 151.1212176,
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13481081766,
+      "lat": -33.7298378,
+      "lon": 151.1581105,
+      "tags": {
+        "level": "1",
+        "level:ref": "1",
+        "name": "The Pet Connection",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13518378473,
+      "lat": -33.8841906,
+      "lon": 151.1569698,
+      "tags": {
+        "addr:shop": "114",
+        "name": "Furry Pawfect",
+        "opening_hours": "Mo-Sa 09:00-17:00",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
       "id": 13535694809,
       "lat": -33.801189,
       "lon": 151.0067345,
@@ -2795,6 +4945,19 @@
         "amenity": "drinking_water",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13584365490,
+      "lat": -33.941794,
+      "lon": 151.2251184,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Tingwell Boulevard",
+        "name": "Dog Salon - Dog Grooming Pagewood",
+        "opening_hours": "Mo-Su 08:00-17:00",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2818,6 +4981,15 @@
         "amenity": "drinking_water",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13610537578,
+      "lat": -33.7662529,
+      "lon": 151.2502581,
+      "tags": {
+        "shop": "pet_grooming"
       }
     },
     {
@@ -2846,12 +5018,64 @@
     },
     {
       "type": "node",
+      "id": 13639952515,
+      "lat": -33.966148,
+      "lon": 151.1047532,
+      "tags": {
+        "name": "Animalia",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13676907049,
+      "lat": -33.8930566,
+      "lon": 151.090892,
+      "tags": {
+        "addr:housenumber": "94-124",
+        "addr:street": "Coronation Parade",
+        "amenity": "veterinary",
+        "check_date": "2026-03-25",
+        "internet_access": "no",
+        "name": "Enfield Veterinary Hospital",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+61 2 9747 3999"
+      }
+    },
+    {
+      "type": "node",
       "id": 13700279618,
       "lat": -33.7402535,
       "lon": 151.2155236,
       "tags": {
         "dog": "yes",
         "man_made": "water_tap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13700281289,
+      "lat": -33.7038513,
+      "lon": 151.2120389,
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "name": "Petbarn",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13707141470,
+      "lat": -33.898657,
+      "lon": 151.174299,
+      "tags": {
+        "addr:housenumber": "103",
+        "addr:street": "Enmore Road",
+        "name": "The Cat Protection Society of NSW",
+        "shop": "pet"
       }
     },
     {
@@ -3398,6 +5622,19 @@
     },
     {
       "type": "way",
+      "id": 23690994,
+      "center": {
+        "lat": -33.6932743,
+        "lon": 151.1098651
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Asquith Vet"
+      }
+    },
+    {
+      "type": "way",
       "id": 25830431,
       "center": {
         "lat": -33.8392437,
@@ -3592,6 +5829,39 @@
     },
     {
       "type": "way",
+      "id": 61972938,
+      "center": {
+        "lat": -33.9039293,
+        "lon": 151.1935297
+      },
+      "tags": {
+        "addr:housenumber": "175",
+        "addr:street": "McEvoy Street",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "building": "commercial",
+        "name": "Petbarn",
+        "opening_hours": "Mo-Fr 08:30-19:00; Sa 08:30-17:00; Su 09:00-17:00; PH 09:00-17:00",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66832122,
+      "center": {
+        "lat": -33.6977736,
+        "lon": 151.0984556
+      },
+      "tags": {
+        "addr:housenumber": "332",
+        "addr:street": "Peats Ferry Road",
+        "building": "yes",
+        "shop": "pet",
+        "source": "nearmap"
+      }
+    },
+    {
+      "type": "way",
       "id": 72997578,
       "center": {
         "lat": -33.9594245,
@@ -3680,6 +5950,33 @@
         "surface": "sand",
         "wikidata": "Q18922828",
         "wikipedia": "en:Greenhills Beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 88541615,
+      "center": {
+        "lat": -33.9535654,
+        "lon": 150.9989153
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Panania Veterinary Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 96044127,
+      "center": {
+        "lat": -33.9845846,
+        "lon": 151.1359078
+      },
+      "tags": {
+        "addr:housenumber": "231",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Ramsgate Veterinary Hospital"
       }
     },
     {
@@ -3862,6 +6159,69 @@
         "natural": "beach",
         "source": "nearmap",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106227319,
+      "center": {
+        "lat": -33.9849,
+        "lon": 151.1424029
+      },
+      "tags": {
+        "building": "yes",
+        "landuse": "retail",
+        "name": "Living Jungle",
+        "opening_hours": "Mo-Sa 09:30-17:30",
+        "shop": "pet",
+        "source": "survey",
+        "source:location": "nearmap"
+      }
+    },
+    {
+      "type": "way",
+      "id": 110163974,
+      "center": {
+        "lat": -33.8293275,
+        "lon": 151.230331
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "attribution": "Mosman Council",
+        "name": "Cremorne Veterinary Hospital and Council Pound",
+        "source_ref": "http://data.mosman.nsw.gov.au/dataset/51,Veterinary-services-in-Mosman"
+      }
+    },
+    {
+      "type": "way",
+      "id": 110163975,
+      "center": {
+        "lat": -33.8348467,
+        "lon": 151.2558284
+      },
+      "tags": {
+        "addr:unit": "2",
+        "amenity": "veterinary",
+        "attribution": "Mosman Council",
+        "building": "yes",
+        "name": "The Barracks Vet Surgery",
+        "source_ref": "http://data.mosman.nsw.gov.au/dataset/51,Veterinary-services-in-Mosman"
+      }
+    },
+    {
+      "type": "way",
+      "id": 110163976,
+      "center": {
+        "lat": -33.8321442,
+        "lon": 151.2386066
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "attribution": "Mosman Council",
+        "building": "yes",
+        "check_date": "2025-02-23",
+        "name": "Mosman Veterinary Clinic",
+        "source_ref": "http://data.mosman.nsw.gov.au/dataset/51,Veterinary-services-in-Mosman"
       }
     },
     {
@@ -4984,6 +7344,17 @@
     },
     {
       "type": "way",
+      "id": 223408256,
+      "center": {
+        "lat": -33.6781268,
+        "lon": 151.2143718
+      },
+      "tags": {
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "way",
       "id": 223616875,
       "center": {
         "lat": -33.8624409,
@@ -5139,6 +7510,19 @@
     },
     {
       "type": "way",
+      "id": 252957533,
+      "center": {
+        "lat": -33.8603911,
+        "lon": 151.0732934
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "industrial",
+        "name": "Animal Referral Hospital"
+      }
+    },
+    {
+      "type": "way",
       "id": 253258716,
       "center": {
         "lat": -34.0373528,
@@ -5235,6 +7619,87 @@
     },
     {
       "type": "way",
+      "id": 275258950,
+      "center": {
+        "lat": -33.9323106,
+        "lon": 151.2367511
+      },
+      "tags": {
+        "addr:housenumber": "577",
+        "addr:street": "Anzac Parade",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Anzac Parade Veterinary Hospital",
+        "opening_hours": "Mo-We,Fr 09:00-12:00,16:00-18:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276907659,
+      "center": {
+        "lat": -33.8336707,
+        "lon": 150.9769543
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Holroyd Veterinary Clinic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277751494,
+      "center": {
+        "lat": -33.9354557,
+        "lon": 151.2372894
+      },
+      "tags": {
+        "addr:housenumber": "633",
+        "addr:street": "Anzac Parade",
+        "amenity": "veterinary",
+        "branch": "Coogee Maroubra",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "building": "commercial",
+        "name": "Greencross Vets"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277751753,
+      "center": {
+        "lat": -33.9282575,
+        "lon": 151.2326962
+      },
+      "tags": {
+        "addr:housenumber": "473-477",
+        "addr:postcode": "2032",
+        "addr:street": "Anzac Parade",
+        "addr:suburb": "Kingsford",
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "building": "commercial",
+        "building:levels": "2",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 279032942,
+      "center": {
+        "lat": -33.9276307,
+        "lon": 151.2331422
+      },
+      "tags": {
+        "building": "commercial",
+        "name": "Slippery little suckers",
+        "shop": "pet",
+        "website": "https://www.slipperylittlesuckers.com/"
+      }
+    },
+    {
+      "type": "way",
       "id": 279680686,
       "center": {
         "lat": -33.844189,
@@ -5255,6 +7720,25 @@
       "tags": {
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 284764911,
+      "center": {
+        "lat": -33.8885182,
+        "lon": 151.0749672
+      },
+      "tags": {
+        "addr:postcode": "2136",
+        "addr:street": "Liverpool Road",
+        "addr:suburb": "Strathfield South",
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "building": "yes",
+        "name": "Petbarn",
+        "shop": "pet",
+        "website": "https://www.petbarn.com.au/"
       }
     },
     {
@@ -5312,6 +7796,42 @@
       "tags": {
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293252847,
+      "center": {
+        "lat": -33.9596562,
+        "lon": 151.2317118
+      },
+      "tags": {
+        "addr:housenumber": "517-519",
+        "addr:postcode": "2036",
+        "addr:state": "NSW",
+        "addr:street": "Bunnerong Road",
+        "addr:suburb": "Matraville",
+        "name": "Stefmar Pet Care",
+        "phone:AU": "1300 139 756",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293252848,
+      "center": {
+        "lat": -33.9599754,
+        "lon": 151.231651
+      },
+      "tags": {
+        "addr:housenumber": "525",
+        "addr:postcode": "2036",
+        "addr:state": "NSW",
+        "addr:street": "Bunnerong Road",
+        "addr:suburb": "Matraville",
+        "amenity": "veterinary",
+        "name": "Matraville Veterinary Practice",
+        "phone": "+61 2 9189 4488"
       }
     },
     {
@@ -5387,6 +7907,24 @@
     },
     {
       "type": "way",
+      "id": 308864615,
+      "center": {
+        "lat": -33.7932294,
+        "lon": 150.9991862
+      },
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Windsor Road",
+        "addr:suburb": "Northmead",
+        "brand": "PetO",
+        "building": "yes",
+        "name": "PetO Northmead",
+        "shop": "pet",
+        "website": "https://peto.com.au"
+      }
+    },
+    {
+      "type": "way",
       "id": 309514417,
       "center": {
         "lat": -33.8709958,
@@ -5436,6 +7974,40 @@
         "opening_hours:kitchen": "Tu-Th 17:00-21:00; Fr-Su 12:00-21:00",
         "phone": "+61 2 9519 4501",
         "website": "https://botanyviewhotel.com.au/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 320900631,
+      "center": {
+        "lat": -33.7757137,
+        "lon": 151.0715791
+      },
+      "tags": {
+        "addr:housenumber": "117",
+        "addr:street": "Midson Road",
+        "addr:suburb": "Epping",
+        "amenity": "veterinary",
+        "building": "retail",
+        "email": "gdbaker@midsonrdvets.com",
+        "name": "Midson Road Veterinary Clinc",
+        "phone": "+61 2 9868 2055",
+        "source": "visual servey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 320900633,
+      "center": {
+        "lat": -33.7727194,
+        "lon": 151.0718239
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "retail",
+        "name": "Epping Veterinary Clinic",
+        "source": "bing",
+        "wheelchair": "yes"
       }
     },
     {
@@ -5552,6 +8124,22 @@
     },
     {
       "type": "way",
+      "id": 401702209,
+      "center": {
+        "lat": -33.908079,
+        "lon": 151.102983
+      },
+      "tags": {
+        "brand": "Petbarn",
+        "brand:wikidata": "Q104746468",
+        "building": "yes",
+        "name": "Petbarn",
+        "shop": "pet",
+        "source": "NSW LPI Imagery"
+      }
+    },
+    {
+      "type": "way",
       "id": 408072309,
       "center": {
         "lat": -33.9826103,
@@ -5628,6 +8216,31 @@
     },
     {
       "type": "way",
+      "id": 434910816,
+      "center": {
+        "lat": -33.7240212,
+        "lon": 151.0861327
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Thornleigh Veterinary Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 435411340,
+      "center": {
+        "lat": -33.7080797,
+        "lon": 151.1001559
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Hornsby Vet"
+      }
+    },
+    {
+      "type": "way",
       "id": 455033033,
       "center": {
         "lat": -33.8094625,
@@ -5694,6 +8307,23 @@
     },
     {
       "type": "way",
+      "id": 475234564,
+      "center": {
+        "lat": -33.8001151,
+        "lon": 151.0753212
+      },
+      "tags": {
+        "addr:housenumber": "15-21",
+        "addr:postcode": "2114",
+        "addr:street": "Allars Street",
+        "addr:suburb": "Denistone West",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Denistone Veterinary Surgery"
+      }
+    },
+    {
+      "type": "way",
       "id": 476857719,
       "center": {
         "lat": -33.9034545,
@@ -5752,6 +8382,20 @@
         "intermittent": "yes",
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 506634774,
+      "center": {
+        "lat": -33.8102182,
+        "lon": 151.17782
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "landuse": "residential",
+        "name": "Dr Paws",
+        "opening_hours": "Mo-Fr 08:30-19:00; Sa 09:00-12:00; Su off"
       }
     },
     {
@@ -5878,6 +8522,64 @@
     },
     {
       "type": "way",
+      "id": 552943245,
+      "center": {
+        "lat": -33.892947,
+        "lon": 151.245561
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "building:levels": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 552943247,
+      "center": {
+        "lat": -33.8927701,
+        "lon": 151.2455741
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "building:levels": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 553375029,
+      "center": {
+        "lat": -33.7926644,
+        "lon": 151.1938192
+      },
+      "tags": {
+        "building": "retail",
+        "building:levels": "1",
+        "name": "Pet O",
+        "shop": "pet",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556190166,
+      "center": {
+        "lat": -33.8984234,
+        "lon": 151.1760139
+      },
+      "tags": {
+        "addr:housenumber": "57",
+        "addr:street": "Enmore Road",
+        "building": "retail",
+        "building:levels": "2",
+        "check_date": "2025-09-03",
+        "name": "Hair of the Dog",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "way",
       "id": 556227931,
       "center": {
         "lat": -33.8795614,
@@ -5927,6 +8629,20 @@
         "name": "Dirty Haul Beach",
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 562339059,
+      "center": {
+        "lat": -33.8074031,
+        "lon": 151.0046622
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Cottage Animal Hospital"
       }
     },
     {
@@ -6093,6 +8809,23 @@
     },
     {
       "type": "way",
+      "id": 603668059,
+      "center": {
+        "lat": -33.6863415,
+        "lon": 150.9229542
+      },
+      "tags": {
+        "branch": "Rouse Hill",
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "building": "yes",
+        "name": "Petstock",
+        "operator": "Pet Stock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
       "id": 605187394,
       "center": {
         "lat": -33.7003472,
@@ -6122,6 +8855,26 @@
     },
     {
       "type": "way",
+      "id": 609669880,
+      "center": {
+        "lat": -33.9421776,
+        "lon": 151.2407303
+      },
+      "tags": {
+        "addr:housenumber": "225",
+        "addr:postcode": "2035",
+        "addr:state": "NSW",
+        "addr:street": "Maroubra Road",
+        "addr:suburb": "Maroubra",
+        "amenity": "veterinary",
+        "building": "commercial",
+        "description": "Southeast Sydney Veterinary Hospital, Southeast Sydney Vet, Southeast Sydney Hospital, Southeast Veterinary Hospital, Southeast Vet",
+        "name": "Southeast Sydney Veterinary Hospital",
+        "operator": "Southeast Sydney Veterinary Hospital"
+      }
+    },
+    {
+      "type": "way",
       "id": 611927861,
       "center": {
         "lat": -33.8239856,
@@ -6131,6 +8884,35 @@
         "leisure": "dog_park",
         "surface": "grass",
         "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 652184605,
+      "center": {
+        "lat": -33.789202,
+        "lon": 151.2662446
+      },
+      "tags": {
+        "brand": "Petstock",
+        "brand:wikidata": "Q106540728",
+        "building": "yes",
+        "name": "Petstock",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 652574829,
+      "center": {
+        "lat": -34.0321425,
+        "lon": 151.0766511
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Kirrawee Vet",
+        "website": "https://www.kirraweevet.com.au/"
       }
     },
     {
@@ -6145,6 +8927,38 @@
         "building:levels": "2",
         "dog": "yes",
         "source:dog": "sign"
+      }
+    },
+    {
+      "type": "way",
+      "id": 667343228,
+      "center": {
+        "lat": -33.8471366,
+        "lon": 151.0896184
+      },
+      "tags": {
+        "addr:housenumber": "351B",
+        "addr:street": "Concord Road",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "all paws vet",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-13:00; Su 09:00-12:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 667343231,
+      "center": {
+        "lat": -33.8472972,
+        "lon": 151.0896853
+      },
+      "tags": {
+        "addr:housenumber": "345",
+        "addr:street": "Concord Road",
+        "building": "yes",
+        "name": "Petite Poodle Parlor",
+        "opening_hours": "Tu-Sa 09:00-16:00",
+        "shop": "pet_grooming"
       }
     },
     {
@@ -6476,6 +9290,26 @@
     },
     {
       "type": "way",
+      "id": 831608611,
+      "center": {
+        "lat": -33.878229,
+        "lon": 151.2428665
+      },
+      "tags": {
+        "addr:housenumber": "389",
+        "addr:postcode": "2028",
+        "addr:street": "New South Head Road",
+        "addr:suburb": "Double Bay",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Vet HQ Double Bay",
+        "operator": "Vet HQ",
+        "phone": "+61 2 9326 1255",
+        "website": "https://vethq.com.au/"
+      }
+    },
+    {
+      "type": "way",
       "id": 835486118,
       "center": {
         "lat": -33.6810374,
@@ -6504,6 +9338,21 @@
       },
       "tags": {
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 849401734,
+      "center": {
+        "lat": -33.7489645,
+        "lon": 151.2240244
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Frenchs Forest Vet Hospital",
+        "website": "https://ffvh.com.au/"
       }
     },
     {
@@ -6774,6 +9623,25 @@
         "leisure": "park",
         "name": "Bardon Park",
         "wikidata": "Q21925482"
+      }
+    },
+    {
+      "type": "way",
+      "id": 974935033,
+      "center": {
+        "lat": -33.7276004,
+        "lon": 151.1413816
+      },
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "2074",
+        "addr:state": "NSW",
+        "addr:street": "Princes Street",
+        "addr:suburb": "Turramurra",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Turramurra Veterinary Hospital",
+        "website": "https://www.turramurravet.com.au/"
       }
     },
     {
@@ -7049,6 +9917,23 @@
     },
     {
       "type": "way",
+      "id": 1097876302,
+      "center": {
+        "lat": -33.7978671,
+        "lon": 151.2504585
+      },
+      "tags": {
+        "addr:housenumber": "55",
+        "addr:street": "Ethel Street",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Seaforth Veterinary Hospital",
+        "phone": "+61 2 9949 1288",
+        "website": "https://www.svh55.com.au/"
+      }
+    },
+    {
+      "type": "way",
       "id": 1098995819,
       "center": {
         "lat": -33.8903223,
@@ -7144,6 +10029,20 @@
     },
     {
       "type": "way",
+      "id": 1158486019,
+      "center": {
+        "lat": -33.8919085,
+        "lon": 151.1376202
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "roof:levels": "1",
+        "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "way",
       "id": 1160813032,
       "center": {
         "lat": -33.8541316,
@@ -7164,6 +10063,23 @@
       "tags": {
         "access": "private",
         "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1165586268,
+      "center": {
+        "lat": -33.8073781,
+        "lon": 151.0126537
+      },
+      "tags": {
+        "addr:housenumber": "100",
+        "addr:street": "Grose Street",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Parramatta Veterinary Hospital",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "phone": "+61 2 9630 5520"
       }
     },
     {
@@ -7234,6 +10150,26 @@
     },
     {
       "type": "way",
+      "id": 1174704042,
+      "center": {
+        "lat": -33.8020082,
+        "lon": 150.9581917
+      },
+      "tags": {
+        "addr:housenumber": "215",
+        "addr:postcode": "2145",
+        "addr:state": "NSW",
+        "addr:street": "Wentworth Avenue",
+        "addr:suburb": "Pendle Hill",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Pendle Hill Veterinary Hospital",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-16:00",
+        "website": "https://www.pendlehillvets.com.au/"
+      }
+    },
+    {
+      "type": "way",
       "id": 1179777757,
       "center": {
         "lat": -33.9605334,
@@ -7245,6 +10181,20 @@
         "dog": "unleashed",
         "fence_type": "chain_link",
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1185947109,
+      "center": {
+        "lat": -33.8716983,
+        "lon": 151.1224408
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Fine Pebble Aquarium",
+        "pet": "fish",
+        "shop": "pet"
       }
     },
     {
@@ -7267,6 +10217,26 @@
       },
       "tags": {
         "leisure": "dog_park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1191359849,
+      "center": {
+        "lat": -33.8905958,
+        "lon": 151.1289155
+      },
+      "tags": {
+        "addr:housenumber": "146",
+        "addr:street": "Liverpool Road",
+        "building": "retail",
+        "building:levels": "1",
+        "email": "ashfield@peto.com.au",
+        "name": "PetO",
+        "opening_hours": "Mo-We, Fr-Sa 09:00-18:00; Th 09:00-19:00; Su 09:00-18:00",
+        "phone": "+61 2 9799 7778",
+        "shop": "pet",
+        "website": "https://peto.com.au"
       }
     },
     {
@@ -7336,6 +10306,19 @@
     },
     {
       "type": "way",
+      "id": 1225536107,
+      "center": {
+        "lat": -34.0299288,
+        "lon": 151.1202201
+      },
+      "tags": {
+        "building": "yes",
+        "name": "PetO",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
       "id": 1226442706,
       "center": {
         "lat": -33.8419166,
@@ -7366,6 +10349,19 @@
       },
       "tags": {
         "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231621284,
+      "center": {
+        "lat": -33.9546139,
+        "lon": 151.1192713
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Bexley Veterinary Hospital"
       }
     },
     {
@@ -7647,6 +10643,32 @@
     },
     {
       "type": "way",
+      "id": 1272445700,
+      "center": {
+        "lat": -33.8718098,
+        "lon": 151.1324871
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "landuse": "commercial",
+        "name": "Five Dock Veterinary Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272468347,
+      "center": {
+        "lat": -33.8841466,
+        "lon": 151.1420915
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "retail",
+        "name": "Haberfield Veterinary Hospital"
+      }
+    },
+    {
+      "type": "way",
       "id": 1272469185,
       "center": {
         "lat": -33.9461817,
@@ -7770,6 +10792,46 @@
     },
     {
       "type": "way",
+      "id": 1303420610,
+      "center": {
+        "lat": -33.7088071,
+        "lon": 151.1003753
+      },
+      "tags": {
+        "addr:housenumber": "150",
+        "addr:postcode": "2077",
+        "addr:state": "NSW",
+        "addr:street": "Pacific Highway",
+        "addr:suburb": "Hornsby",
+        "building": "yes",
+        "email": "hornsby@peto.com.au",
+        "name": "PetO",
+        "opening_hours": "Mo-We 09:00-18:00; Th 09:00-19:00; Fr-Sa 09:00-18:00; Su 09:00-17:00",
+        "phone": "+61 2 9987 2949",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1305681271,
+      "center": {
+        "lat": -33.7287303,
+        "lon": 151.1086545
+      },
+      "tags": {
+        "addr:housenumber": "107",
+        "addr:postcode": "2076",
+        "addr:state": "NSW",
+        "addr:street": "Fox Valley Road",
+        "addr:suburb": "Wahroonga",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Fox Valley Animal Hospital",
+        "source": "microsoft/BuildingFootprints"
+      }
+    },
+    {
+      "type": "way",
       "id": 1306715357,
       "center": {
         "lat": -33.8759865,
@@ -7810,6 +10872,62 @@
     },
     {
       "type": "way",
+      "id": 1318023152,
+      "center": {
+        "lat": -33.7957056,
+        "lon": 151.2761842
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "layer": "1",
+        "name": "Manly Veterinary Clinic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318115328,
+      "center": {
+        "lat": -33.7371993,
+        "lon": 151.0017915
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1323096152,
+      "center": {
+        "lat": -33.7487337,
+        "lon": 151.066116
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Beecroft Vet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1327159797,
+      "center": {
+        "lat": -33.7133852,
+        "lon": 151.1468848
+      },
+      "tags": {
+        "addr:street": "Bobbin Head Road",
+        "amenity": "veterinary",
+        "brand": "Greencross Vets",
+        "brand:wikidata": "Q41179992",
+        "building": "retail",
+        "name": "Greencross Vets",
+        "roof:shape": "flat"
+      }
+    },
+    {
+      "type": "way",
       "id": 1344906268,
       "center": {
         "lat": -33.7590817,
@@ -7837,6 +10955,19 @@
     },
     {
       "type": "way",
+      "id": 1354132026,
+      "center": {
+        "lat": -33.9327399,
+        "lon": 150.9483221
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Vets for Pets"
+      }
+    },
+    {
+      "type": "way",
       "id": 1356144342,
       "center": {
         "lat": -33.7786354,
@@ -7855,6 +10986,21 @@
       },
       "tags": {
         "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1361353455,
+      "center": {
+        "lat": -33.7605217,
+        "lon": 151.2169286
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "landuse": "commercial",
+        "name": "VetMed",
+        "phone": "+61 2 9451 4840",
+        "website": "https://www.vetmed.com.au"
       }
     },
     {
@@ -8291,6 +11437,22 @@
     },
     {
       "type": "way",
+      "id": 1497224537,
+      "center": {
+        "lat": -33.8820555,
+        "lon": 151.1899376
+      },
+      "tags": {
+        "addr:housenumber": "113",
+        "addr:street": "Glebe Point Road",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Glebe Veterinary Hospital",
+        "phone": "+61 2 9660 1771"
+      }
+    },
+    {
+      "type": "way",
       "id": 1498418764,
       "center": {
         "lat": -33.8439415,
@@ -8581,6 +11743,26 @@
     },
     {
       "type": "relation",
+      "id": 7661953,
+      "center": {
+        "lat": -33.8132255,
+        "lon": 150.9563732
+      },
+      "tags": {
+        "addr:housenumber": "469",
+        "addr:postcode": "2145",
+        "addr:state": "NSW",
+        "addr:street": "Great Western Highway",
+        "amenity": "veterinary",
+        "landuse": "commercial",
+        "name": "Great Western Animal Hospital",
+        "opening_hours": "Mo-Fr 08:00-19:00, Sa 08:00-14:00, Su 08:00-12:00",
+        "type": "multipolygon",
+        "website": "www.greatwesternanimalhospital.com.au"
+      }
+    },
+    {
+      "type": "relation",
       "id": 8238628,
       "center": {
         "lat": -33.7879311,
@@ -8669,6 +11851,26 @@
         "supervised": "no",
         "surface": "sand",
         "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18543752,
+      "center": {
+        "lat": -33.7589227,
+        "lon": 150.9933043
+      },
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:postcode": "2153",
+        "addr:street": "Old Northern Road",
+        "addr:suburb": "Baulkham Hills",
+        "alt_name": "Emergency Vet",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Animal Referral Hospital",
+        "type": "multipolygon",
+        "website": "https://www.emergencyvet.com.au/our-network/arh-home/arh-baulkham-hills.html"
       }
     },
     {

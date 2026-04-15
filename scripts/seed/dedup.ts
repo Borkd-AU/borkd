@@ -24,11 +24,17 @@ function nameSimilarity(a: string, b: string): number {
   return 1 - dist / Math.max(x.length, y.length);
 }
 
-// Higher = higher authority. CoS (official municipal data) > manual (curated) > OSM (crowdsourced).
+// Higher = higher authority when two pins collide on name+location.
+// Rationale:
+//   * CoS (3)  — official municipal GIS, ground-truth
+//   * manual (2)  — curated from council-published lists
+//   * osm   (1)  — crowdsourced, can drift
+//   * foursquare (1)  — commercial POI dataset, comparable freshness to OSM
 const AUTHORITY: Record<CanonicalPin['source'], number> = {
   city_of_sydney: 3,
   manual: 2,
   osm: 1,
+  foursquare: 1,
 };
 
 export type DroppedPin = CanonicalPin & {

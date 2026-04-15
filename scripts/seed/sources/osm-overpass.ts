@@ -34,8 +34,9 @@ type OverpassResponse = {
 function buildQuery(): string {
   const { south, west, north, east } = BBOX_SYDNEY;
   const bbox = `${south},${west},${north},${east}`;
-  return `[out:json][timeout:60];
+  return `[out:json][timeout:90];
 (
+  // ── Dog spots ─────────────────────────────────────────────
   nwr["leisure"="dog_park"](${bbox});
   nwr["dog"="yes"](${bbox});
   nwr["dog"="unleashed"](${bbox});
@@ -46,6 +47,15 @@ function buildQuery(): string {
   nwr["amenity"="pub"]["dog"~"yes|leashed"](${bbox});
   nwr["natural"="beach"](${bbox});
   nwr["amenity"="drinking_water"]["dog"="yes"](${bbox});
+
+  // ── Pet services (no dog=* required — these are dog-relevant by definition) ───────
+  nwr["amenity"="veterinary"](${bbox});
+  nwr["shop"="pet"](${bbox});
+  nwr["shop"="pet_grooming"](${bbox});
+
+  // ── Public dog-waste + dog-toilet infrastructure ──────────
+  nwr["amenity"="dog_toilet"](${bbox});
+  nwr["amenity"="waste_basket"]["waste"="dog_excrement"](${bbox});
 );
 out center tags;`;
 }
