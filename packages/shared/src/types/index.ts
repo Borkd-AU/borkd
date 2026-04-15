@@ -114,7 +114,39 @@ export type WalkUpdate = Partial<
 // ── Pin ────────────────────────────────────────────────────────
 
 export type PinType = 'temporary' | 'permanent';
-export type PinSource = 'city_of_sydney' | 'osm' | 'manual';
+export type PinSource = 'city_of_sydney' | 'osm' | 'manual' | 'foursquare';
+
+/**
+ * Shape returned by the `get_pins_in_viewport` Postgres RPC.
+ * Flatter than `Pin` — the RPC projects ST_X/ST_Y to separate lng/lat
+ * float columns for mobile consumers that don't want to parse PostGIS
+ * geometry text.
+ */
+export type MapPin = {
+  id: string;
+  user_id: string;
+  category: PinCategory;
+  subcategory: string | null;
+  pin_type: PinType;
+  name: string | null;
+  note: string;
+  photo_url: string | null;
+  attribution: string | null;
+  upvotes: number;
+  downvotes: number;
+  verification_score: number;
+  longitude: number;
+  latitude: number;
+  created_at: string;
+};
+
+/** Bounding box for viewport queries. Mirrors Supabase RPC param order. */
+export type Bbox = {
+  min_lng: number;
+  min_lat: number;
+  max_lng: number;
+  max_lat: number;
+};
 
 export type Pin = {
   id: string;
