@@ -9,7 +9,29 @@
       "@borkd/shared": [
         "../../packages/shared/src"
       ]
-    }
+    },
+    /*
+     * Align tsc's module resolution with Metro's platform-suffix lookup.
+     * When code does `import './foo'`, tsc will search:
+     *   ./foo.native.ts(x) → ./foo.ios.ts(x) → ./foo.android.ts(x) →
+     *   ./foo.web.ts(x) → ./foo.ts(x)
+     * picking whichever is found first. This lets bare imports (e.g.
+     * `import MapView from '../components/MapView'`) resolve against
+     * `MapView.native.tsx` + `MapView.web.tsx` sibling files, same as
+     * Metro does at runtime. Without this, tsc sees no match and fails
+     * TS2307.
+     *
+     * The empty string ("") at the end falls back to the plain
+     * extension — required so imports of files that DON'T have a
+     * platform sibling (e.g. lib/supabase.ts) still resolve.
+     */
+    "moduleSuffixes": [
+      ".native",
+      ".ios",
+      ".android",
+      ".web",
+      ""
+    ]
   },
   "include": [
     "**/*.ts",
