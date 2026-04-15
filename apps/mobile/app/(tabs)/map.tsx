@@ -1,8 +1,9 @@
 import type { Bbox } from '@borkd/shared';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import MapView from '../../components/MapView';
+import { PinDetailSheet } from '../../features/map/components';
 import { useMapPins } from '../../features/map/hooks';
 
 // Sydney CBD default viewport (centre + ~5 km radius) used before the
@@ -17,13 +18,15 @@ const DEFAULT_BBOX: Bbox = {
 /**
  * Community Map tab.
  *
- * Current state: data layer only — MapView mounts with default Mapbox
- * styling, useMapPins fetches from the staging Supabase and feeds the
- * resulting pins to MapView via props. Marker styling, cluster colours,
- * and bottom sheets wait on the design system pass from Steph.
+ * Data layer: `useMapPins` fetches pins inside the current viewport from
+ * the staging Supabase and feeds them to MapView. Tapping a pin opens a
+ * minimal `PinDetailSheet` — the detail data is already in the viewport
+ * payload, so no extra network call is issued.
  *
- * No Mapbox token configured → map tiles render grey. App shell still
- * works so we can exercise the data fetch path end to end.
+ * Marker styling, cluster colours, and the long-form detail screen are
+ * still pending Steph's design pass. No Mapbox token configured → map
+ * tiles render grey, but the full interaction path (viewport → pin tap
+ * → sheet → close) is exercisable.
  */
 export default function MapScreen() {
   // TODO: swap for a real `onRegionDidChange` callback from MapView once
@@ -31,6 +34,7 @@ export default function MapScreen() {
   // both .native and .web variants. Using a static bbox is enough to
   // smoke-test the Supabase RPC wiring.
   const [bbox] = useState<Bbox>(DEFAULT_BBOX);
+  const [selectedPinId, setSelectedPinId] = useState<string | null>(null);
 
   const { data: pins, isLoading, error } = useMapPins({ bbox });
 
@@ -47,10 +51,28 @@ export default function MapScreen() {
     [pins],
   );
 
+  // Look up the full MapPin (not just the marker projection) whenever
+  // the user taps one. The viewport fetch already has every field the
+  // detail sheet needs, so there's no extra network call — this will
+  // also make it trivial to swap to a future `useMapPinDetail` hook
+  // that fetches review counts / photos lazily if that ever matters.
+  const selectedPin = useMemo(
+    () => pins?.find((p) => p.id === selectedPinId) ?? null,
+    [pins, selectedPinId],
+  );
+
+  const handlePinPress = useCallback((pinId: string) => {
+    setSelectedPinId(pinId);
+  }, []);
+
+  const handleSheetClose = useCallback(() => {
+    setSelectedPinId(null);
+  }, []);
+
   return (
     <SafeAreaView className="flex-1 bg-cream" edges={['top']}>
       <View className="flex-1">
-        <MapView pins={markers} />
+        <MapView pins={markers} onPinPress={handlePinPress} />
         {/*
           Lightweight status strip. Will move into the shared HUD overlay
           once the map design lands.
@@ -69,6 +91,7 @@ export default function MapScreen() {
             <Text className="font-body text-sm text-charcoal">{markers.length} pins nearby</Text>
           )}
         </View>
+        <PinDetailSheet pin={selectedPin} onClose={handleSheetClose} />
       </View>
     </SafeAreaView>
   );
