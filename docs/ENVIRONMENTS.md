@@ -84,7 +84,7 @@ Setup:
 
 | Asset | 용도 |
 |-------|------|
-| Repository | `ddalgiwuu/borkd` |
+| Repository | `Borkd-AU/borkd` |
 | Actions | CI/CD workflow 2개 (`.github/workflows/ci.yml`, `pr-checks.yml`) |
 | Secrets | `EXPO_TOKEN`, `SUPABASE_ACCESS_TOKEN`, `SUPABASE_PROJECT_REF` (Beta) |
 | Variables | `EAS_ENABLED`, `SUPABASE_CI_ENABLED` (on/off toggles) |
