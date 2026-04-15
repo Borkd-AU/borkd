@@ -40,30 +40,58 @@ Details → `docs/DATABASE.md`
 
 ## Git Workflow
 
-Details → `docs/GIT_WORKFLOW.md`
+Details → `docs/GIT_WORKFLOW.md` (branching + promotion matrix)
 
-- Branches: `main` → `staging` → `develop` → `feat/*`
+- Branches: `main` → `staging` → `develop` → `feat/*`, `feat-exp/*`, `fix/*`, `ui/*`, `chore/*`, `refactor/*`, `perf/*`, `docs/*`
 - Commits: `type(scope): description` (conventional)
 - **main/staging/develop 직접 push 금지**
 
+### Release + Incident runbooks
+
+| Runbook | 언제 | 목표 시간 |
+|---------|------|----------|
+| `docs/RELEASE.md` | develop → staging → main 승격 | 정기 주 1회 / 격주 |
+| `docs/HOTFIX.md` | 프로덕션 장애 fast-fix | 60분 |
+| `docs/ROLLBACK.md` | 배포 되돌리기 (Vercel / OTA / DB) | 5분 |
+| `docs/INCIDENT.md` | 5단계 incident response | SEV1: 5분 응답 |
+| `docs/WORKTREES.md` | worktree 패턴 + ops 스크립트 | reference |
+| `docs/ENVIRONMENTS.md` | local / preview / staging / prod 서비스 map | reference |
+| `supabase/migrations/_CONVENTIONS.md` | migration 안전성 규칙 | reference |
+
+### Ops scripts
+
+```bash
+./scripts/ops/new-branch.sh <type> <slug>    # from develop
+./scripts/ops/hotfix.sh <slug>               # from main
+./scripts/ops/release.sh <semver>            # from staging + version bump
+./scripts/ops/cleanup.sh                     # remove merged worktrees
+./scripts/ops/rollback-web.sh <project>      # Vercel promote-previous
+```
+
 ### Worktree layout (multi-branch parallel work)
 
-- `~/Desktop/DEV_Local/borkd/` = main 참고용 clone, **수정 금지**
-- `~/Desktop/DEV_Local/borkd-<scope>/` = feature 브랜치당 1 디렉토리
+모든 borkd worktree는 **`~/Desktop/DEV_Local/borkd/`** 하나의 grouping
+폴더 안에 모여 있음 — `DEV_Local/` 최상위는 프로젝트당 폴더 하나씩만
+보여서 깔끔함. Details → `docs/WORKTREES.md`.
+
+- `~/Desktop/DEV_Local/borkd/main/` = main 참고용 clone, **수정 금지**
+- `~/Desktop/DEV_Local/borkd/<slug>/` = feature 브랜치당 1 디렉토리
+- `~/Desktop/DEV_Local/borkd/hotfix-<slug>/` = hotfix (main fork)
+- `~/Desktop/DEV_Local/borkd/release-v<ver>/` = release (staging fork)
 - 각 worktree는 자체 `node_modules` + `.turbo` 캐시 → 브랜치 간 충돌 0
 
 **새 feature 시작:**
 ```bash
-cd ~/Desktop/DEV_Local/borkd
+cd ~/Desktop/DEV_Local/borkd/main
 git fetch origin
-git worktree add -b feat/<name> ../borkd-<name> origin/develop
-cd ../borkd-<name> && pnpm install
+git worktree add -b feat/<name> ../<name> origin/develop
+cd ../<name> && pnpm install
 ```
 
 **Feature 완료 (PR 머지 후):**
 ```bash
-cd ~/Desktop/DEV_Local/borkd
-git worktree remove ../borkd-<name>
+cd ~/Desktop/DEV_Local/borkd/main
+git worktree remove ../<name>
 git branch -d feat/<name>
 ```
 

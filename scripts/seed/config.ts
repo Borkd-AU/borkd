@@ -32,7 +32,7 @@ export const NOMINATIM_USER_AGENT =
 export const BBOX_SYDNEY = {
   south: -34.05,
   west: 150.85,
-  north: -33.65,
+  north: -33.55,
   east: 151.35,
 } as const;
 

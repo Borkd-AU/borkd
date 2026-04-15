@@ -6,9 +6,19 @@ import { type CanonicalPin, assertSydneyBbox, defaultNote, slugify } from '../tr
 import { geocode } from '../transform/nominatim';
 
 // Schema mirrors Pin PART 2 Block 5 doc; see plan for council list + rationale.
+// Council names are tracked here so new sources get compile-time errors if
+// they forget to add the council or its attribution string.
 const manualEntrySchema = z.object({
   name: z.string().trim().min(1),
-  council: z.enum(['Waverley', 'Randwick', 'Woollahra', 'Inner West', 'Centennial Parklands']),
+  council: z.enum([
+    'Waverley',
+    'Randwick',
+    'Woollahra',
+    'Inner West',
+    'Centennial Parklands',
+    'Northern Beaches',
+    'Bayside',
+  ]),
   category: z.enum(['good_spot', 'amenity']),
   subcategory: z.enum(['off_leash_area', 'dog_park', 'park', 'beach', 'cafe', 'fountain']),
   lat: z.number().min(-34.3).max(-33.4).optional(),
@@ -25,6 +35,8 @@ const FILES = [
   'woollahra.json',
   'inner-west.json',
   'centennial.json',
+  'northern-beaches.json',
+  'bayside.json',
 ] as const;
 
 function attributionFor(council: ManualEntry['council']): string {

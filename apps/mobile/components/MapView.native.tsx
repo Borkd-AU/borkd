@@ -1,3 +1,4 @@
+import type { Bbox } from '@borkd/shared';
 import MapboxGL, { UserLocationRenderMode } from '@rnmapbox/maps';
 import type React from 'react';
 import { useCallback, useMemo, useRef } from 'react';
@@ -20,6 +21,15 @@ export interface MapViewProps {
   pins?: MapPin[];
   onPinPress?: (pinId: string) => void;
   onMapPress?: (coords: { latitude: number; longitude: number }) => void;
+  /**
+   * Fired after the camera settles on a new viewport. The bbox is derived
+   * from the Mapbox visibleBounds (ne/sw) and uses the canonical Borkd
+   * Bbox shape (min_lng/min_lat/max_lng/max_lat).
+   *
+   * Consumers should debounce before triggering a network refetch — the
+   * native Mapbox SDK can fire onCameraChanged multiple times per gesture.
+   */
+  onViewportChange?: (bbox: Bbox) => void;
   walkRoute?: Array<{ latitude: number; longitude: number }>;
   showUserLocation?: boolean;
   children?: React.ReactNode;
@@ -74,6 +84,7 @@ export default function MapView({
   pins = [],
   onPinPress,
   onMapPress,
+  onViewportChange,
   walkRoute,
   showUserLocation = false,
   children,
@@ -87,6 +98,28 @@ export default function MapView({
       onMapPress({ latitude: coords[1], longitude: coords[0] });
     },
     [onMapPress],
+  );
+
+  // @rnmapbox/maps v10 reports camera state via the onCameraChanged callback.
+  // `properties.bounds` gives us {ne: [lng,lat], sw: [lng,lat]} which we
+  // translate into the canonical Borkd Bbox. No-op when no consumer is
+  // listening, which avoids native bridge traffic on every pan for the
+  // common "static map" case.
+  const handleCameraChanged = useCallback(
+    (state: MapboxGL.MapState) => {
+      if (!onViewportChange) return;
+      const bounds = state?.properties?.bounds;
+      if (!bounds?.ne || !bounds?.sw) return;
+      const [neLng, neLat] = bounds.ne;
+      const [swLng, swLat] = bounds.sw;
+      onViewportChange({
+        min_lng: swLng,
+        min_lat: swLat,
+        max_lng: neLng,
+        max_lat: neLat,
+      });
+    },
+    [onViewportChange],
   );
 
   const handlePinPress = useCallback(
@@ -116,6 +149,7 @@ export default function MapView({
         style={{ flex: 1 }}
         styleURL={MAPBOX_STYLE}
         onPress={handlePress}
+        onCameraChanged={onViewportChange ? handleCameraChanged : undefined}
         logoEnabled={false}
         attributionEnabled={false}
         compassEnabled

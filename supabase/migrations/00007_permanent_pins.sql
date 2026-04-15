@@ -19,22 +19,28 @@
 -- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ALTER TABLE public.pins
-  ADD COLUMN pin_type    TEXT NOT NULL DEFAULT 'temporary'
-                         CHECK (pin_type IN ('temporary', 'permanent')),
-  ADD COLUMN subcategory TEXT,
-  ADD COLUMN source      TEXT,
-  ADD COLUMN source_id   TEXT,
-  ADD COLUMN name        TEXT,
-  ADD COLUMN attribution TEXT;
+  ADD COLUMN IF NOT EXISTS pin_type    TEXT NOT NULL DEFAULT 'temporary'
+                                       CHECK (pin_type IN ('temporary', 'permanent')),
+  ADD COLUMN IF NOT EXISTS subcategory TEXT,
+  ADD COLUMN IF NOT EXISTS source      TEXT,
+  ADD COLUMN IF NOT EXISTS source_id   TEXT,
+  ADD COLUMN IF NOT EXISTS name        TEXT,
+  ADD COLUMN IF NOT EXISTS attribution TEXT;
 
 -- Permanent pins never expire — relax NOT NULL, enforce via CHECK
 ALTER TABLE public.pins ALTER COLUMN expires_at DROP NOT NULL;
 
-ALTER TABLE public.pins
-  ADD CONSTRAINT pins_expiry_matches_type CHECK (
-    (pin_type = 'temporary' AND expires_at IS NOT NULL)
-    OR (pin_type = 'permanent' AND expires_at IS NULL)
-  );
+-- CONSTRAINTs have no IF NOT EXISTS — wrap in a duplicate_object guard
+-- so re-running the migration against an already-migrated DB is a no-op.
+DO $$ BEGIN
+  ALTER TABLE public.pins
+    ADD CONSTRAINT pins_expiry_matches_type CHECK (
+      (pin_type = 'temporary' AND expires_at IS NOT NULL)
+      OR (pin_type = 'permanent' AND expires_at IS NULL)
+    );
+EXCEPTION
+  WHEN duplicate_object THEN NULL;
+END $$;
 
 -- Idempotent re-seeding: (source, source_id) uniquely identifies a
 -- pre-seeded record across reruns. Postgres UNIQUE treats NULLs as
@@ -43,11 +49,15 @@ ALTER TABLE public.pins
 -- CONSTRAINT (not partial INDEX) so supabase-js can target it via
 -- onConflict='source,source_id' — partial indexes aren't eligible for
 -- ON CONFLICT.
-ALTER TABLE public.pins
-  ADD CONSTRAINT pins_source_unique UNIQUE (source, source_id);
+DO $$ BEGIN
+  ALTER TABLE public.pins
+    ADD CONSTRAINT pins_source_unique UNIQUE (source, source_id);
+EXCEPTION
+  WHEN duplicate_object THEN NULL;
+END $$;
 
 -- Fast filter for permanent pins by subcategory (map viewport queries)
-CREATE INDEX idx_pins_permanent
+CREATE INDEX IF NOT EXISTS idx_pins_permanent
   ON public.pins(pin_type, subcategory)
   WHERE pin_type = 'permanent';
 
