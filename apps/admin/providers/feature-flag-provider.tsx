@@ -1,53 +1,32 @@
 'use client';
 
 import { FLAG_DEFAULT, type FlagKey } from '@borkd/shared';
-import posthog from 'posthog-js';
-import { PostHogProvider, usePostHog } from 'posthog-js/react';
-import { type ReactNode, useEffect } from 'react';
+import type { ReactNode } from 'react';
 
 /**
- * Admin-side (Next.js) PostHog provider.
+ * Admin-side feature flag provider — intentional no-op.
  *
- * Mirrors the mobile provider surface (`useFeatureFlag(key)`) so the
- * same typed `FLAGS` registry works across both apps. Client-only —
- * we never read flags on the server, and PostHog's browser SDK is
- * the right tool for client components.
+ * `apps/admin` is an internal operator tool for a closed user list
+ * (team members, ≤ 5 people). We don't run feature gates or analytics
+ * here because:
+ *   * No meaningful sample size to A/B test against.
+ *   * Operators benefit from seeing every feature immediately rather
+ *     than gated rollouts.
+ *   * Keeping the admin bundle free of analytics SDKs keeps internal
+ *     tooling responsive and avoids pulling another vendor key into
+ *     staff browsers.
  *
- * NEXT_PUBLIC_POSTHOG_KEY is required. Missing key = no-op (flags
- * return FLAG_DEFAULT = false).
+ * The provider + hook stay in place so shared code that imports
+ * `useFeatureFlag` from this path still resolves — they just always
+ * return `FLAG_DEFAULT`. If admin ever opens up to outside users,
+ * swap this stub for a real Statsig provider (match the mobile one in
+ * `apps/mobile/providers/feature-flag-provider.tsx`).
  */
-
-const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? 'https://app.posthog.com';
 
 export function FeatureFlagProvider({ children }: { children: ReactNode }) {
-  useEffect(() => {
-    if (!POSTHOG_KEY) return;
-    if (posthog.__loaded) return;
-    posthog.init(POSTHOG_KEY, {
-      api_host: POSTHOG_HOST,
-      person_profiles: 'identified_only',
-      capture_pageview: false, // Next.js App Router handles routing manually
-      loaded: (ph) => {
-        if (process.env.NODE_ENV === 'development') ph.debug(false);
-      },
-    });
-  }, []);
-
-  if (!POSTHOG_KEY) {
-    return <>{children}</>;
-  }
-
-  return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
+  return <>{children}</>;
 }
 
-/**
- * Read a boolean feature flag. Returns `FLAG_DEFAULT` until PostHog
- * bootstraps and when the SDK is not configured.
- */
-export function useFeatureFlag(key: FlagKey): boolean {
-  const client = usePostHog();
-  if (!client) return FLAG_DEFAULT;
-  const value = client.isFeatureEnabled(key);
-  return value === true;
+export function useFeatureFlag(_key: FlagKey): boolean {
+  return FLAG_DEFAULT;
 }
