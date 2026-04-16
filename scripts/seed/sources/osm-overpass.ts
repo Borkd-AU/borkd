@@ -56,6 +56,11 @@ function buildQuery(): string {
   // ── Public dog-waste + dog-toilet infrastructure ──────────
   nwr["amenity"="dog_toilet"](${bbox});
   nwr["amenity"="waste_basket"]["waste"="dog_excrement"](${bbox});
+
+  // ── Boarding + shelter + healthcare vet (beyond amenity=veterinary) ──
+  nwr["amenity"="animal_boarding"](${bbox});
+  nwr["amenity"="animal_shelter"](${bbox});
+  nwr["healthcare"="veterinary"](${bbox});
 );
 out center tags;`;
 }

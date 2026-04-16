@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-04-15T02:43:33Z",
+    "timestamp_osm_base": "2026-04-16T04:30:05Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -298,6 +298,17 @@
         "phone": "+61 2 9521 7778",
         "shop": "pet",
         "website": "https://www.kirraweepicapet.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2337790406,
+      "lat": -33.6441184,
+      "lon": 150.8550921,
+      "tags": {
+        "addr:housenumber": "504",
+        "amenity": "animal_boarding",
+        "name": "Brierdene Pet Care Centre"
       }
     },
     {
@@ -1684,6 +1695,19 @@
     },
     {
       "type": "node",
+      "id": 6952930512,
+      "lat": -33.75512,
+      "lon": 151.275005,
+      "tags": {
+        "addr:housenumber": "72",
+        "addr:unit": "3",
+        "amenity": "animal_boarding",
+        "name": "Dog day Spa & day stay",
+        "phone": "+61 2 8068 8120"
+      }
+    },
+    {
+      "type": "node",
       "id": 6952935460,
       "lat": -33.6938051,
       "lon": 151.303943,
@@ -1801,6 +1825,26 @@
     },
     {
       "type": "node",
+      "id": 7284925170,
+      "lat": -33.6708687,
+      "lon": 150.9603386,
+      "tags": {
+        "amenity": "animal_boarding",
+        "name": "Sleepy Haven Boarding Cattery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7284925171,
+      "lat": -33.6749536,
+      "lon": 150.9584114,
+      "tags": {
+        "amenity": "animal_boarding",
+        "name": "Aristocat Boarding Cattery"
+      }
+    },
+    {
+      "type": "node",
       "id": 7284933066,
       "lat": -33.6929013,
       "lon": 151.0210276,
@@ -1840,6 +1884,18 @@
       "tags": {
         "amenity": "waste_basket",
         "waste": "dog_excrement"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7350326589,
+      "lat": -33.751226,
+      "lon": 151.1705982,
+      "tags": {
+        "amenity": "animal_shelter",
+        "animal_shelter:release": "bat",
+        "operator": "Ku-ring-gai Bat Conservation Society",
+        "source": "survey"
       }
     },
     {
@@ -1885,6 +1941,16 @@
         "bottle": "yes",
         "dog": "yes",
         "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7615756230,
+      "lat": -33.9201317,
+      "lon": 151.1855631,
+      "tags": {
+        "amenity": "animal_boarding",
+        "name": "Happy Paws Pethouse"
       }
     },
     {
@@ -2058,6 +2124,27 @@
         "opening_hours": "Mo-Su 10:00-18:00",
         "phone": "+61 2 8861 5725",
         "shop": "pet_grooming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8393390981,
+      "lat": -33.90003,
+      "lon": 151.2117594,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "Potter Street",
+        "addr:unit": "13B",
+        "amenity": "animal_boarding",
+        "animal": "wellness",
+        "animal_boarding": "dog",
+        "animal_training": "dog",
+        "check_date": "2023-11-10",
+        "email": "info@centennialbark.com.au",
+        "name": "Centennial Bark",
+        "opening_hours": "Mo-Fr 07:30-18:30; Th 07:30-20:00",
+        "phone": "+61 2 9029 6882",
+        "website": "https://www.centennialbark.com.au/"
       }
     },
     {
@@ -2972,6 +3059,17 @@
     },
     {
       "type": "node",
+      "id": 10285525601,
+      "lat": -33.7092097,
+      "lon": 151.2952749,
+      "tags": {
+        "amenity": "animal_boarding",
+        "name": "Canine Kindergarten",
+        "website": "https://www.caninekindergarten.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 10290561677,
       "lat": -33.8874295,
       "lon": 151.1986847,
@@ -3815,6 +3913,19 @@
     },
     {
       "type": "node",
+      "id": 11256516002,
+      "lat": -33.9078773,
+      "lon": 151.1695942,
+      "tags": {
+        "addr:unit": "26",
+        "amenity": "animal_boarding",
+        "name": "Aeropets",
+        "phone:AU": "1800 237 673",
+        "website": "https://aeropets.com.au/"
+      }
+    },
+    {
+      "type": "node",
       "id": 11268430100,
       "lat": -33.8225202,
       "lon": 151.0781378,
@@ -4296,6 +4407,20 @@
     },
     {
       "type": "node",
+      "id": 12169131994,
+      "lat": -33.8912537,
+      "lon": 151.0397199,
+      "tags": {
+        "amenity": "animal_shelter",
+        "name": "RSPCA NSW Sydney Adoption Centre",
+        "opening_hours": "Tu-Su 09:30-15:30",
+        "operator": "RSPCA NSW",
+        "phone": "+61 2 9770 7577",
+        "website": "https://www.rspcansw.org.au/who-we-are/locations/shelters/sydney-adoption-centre/"
+      }
+    },
+    {
+      "type": "node",
       "id": 12184028776,
       "lat": -33.8789138,
       "lon": 151.2100162,
@@ -4644,8 +4769,8 @@
     {
       "type": "node",
       "id": 13076738113,
-      "lat": -33.8345204,
-      "lon": 151.1983301,
+      "lat": -33.8345265,
+      "lon": 151.1984481,
       "tags": {
         "amenity": "drinking_water",
         "bottle": "yes",
@@ -5096,6 +5221,17 @@
     },
     {
       "type": "node",
+      "id": 13692416483,
+      "lat": -33.8343222,
+      "lon": 151.1982351,
+      "tags": {
+        "amenity": "drinking_water",
+        "dog": "yes",
+        "fountain": "bubbler"
+      }
+    },
+    {
+      "type": "node",
       "id": 13700279618,
       "lat": -33.7402535,
       "lon": 151.2155236,
@@ -5364,6 +5500,22 @@
         "sport": "equestrian;rugby",
         "surface": "grass",
         "website": "https://www.krg.nsw.gov.au/Things-to-do/Parks-playgrounds-and-sportsfields/Jim-Watson-Main-Arena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4338530,
+      "center": {
+        "lat": -33.8346064,
+        "lon": 151.1983359
+      },
+      "tags": {
+        "check_date": "2026-04-16",
+        "dog": "yes",
+        "leisure": "park",
+        "name": "Brennan Park",
+        "website": "https://www.northsydney.nsw.gov.au/directory-record/1386/brennan-park",
+        "wikidata": "Q21925326"
       }
     },
     {
@@ -5895,6 +6047,21 @@
         "supervised": "yes",
         "surface": "sand",
         "wikidata": "Q21957520"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32026915,
+      "center": {
+        "lat": -33.8436267,
+        "lon": 151.2064001
+      },
+      "tags": {
+        "dog": "yes",
+        "leisure": "park",
+        "name": "Watt Park",
+        "source": "survey",
+        "website": "https://www.northsydney.nsw.gov.au/directory-record/1516/watt-park"
       }
     },
     {
@@ -9197,6 +9364,25 @@
     },
     {
       "type": "way",
+      "id": 589847341,
+      "center": {
+        "lat": -33.8005938,
+        "lon": 150.9016913
+      },
+      "tags": {
+        "addr:housenumber": "415",
+        "addr:postcode": "2148",
+        "addr:state": "NSW",
+        "addr:street": "Flushcombe Road",
+        "addr:suburb": "Blacktown",
+        "amenity": "animal_shelter",
+        "landuse": "commercial",
+        "name": "Blacktown Animal Holding Facility",
+        "website": "https://www.blacktown.nsw.gov.au/Services/Pets-and-animals/Animal-Holding-Facility"
+      }
+    },
+    {
+      "type": "way",
       "id": 591348084,
       "center": {
         "lat": -33.9937678,
@@ -9249,6 +9435,21 @@
         "name": "Petstock",
         "operator": "Pet Stock",
         "shop": "pet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 604686879,
+      "center": {
+        "lat": -33.8857912,
+        "lon": 151.1820459
+      },
+      "tags": {
+        "amenity": "animal_shelter",
+        "building": "yes",
+        "description": "Used to hold large animals, related to the veterinary science faculty.",
+        "name": "Sand Roll House",
+        "operator": "University of Sydney"
       }
     },
     {
@@ -10729,6 +10930,25 @@
     },
     {
       "type": "way",
+      "id": 1155186289,
+      "center": {
+        "lat": -33.7513122,
+        "lon": 150.8588063
+      },
+      "tags": {
+        "addr:housenumber": "20",
+        "addr:postcode": "2761",
+        "addr:state": "NSW",
+        "addr:street": "Owen Street",
+        "addr:suburb": "Glendenning",
+        "amenity": "animal_shelter",
+        "animal_shelter": "dog;cat",
+        "name": "Blacktown Animal Rehoming Centre (BARC)",
+        "operator": "Blacktown City Council"
+      }
+    },
+    {
+      "type": "way",
       "id": 1158486019,
       "center": {
         "lat": -33.8919085,
@@ -10963,6 +11183,22 @@
       "tags": {
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1210898530,
+      "center": {
+        "lat": -34.023288,
+        "lon": 151.188764
+      },
+      "tags": {
+        "amenity": "animal_boarding",
+        "animal_boarding": "horse",
+        "landuse": "recreation_ground",
+        "leisure": "horse_riding",
+        "name": "Kurnell Boarding Stables and Riding School",
+        "sport": "equestrian"
       }
     },
     {
@@ -11611,6 +11847,17 @@
     },
     {
       "type": "way",
+      "id": 1325583439,
+      "center": {
+        "lat": -33.6898429,
+        "lon": 151.0301554
+      },
+      "tags": {
+        "amenity": "animal_shelter"
+      }
+    },
+    {
+      "type": "way",
       "id": 1327159797,
       "center": {
         "lat": -33.7133852,
@@ -11693,6 +11940,19 @@
       "tags": {
         "natural": "beach",
         "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1355174210,
+      "center": {
+        "lat": -33.9414964,
+        "lon": 151.1911073
+      },
+      "tags": {
+        "amenity": "animal_boarding",
+        "landuse": "commercial",
+        "name": "Hanrob Pet Hotel"
       }
     },
     {
