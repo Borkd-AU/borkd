@@ -69,6 +69,17 @@ export function osmToCanonical(
   if (tags.shop === 'pet_grooming') {
     return { category: 'amenity', subcategory: 'pet_grooming' };
   }
+  // ── Boarding, shelter, healthcare vet ───────────────────────
+  if (tags.amenity === 'animal_boarding') {
+    return { category: 'amenity', subcategory: 'animal_boarding' };
+  }
+  if (tags.amenity === 'animal_shelter') {
+    return { category: 'amenity', subcategory: 'animal_shelter' };
+  }
+  // healthcare=veterinary catches vets not tagged amenity=veterinary.
+  if (tags.healthcare === 'veterinary' && tags.amenity !== 'veterinary') {
+    return { category: 'amenity', subcategory: 'veterinary' };
+  }
   // Dedicated dog toilets (public WC for dogs — rare but valuable).
   if (tags.amenity === 'dog_toilet') {
     return { category: 'amenity', subcategory: 'dog_toilet' };
