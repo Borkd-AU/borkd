@@ -4,10 +4,11 @@ import { dedupePins } from './dedup';
 import { fetchCityOfSydney } from './sources/city-of-sydney';
 import { fetchManualCouncils } from './sources/manual-councils';
 import { fetchOsmOverpass } from './sources/osm-overpass';
+import { fetchOverture } from './sources/overture';
 import type { CanonicalPin } from './transform/canonical';
 import { upsertPermanentPins } from './upsert';
 
-type SourceFilter = 'cos' | 'osm' | 'manual' | 'all';
+type SourceFilter = 'cos' | 'osm' | 'manual' | 'overture' | 'all';
 
 function parseArgs(argv: string[]): { source: SourceFilter; dryRun: boolean; refresh: boolean } {
   let source: SourceFilter = 'all';
@@ -18,7 +19,7 @@ function parseArgs(argv: string[]): { source: SourceFilter; dryRun: boolean; ref
     else if (arg === '--refresh') refresh = true;
     else if (arg.startsWith('--source=')) {
       const v = arg.slice('--source='.length);
-      if (v === 'cos' || v === 'osm' || v === 'manual' || v === 'all') {
+      if (v === 'cos' || v === 'osm' || v === 'manual' || v === 'overture' || v === 'all') {
         source = v;
       } else {
         throw new Error(`Unknown --source value: ${v}`);
@@ -45,6 +46,10 @@ async function main(): Promise<void> {
   if (source === 'all' || source === 'manual') {
     console.log('[seed] → Manual councils');
     all.push(...(await fetchManualCouncils()));
+  }
+  if (source === 'all' || source === 'overture') {
+    console.log('[seed] → Overture Maps');
+    all.push(...(await fetchOverture()));
   }
 
   console.log(`[seed] total candidates: ${all.length}`);

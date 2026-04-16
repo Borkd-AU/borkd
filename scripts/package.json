@@ -10,10 +10,12 @@
     "seed:cos": "tsx seed/index.ts --source=cos",
     "seed:osm": "tsx seed/index.ts --source=osm",
     "seed:manual": "tsx seed/index.ts --source=manual",
+    "seed:overture": "tsx seed/index.ts --source=overture",
     "export:geojson": "tsx seed/export-geojson.ts",
     "export:report": "tsx export-pins-report.ts"
   },
   "dependencies": {
+    "@duckdb/node-api": "^1.5.2-r.1",
     "@supabase/supabase-js": "^2.45.0",
     "dotenv": "^16.4.5",
     "fastest-levenshtein": "^1.0.16",

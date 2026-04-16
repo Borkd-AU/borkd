@@ -4,7 +4,7 @@
  * that seed code actually writes.
  */
 export type CanonicalPin = {
-  source: 'city_of_sydney' | 'osm' | 'manual' | 'foursquare';
+  source: 'city_of_sydney' | 'osm' | 'manual' | 'foursquare' | 'overture';
   /** Unique within (source). E.g. `cos_1234`, `osm_way/567`, `manual_waverley_queens-park`, `fsq_<id>`. */
   source_id: string;
   category: 'good_spot' | 'hazard' | 'amenity' | 'wildlife';
@@ -13,6 +13,9 @@ export type CanonicalPin = {
    *   'off_leash_area' | 'dog_park' | 'park' | 'beach' | 'fountain'
    *   'cafe' | 'restaurant' | 'pub'
    *   'veterinary' | 'pet_shop' | 'pet_grooming' | 'waste_bin' | 'dog_toilet'
+   *   'animal_boarding' | 'animal_shelter' | 'bar' | 'dog_wash'
+   *   'dog_trainer' | 'dog_walker' | 'pet_sitting' | 'animal_hospital'
+   *   'emergency_vet' | 'pet_breeder'
    */
   subcategory: string;
   name: string;
@@ -101,6 +104,12 @@ export function osmToCanonical(
   if (tags.amenity === 'pub' && dogFriendly) {
     return { category: 'amenity', subcategory: 'pub' };
   }
+  if (tags.amenity === 'bar' && dogFriendly) {
+    return { category: 'amenity', subcategory: 'bar' };
+  }
+  if (tags.amenity === 'dog_wash' || tags.self_service === 'dog_wash') {
+    return { category: 'amenity', subcategory: 'dog_wash' };
+  }
   if (tags.amenity === 'drinking_water' && tags.dog === 'yes') {
     return { category: 'amenity', subcategory: 'fountain' };
   }
@@ -152,6 +161,41 @@ export function fsqToCanonical(
     if (hit) return hit;
   }
   return null;
+}
+
+// ── Overture Maps category → canonical mapping ────────────────────
+//
+// Overture Maps Foundation (CDLA Permissive 2.0) places theme provides
+// granular pet-service categories from Meta/Microsoft/community sources.
+// Many overlap with OSM; the dedup layer in dedup.ts handles proximity-
+// based merging so the same vet appearing in both OSM and Overture
+// becomes a single pin.
+
+const OVERTURE_CATEGORY_MAP: Record<
+  string,
+  { category: CanonicalPin['category']; subcategory: string }
+> = {
+  pet_groomer:            { category: 'amenity', subcategory: 'pet_grooming' },
+  pet_store:              { category: 'amenity', subcategory: 'pet_shop' },
+  veterinarian:           { category: 'amenity', subcategory: 'veterinary' },
+  emergency_pet_hospital: { category: 'amenity', subcategory: 'emergency_vet' },
+  animal_hospital:        { category: 'amenity', subcategory: 'animal_hospital' },
+  pet_boarding:           { category: 'amenity', subcategory: 'animal_boarding' },
+  pet_training:           { category: 'amenity', subcategory: 'dog_trainer' },
+  dog_trainer:            { category: 'amenity', subcategory: 'dog_trainer' },
+  dog_park:               { category: 'good_spot', subcategory: 'dog_park' },
+  dog_walkers:            { category: 'amenity', subcategory: 'dog_walker' },
+  pet_sitting:            { category: 'amenity', subcategory: 'pet_sitting' },
+  pet_adoption:           { category: 'amenity', subcategory: 'animal_shelter' },
+  animal_shelter:         { category: 'amenity', subcategory: 'animal_shelter' },
+  pet_breeder:            { category: 'amenity', subcategory: 'pet_breeder' },
+  holistic_animal_care:   { category: 'amenity', subcategory: 'veterinary' },
+};
+
+export function overtureToCanonical(
+  category: string,
+): { category: CanonicalPin['category']; subcategory: string } | null {
+  return OVERTURE_CATEGORY_MAP[category] ?? null;
 }
 
 // ── City of Sydney dataset → category mapping ───────────────────

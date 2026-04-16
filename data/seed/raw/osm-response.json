@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-04-16T04:30:05Z",
+    "timestamp_osm_base": "2026-04-16T04:53:45Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -4947,6 +4947,15 @@
         "drinking_water": "yes",
         "fee": "no",
         "man_made": "water_tap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13375414887,
+      "lat": -33.8925307,
+      "lon": 151.1431292,
+      "tags": {
+        "amenity": "dog_wash"
       }
     },
     {

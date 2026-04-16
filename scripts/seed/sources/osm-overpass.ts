@@ -61,6 +61,11 @@ function buildQuery(): string {
   nwr["amenity"="animal_boarding"](${bbox});
   nwr["amenity"="animal_shelter"](${bbox});
   nwr["healthcare"="veterinary"](${bbox});
+
+  // ── Dog-friendly bars + dog wash stations ──────────────────
+  nwr["amenity"="bar"]["dog"~"yes|leashed"](${bbox});
+  nwr["amenity"="dog_wash"](${bbox});
+  nwr["self_service"="dog_wash"](${bbox});
 );
 out center tags;`;
 }

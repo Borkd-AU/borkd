@@ -35,6 +35,7 @@ const AUTHORITY: Record<CanonicalPin['source'], number> = {
   manual: 2,
   osm: 1,
   foursquare: 1,
+  overture: 1,
 };
 
 export type DroppedPin = CanonicalPin & {

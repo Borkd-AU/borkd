@@ -114,7 +114,7 @@ export type WalkUpdate = Partial<
 // ── Pin ────────────────────────────────────────────────────────
 
 export type PinType = 'temporary' | 'permanent';
-export type PinSource = 'city_of_sydney' | 'osm' | 'manual' | 'foursquare';
+export type PinSource = 'city_of_sydney' | 'osm' | 'manual' | 'foursquare' | 'overture';
 
 /**
  * Shape returned by the `get_pins_in_viewport` Postgres RPC.
